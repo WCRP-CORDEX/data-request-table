@@ -1,7 +1,6 @@
 # CORDEX-CMIP6 data request
 
 This repository contains a CORDEX-CMIP6 data request table that is used to create [CORDEX-CMIP6 cmor tables](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables).
-If the CORDEX-CMIP6 cmor tables are supposed to be the same structure as the CMIP6 cmor tables, the following attributes have to be specified for each requested variable:
 
 ## Introduction [^1]
 
