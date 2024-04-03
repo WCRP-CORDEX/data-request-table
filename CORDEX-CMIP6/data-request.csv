@@ -562,6 +562,6 @@ sftgif,%,Percentage of the Grid Cell Covered by Glacier,land_ice_area_fraction,T
 mrsofc,kg m-2,Capacity of Soil to Store Water  (Field Capacity),soil_moisture_content_at_field_capacity,TIER2,,fx,area: mean,atmos,area: areacella,longitude latitude,real,,,,,
 rootd,m,Maximum Root Depth,root_depth,TIER2,,fx,area: mean,atmos,area: areacella,longitude latitude,real,,,,,
 sftlaf,%,Percentage of the Grid Cell Occupied by Lake,area_fraction,TIER2,not in CMIP or in CF,fx,area: mean where lake,atmos,area: areacella,longitude latitude,real,,,,,
-sfturf,%,Percentage of the Grid Cell Occupied by City,area_fraction,TIER2,not in CMIP or in CF,fx,area: mean where urban,atmos,area: areacella,longitude latitude,real,,,,,
+sfturf,%,Percentage of the Grid Cell Occupied by Urban Area,area_fraction,TIER2,not in CMIP or in CF,fx,area: mean where urban,atmos,area: areacella,longitude latitude,real,,,,,
 dtb,m,Depth to Bedrock,bedrock_depth,TIER2,not in CMIP or in CF (lower boundary of land surface models),fx,area: mean,atmos,area: areacella,longitude latitude,real,,,,,
 areacella,m2,Atmosphere Grid-Cell Area,cell_area,TIER2,,fx,area: sum,atmos,area: areacella,longitude latitude,real,,,,,
