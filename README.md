@@ -1,6 +1,7 @@
 # CORDEX-CMIP6 data request
 
-This repository contains a CORDEX-CMIP6 data request table that is used to create [CORDEX-CMIP6 cmor tables](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables).
+This repository contains a CORDEX-CMIP6 data request table that is used to create [CORDEX-CMIP6 cmor tables](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables). Note, that this table is represented in a [tidy format](https://aeturrell.github.io/python4DS/data-tidy.html#tidy-data) which means that
+*each row represents one requested dataset*.
 
 ## Introduction [^1]
 
