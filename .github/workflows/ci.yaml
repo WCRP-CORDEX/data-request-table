@@ -47,4 +47,4 @@ jobs:
           conda list
       - name: Run tests
         timeout-minutes: 5
-        run: python -u -m pytest ci/tests.py
+        run: pytest ci/tests.py -s

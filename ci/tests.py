@@ -13,7 +13,7 @@ def test_all_in_cmor_tables(dreq_file):
     """test if all entries of a data request are registered in the cmor tables"""
     cmor_df = pd.read_csv(cmor_tables)
     dreq_df = pd.read_csv(op.join(table_dir, dreq_file))
-
+    # dreq_df.loc[0, "out_name"] = "xxx"
     # merge two dataFrames and add indicator column
     all_df = pd.merge(
         dreq_df, cmor_df, on=dreq_df.columns.to_list(), how="left", indicator="exists"
