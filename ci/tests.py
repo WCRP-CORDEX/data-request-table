@@ -1,16 +1,15 @@
 import pandas as pd
-from os import path as op
 import pytest
 import numpy as np
 
-from .utils import table_dir, cmor_tables, tables
+from .utils import cmor_tables, tables
 
 
 @pytest.mark.parametrize("dreq_file", tables)
 def test_all_in_cmor_tables(dreq_file):
     """test if all entries of a data request are registered in the cmor tables"""
     cmor_df = pd.read_csv(cmor_tables)
-    dreq_df = pd.read_csv(op.join(table_dir, dreq_file))
+    dreq_df = pd.read_csv(dreq_file)
     # dreq_df.loc[0, "out_name"] = "xxx"
     # merge two dataFrames and add indicator column
     all_df = pd.merge(

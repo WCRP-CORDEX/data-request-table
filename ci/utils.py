@@ -1,11 +1,13 @@
 import pandas as pd
 from os import path as op
+import glob
 
 cmor_tables = "cmor-table/datasets.csv"
-tables = ["dreq_main.csv"]
 table_dir = "data-request"
 
 cols = ["out_name", "standard_name", "long_name", "units", "cell_methods"]
+
+tables = glob.glob(op.join(table_dir, "*.csv"))
 
 
 def human_readable(df):
@@ -33,12 +35,12 @@ def create_excel(filename):
 
 
 def main():
-    for table in tables:
-        filename = op.join(table_dir, table)
+    for filename in tables:
         print(f"creating excel table for: {filename}")
         xlsx = create_excel(filename)
         print(f"created: {xlsx}")
 
 
 if __name__ == "__main__":
+    print(f"found tables: {tables}")
     main()
