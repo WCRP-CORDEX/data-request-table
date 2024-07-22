@@ -2,8 +2,10 @@
 name: create xlsx
 on:
   push:
+    paths:
+      - 'data-request/*.csv'
     branches:
-      - "main"
+      - main
   workflow_dispatch:
 
 jobs:
