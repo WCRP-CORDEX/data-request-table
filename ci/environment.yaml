@@ -1,0 +1,12 @@
+name: data-request
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - pandas
+  - openpyxl
+  - xlsxwriter
+# for testing
+  - pytest
+  - pytest-cov
+  - pytest-env
