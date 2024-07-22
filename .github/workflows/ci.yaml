@@ -48,21 +48,6 @@ jobs:
         run: |
           conda info -a
           conda list
-      - name: Import cordex
-        run: |
-          python -c "import cordex"
       - name: Run tests
         timeout-minutes: 5
-        run: python -u -m pytest
-          --cov=cordex
-          --cov-report=xml
-          --junitxml=test-results/${{ runner.os }}-${{ matrix.python-version }}.xml
-
-      - name: Upload code coverage to Codecov
-        uses: codecov/codecov-action@v4
-        with:
-          file: ./coverage.xml
-          flags: unittests
-          env_vars: RUNNER_OS,PYTHON_VERSION
-          name: codecov-umbrella
-          fail_ci_if_error: false
+        run: python -u -m pytest ci/tests.py
