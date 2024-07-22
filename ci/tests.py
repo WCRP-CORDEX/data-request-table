@@ -3,9 +3,7 @@ from os import path as op
 import pytest
 import numpy as np
 
-cmor_tables = "cmor-table/datasets.csv"
-tables = ["dreq_main.csv"]
-table_dir = "data-request"
+from .utils import table_dir, cmor_tables, tables
 
 
 @pytest.mark.parametrize("dreq_file", tables)
