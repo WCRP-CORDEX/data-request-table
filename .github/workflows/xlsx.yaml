@@ -9,8 +9,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
-    name: ${{ matrix.os }}-py${{ matrix.python-version }}
+  create xlsx:
+    name: Create and update xlsx tables
     runs-on: ${{ matrix.os }}
     defaults:
       run:
