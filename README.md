@@ -5,6 +5,10 @@ This repository contains a CORDEX-CMIP6 cmor table in csv format (`cmor-table/da
 
 The cmor tables, however, are independent from a (domain) specific *data request* which can be only a subset of all datasets in the cmor tables and are supposed to provide some meta data on priorities. These tables are also available in more human-readable xlsx format in the `data-request` subfolder.
 
+### Adding a data request
+
+If you want to add a data request, please open an issue. You can start with an existing data request table, e.g., `data-request/dreq_main.csv`, modify it, and create a PR. If you are requesting a dataset that is not available in the cmor tables, please open an issue and provide appropriate meta data, especially about cell methods and frequencies.
+
 ## Introduction [^1]
 
 [^1]: from https://docs.google.com/document/d/1qX6tF26jPY1IYRVZQ00FLSU7AY4hZJoC.
