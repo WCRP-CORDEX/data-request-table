@@ -1,7 +1,9 @@
 # CORDEX-CMIP6 data request
 
-This repository contains a CORDEX-CMIP6 data request table that is used to create [CORDEX-CMIP6 cmor tables](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables). Note, that this table is represented in a [tidy format](https://aeturrell.github.io/python4DS/data-tidy.html#tidy-data) which means that
-*each row represents one requested dataset*.
+This repository contains a CORDEX-CMIP6 cmor table in csv format (`cmor-table/datasets.csv`) that is used to create [CORDEX-CMIP6 cmor tables](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables). Note, that this table is represented in a [tidy format](https://aeturrell.github.io/python4DS/data-tidy.html#tidy-data) which means that
+*each row represents one requested dataset*. This table contains all meta data required to be used with the [cmor](https://cmor.llnl.gov/) library to produce [CORDEX-CMIP6 compliant]( https://doi.org/10.5281/zenodo.10961069) datasets.
+
+The cmor tables, however, are independent from a (domain) specific *data request* which can be only a subset of all datasets in the cmor tables and are supposed to provide some meta data on priorities. These tables are also available in more human-readable xlsx format in the `data-request` subfolder.
 
 ## Introduction [^1]
 
