@@ -20,6 +20,7 @@ def test_no_duplicates(dreq_file):
 @pytest.mark.parametrize("dreq_file", tables)
 def test_all_in_cmor_tables(dreq_file):
     """assert all entries of a data request are registered in the cmor tables"""
+    print(f"Checking if all entries exist in cmor table: {dreq_file}")
     cmor_df = pd.read_csv(cmor_tables)
     dreq_df = pd.read_csv(dreq_file).drop(columns="priority")
     # dreq_df.loc[0, "out_name"] = "xxx"
@@ -35,3 +36,4 @@ def test_all_in_cmor_tables(dreq_file):
         print(print(all_df[~all_df.exists]))
 
     assert all_df.exists.all()
+    print(f"Seems ok: {dreq_file}")
