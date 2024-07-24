@@ -57,4 +57,4 @@ jobs:
           git add data-request/*.xlsx
           git commit data-request/*.xlsx -m "update xlsx"
           git status
-          git push origin split
+          git push
