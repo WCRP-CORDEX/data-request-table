@@ -522,24 +522,6 @@ wa20,6hr,m s-1,Upward Air Velocity,upward_air_velocity,area: mean time: point,TI
 wa10,mon,m s-1,Upward Air Velocity,upward_air_velocity,area: time: mean,TIER2,
 wa10,day,m s-1,Upward Air Velocity,upward_air_velocity,area: time: mean,TIER2,
 wa10,6hr,m s-1,Upward Air Velocity,upward_air_velocity,area: mean time: point,TIER2,
-ua750,mon,m s-1,Eastward Wind,eastward_wind,area: time: mean,TIER2,requested by CORDEX-Africa
-ua750,day,m s-1,Eastward Wind,eastward_wind,area: time: mean,TIER2,requested by CORDEX-Africa
-ua750,6hr,m s-1,Eastward Wind,eastward_wind,area: mean time: point,TIER2,requested by CORDEX-Africa
-va750,mon,m s-1,Northward Wind,northward_wind,area: time: mean,TIER2,requested by CORDEX-Africa
-va750,day,m s-1,Northward Wind,northward_wind,area: time: mean,TIER2,requested by CORDEX-Africa
-va750,6hr,m s-1,Northward Wind,northward_wind,area: mean time: point,TIER2,requested by CORDEX-Africa
-ta750,mon,K,Air Temperature,air_temperature,area: time: mean,TIER2,requested by CORDEX-Africa
-ta750,day,K,Air Temperature,air_temperature,area: time: mean,TIER2,requested by CORDEX-Africa
-ta750,6hr,K,Air Temperature,air_temperature,area: mean time: point,TIER2,requested by CORDEX-Africa
-hus750,mon,1,Specific Humidity,specific_humidity,area: time: mean,TIER2,requested by CORDEX-Africa
-hus750,day,1,Specific Humidity,specific_humidity,area: time: mean,TIER2,requested by CORDEX-Africa
-hus750,6hr,1,Specific Humidity,specific_humidity,area: mean time: point,TIER2,requested by CORDEX-Africa
-zg750,mon,m,Geopotential Height,geopotential_height,area: time: mean,TIER2,requested by CORDEX-Africa
-zg750,day,m,Geopotential Height,geopotential_height,area: time: mean,TIER2,requested by CORDEX-Africa
-zg750,6hr,m,Geopotential Height,geopotential_height,area: mean time: point,TIER2,requested by CORDEX-Africa
-wa750,mon,m s-1,Upward Air Velocity,upward_air_velocity,area: time: mean,TIER2,requested by CORDEX-Africa
-wa750,day,m s-1,Upward Air Velocity,upward_air_velocity,area: time: mean,TIER2,requested by CORDEX-Africa
-wa750,6hr,m s-1,Upward Air Velocity,upward_air_velocity,area: mean time: point,TIER2,requested by CORDEX-Africa
 ua200m,mon,m s-1,Eastward Wind at 200m,eastward_wind,area: time: mean,TIER2,
 ua200m,day,m s-1,Eastward Wind at 200m,eastward_wind,area: time: mean,TIER2,
 ua200m,1hr,m s-1,Eastward Wind at 200m,eastward_wind,area: mean time: point,TIER2,
