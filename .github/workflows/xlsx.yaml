@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  create xlsx:
+  create_xlsx:
     name: Create and update xlsx tables
     runs-on: ${{ matrix.os }}
     defaults:
