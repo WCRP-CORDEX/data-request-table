@@ -9,7 +9,7 @@ from .utils import cmor_tables, tables
 def test_all_in_cmor_tables(dreq_file):
     """test if all entries of a data request are registered in the cmor tables"""
     cmor_df = pd.read_csv(cmor_tables)
-    dreq_df = pd.read_csv(dreq_file)
+    dreq_df = pd.read_csv(dreq_file).drop(columns="priority")
     # dreq_df.loc[0, "out_name"] = "xxx"
     # merge two dataFrames and add indicator column
     all_df = pd.merge(
