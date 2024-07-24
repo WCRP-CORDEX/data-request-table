@@ -30,7 +30,7 @@ def test_all_in_cmor_tables(dreq_file):
     all_df["exists"] = np.where(all_df.exists == "both", True, False)
     if not all_df.exists.all():
         print(
-            "!!!! There are some variables from {dreq_file} that do not exsits in cmor tables !!!!"
+            f"!!!! There are some variables from {dreq_file} that do not exsits in cmor tables !!!!"
         )
         print(print(all_df[~all_df.exists]))
 
