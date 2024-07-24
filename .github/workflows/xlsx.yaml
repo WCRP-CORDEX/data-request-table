@@ -47,13 +47,13 @@ jobs:
       - name: Check if there are any changes
         id: verify_diff
         run: |
-          git diff docs/ --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff data-request/ --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
       - name: Commit and push
         if: steps.verify_diff.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           #(pre-commit run --all-files) || true
-          git commit data-request/ -am "update xlsx"
+          git commit data-request/*.xlsx -am "update xlsx"
           git status
-          git push
+          git push origin split
