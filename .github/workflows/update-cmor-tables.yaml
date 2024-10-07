@@ -1,0 +1,58 @@
+# this workflow will update cmor tables in cordex-cmip6-cmor-tables
+# if the data request table in this repo is updated...
+name: update cmor tables
+on:
+  workflow_dispatch:
+
+  push:
+    paths:
+      - 'cmor-table/datasets.csv'
+    branches:
+      - main
+
+jobs:
+  update_cmor_tables:
+
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: checkout data request
+      uses: actions/checkout@v4
+
+    - name: checkout cordex cmor tables
+      uses: actions/checkout@v4
+      with:
+        repository: WCRP-CORDEX/cordex-cmip6-cmor-tables
+        path: tables
+        token: ${{ secrets.TABLE_ACCESS_TOKEN }}
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r ./ci/requirements.txt
+
+    - name: Create tables
+      run: |
+        create-cmor-tables cmor-table/datasets.csv --coords --output tables/Tables
+
+    - name: Check if there are any changes
+      id: verify_diff
+      run: |
+        cd tables
+        git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+
+    - name: Commit and push
+      if: steps.verify_diff.outputs.changed == 'true'
+      run: |
+        cd tables
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        (pre-commit run --all-files) || true
+        git commit Tables/*.json -m "update cmor tables from data request repository"
+        git status
+        git push
