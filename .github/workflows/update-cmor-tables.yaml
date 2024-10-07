@@ -1,12 +1,14 @@
-
+# this workflow will update cmor tables in cordex-cmip6-cmor-tables
+# if the data request table in this repo is updated...
 name: update cmor tables
 on:
-  push:
-    #    paths:
-    ##  - 'cmor-table/datasets.csv'
-    branches:
-      - '*'
   workflow_dispatch:
+
+  push:
+    paths:
+      - 'cmor-table/datasets.csv'
+    branches:
+      - main
 
 jobs:
   update_cmor_tables:
@@ -37,3 +39,20 @@ jobs:
     - name: Create tables
       run: |
         create-cmor-tables cmor-table/datasets.csv --coords --output tables/Tables
+
+    - name: Check if there are any changes
+      id: verify_diff
+      run: |
+        cd tables
+        git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+
+    - name: Commit and push
+      if: steps.verify_diff.outputs.changed == 'true'
+      run: |
+        cd tables
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        (pre-commit run --all-files) || true
+        git commit Tables/*.json -m "update cmor tables from data request repository"
+        git status
+        git push
