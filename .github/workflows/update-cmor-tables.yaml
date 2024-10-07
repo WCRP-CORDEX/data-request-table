@@ -33,3 +33,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r ./ci/requirements.txt
+
+    - name: Create tables
+      run: |
+        create-cmor-tables https://raw.githubusercontent.com/WCRP-CORDEX/data-request-table/refs/heads/main/cmor-table/datasets.csv --coords --output tables/Tables
