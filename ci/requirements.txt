@@ -1,0 +1,2 @@
+pandas
+data-request-tools @ git+https://github.com/WCRP-CORDEX/data-request-tools.git@releases/tag/v0.1.0
