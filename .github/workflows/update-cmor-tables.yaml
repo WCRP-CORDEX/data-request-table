@@ -5,10 +5,10 @@ on:
   workflow_dispatch:
 
   push:
-    #paths:
-    #  - 'cmor-table/datasets.csv'
+    paths:
+      - 'cmor-table/datasets.csv'
     branches:
-      - '*'
+      - main
 
 jobs:
   update_cmor_tables:
