@@ -37,3 +37,22 @@ def test_all_in_cmor_tables(dreq_file):
 
     assert all_df.exists.all()
     print(f"Seems ok: {dreq_file}")
+
+
+def test_all_positive_attrs_set():
+    """assert all positive attributes are set in the cmor tables
+
+    Check if standard name indicates a directional variable and the
+    positive attribute is set consistently.
+
+    """
+
+    up = ["outgoing", "upward", "upwelling"]
+    down = ["incoming", "downward", "downwelling", "sinking"]
+    df = pd.read_csv(cmor_tables)
+
+    ups = df.loc[df.standard_name.str.contains("|".join(up), case=False)]
+    downs = df.loc[df.standard_name.str.contains("|".join(down), case=False)]
+
+    assert all(ups.positive == "up")
+    assert all(downs.positive == "down")
