@@ -53,7 +53,6 @@ tsl,6hr,K,Temperature of Soil,soil_temperature,Temperature of each soil layer (3
 prc,mon,kg m-2 s-1,Convective Precipitation,convective_precipitation_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,
 prc,day,kg m-2 s-1,Convective Precipitation,convective_precipitation_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,
 prc,1hr,kg m-2 s-1,Convective Precipitation,convective_precipitation_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,
-prhmax,mon,kg m-2 s-1,Daily Maximum Hourly Precipitation Rate,precipitation_flux,Defined as maximum of the precipitation rate averaged over the whole hour.,area: mean time: mean within hours time: maximum over hours,area: areacella,longitude latitude time,real,,,,,
 prhmax,day,kg m-2 s-1,Daily Maximum Hourly Precipitation Rate,precipitation_flux,Defined as maximum of the precipitation rate averaged over the whole hour.,area: mean time: mean within hours time: maximum over hours,area: areacella,longitude latitude time,real,,,,,
 prsn,mon,kg m-2 s-1,Snowfall Flux,snowfall_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,
 prsn,day,kg m-2 s-1,Snowfall Flux,snowfall_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,
