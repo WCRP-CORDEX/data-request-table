@@ -79,3 +79,20 @@ def test_cell_methods_attrs_set():
     print(f"No cell methods defined for: {no_cell_methods[['out_name', 'frequency']]}")
 
     assert no_cell_methods.empty
+
+
+def test_all_units_cf_conform():
+    import cf_units
+
+    def is_cf_conform(unit):
+        try:
+            cf_units.Unit(unit)
+            return True
+        except ValueError:
+            return False
+
+    df = pd.read_csv(cmor_tables)
+    df["cf_units_conform"] = df["units"].apply(is_cf_conform)
+    non_cf_units = df.loc[~df.cf_units_conform]
+    print(f"Non CF conform units: {non_cf_units[['out_name', 'units']]}")
+    assert non_cf_units.empty
