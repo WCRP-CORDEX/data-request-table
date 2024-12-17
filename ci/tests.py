@@ -1,13 +1,17 @@
+import numpy as np
 import pandas as pd
 import pytest
-import numpy as np
-
 from .utils import cmor_tables, tables
 
 
 @pytest.mark.parametrize("dreq_file", tables)
 def test_no_duplicates(dreq_file):
-    """assert all entries of a data request are unique"""
+    """
+    Ensure all entries in the data request file are unique.
+
+    This test checks that there are no duplicate entries in the data request file.
+    It verifies uniqueness both with and without the 'priority' column.
+    """
     dreq_df = pd.read_csv(dreq_file)
     assert dreq_df.loc[dreq_df.duplicated()].empty
     assert (
@@ -19,34 +23,38 @@ def test_no_duplicates(dreq_file):
 
 @pytest.mark.parametrize("dreq_file", tables)
 def test_all_in_cmor_tables(dreq_file):
-    """assert all entries of a data request are registered in the cmor tables"""
-    print(f"Checking if all entries exist in cmor table: {dreq_file}")
+    """
+    Ensure all entries in the data request file are registered in the CMOR tables.
+
+    This test checks that every entry in the data request file exists in the CMOR tables.
+    It merges the data request file with the CMOR tables and verifies that all entries are present.
+    """
+    print(f"Checking if all entries exist in CMOR table: {dreq_file}")
     cmor_df = pd.read_csv(cmor_tables)
-    dreq_df = pd.read_csv(dreq_file).drop(columns="priority")
+    dreq_df = pd.read_csv(dreq_file).drop(columns=["comment", "priority"])
     # dreq_df.loc[0, "out_name"] = "xxx"
-    # merge two dataFrames and add indicator column
+    # Merge two DataFrames and add indicator column
     all_df = pd.merge(
         dreq_df, cmor_df, on=dreq_df.columns.to_list(), how="left", indicator="exists"
     )
     all_df["exists"] = np.where(all_df.exists == "both", True, False)
     if not all_df.exists.all():
         print(
-            f"!!!! There are some variables from {dreq_file} that do not exsits in cmor tables !!!!"
+            f"!!!! There are some variables from {dreq_file} that do not exist in CMOR tables !!!!"
         )
-        print(print(all_df[~all_df.exists]))
+        print(all_df[~all_df.exists])
 
     assert all_df.exists.all()
     print(f"Seems ok: {dreq_file}")
 
 
 def test_all_positive_attrs_set():
-    """assert all positive attributes are set in the cmor tables
-
-    Check if standard name indicates a directional variable and the
-    positive attribute is set consistently.
-
     """
+    Ensure all positive attributes are set in the CMOR tables.
 
+    This test checks if the 'positive' attribute is set for all directional variables
+    in the CMOR tables, as indicated by their standard names.
+    """
     up = ["outgoing", "upward", "upwelling"]
     down = ["incoming", "downward", "downwelling", "sinking"]
     df = pd.read_csv(cmor_tables)
@@ -56,3 +64,18 @@ def test_all_positive_attrs_set():
 
     assert all(ups.positive == "up")
     assert all(downs.positive == "down")
+
+
+def test_cell_methods_attrs_set():
+    """assert all positive attributes are set in the cmor tables
+
+    Check if standard name indicates a directional variable and the
+    positive attribute is set consistently.
+
+    """
+    df = pd.read_csv(cmor_tables)
+
+    no_cell_methods = df.loc[df.cell_methods.isna()]
+    print(no_cell_methods)
+
+    assert no_cell_methods.empty
