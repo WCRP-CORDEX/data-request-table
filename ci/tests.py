@@ -82,6 +82,12 @@ def test_cell_methods_attrs_set():
 
 
 def test_all_units_cf_conform():
+    """
+    Ensure all units are CF conform in the CMOR tables.
+
+    This test checks if the 'units' attribute for all entries in the CMOR tables
+    conforms to the CF conventions. It identifies any entries with non-conforming units.
+    """
     import cf_units
 
     def is_cf_conform(unit):
