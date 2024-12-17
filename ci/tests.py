@@ -67,11 +67,11 @@ def test_all_positive_attrs_set():
 
 
 def test_cell_methods_attrs_set():
-    """assert all positive attributes are set in the cmor tables
+    """
+    Ensure all cell methods attributes are set in the CMOR tables.
 
-    Check if standard name indicates a directional variable and the
-    positive attribute is set consistently.
-
+    This test checks if the 'cell_methods' attribute is set for all entries
+    in the CMOR tables. It identifies any entries that are missing this attribute.
     """
     df = pd.read_csv(cmor_tables)
 
