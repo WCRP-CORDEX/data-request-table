@@ -76,6 +76,6 @@ def test_cell_methods_attrs_set():
     df = pd.read_csv(cmor_tables)
 
     no_cell_methods = df.loc[df.cell_methods.isna()]
-    print(no_cell_methods)
+    print(f"No cell methods defined for: {no_cell_methods[['out_name', 'frequency']]}")
 
     assert no_cell_methods.empty
