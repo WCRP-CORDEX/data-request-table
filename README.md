@@ -7,7 +7,7 @@ The cmor tables, however, are independent from a (domain) specific *data request
 ### Adding a data request
 
 > [!IMPORTANT]
-> If you want to add a data request, please open an issue. You can start with an existing data request table, e.g., `data-request/dreq_main.csv`, modify it, and create a PR. If you are requesting a dataset that is not available in the cmor tables, please open an issue and provide appropriate meta data, especially about cell methods and frequencies.
+> If you want to add a data request, please open an issue. You can start with an existing data request table, e.g., `data-request/dreq_main.csv`, modify it, and create a pull request. If you are requesting a dataset that is not available in the cmor tables, please open an issue and provide appropriate meta data, especially about cell methods and frequencies. You are also very welcome to make a pull request on the overall list of datasets ([cmor-table/datasets.csv](https://github.com/WCRP-CORDEX/data-request-table/blob/main/cmor-table/datasets.csv)) and simply add new rows. Please make sure that new datasets are consistent with [CMIP6 cmor tables](https://github.com/PCMDI/cmip6-cmor-tables) (if they exist in there).
 
 
 
