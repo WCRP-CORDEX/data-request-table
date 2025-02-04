@@ -76,9 +76,31 @@ def test_cell_methods_attrs_set():
     df = pd.read_csv(cmor_tables)
 
     no_cell_methods = df.loc[df.cell_methods.isna()]
-    print(f"No cell methods defined for: {no_cell_methods[['out_name', 'frequency']]}")
+    if not no_cell_methods.empty:
+        print(
+            f"No cell methods defined for: {no_cell_methods[['out_name', 'frequency', 'realm']]}"
+        )
 
     assert no_cell_methods.empty
+
+
+def test_dimensions_attrs_set():
+    """
+    Ensure all dimensions attributes are set in the CMOR tables.
+
+    This test checks if the 'dimensions' attribute is set for all entries
+    in the CMOR tables. It identifies any entries that are missing this attribute
+    and prints them out.
+    """
+    df = pd.read_csv(cmor_tables)
+
+    no_dimensions = df.loc[df.dimensions.isna()]
+    if not no_dimensions.empty:
+        print(
+            f"No dimensions defined for: {no_dimensions[['out_name', 'frequency', 'realm']]}"
+        )
+
+    assert no_dimensions.empty
 
 
 def test_all_units_cf_conform():
@@ -100,5 +122,6 @@ def test_all_units_cf_conform():
     df = pd.read_csv(cmor_tables)
     df["cf_units_conform"] = df["units"].apply(is_cf_conform)
     non_cf_units = df.loc[~df.cf_units_conform]
-    print(f"Non CF conform units: {non_cf_units[['out_name', 'units']]}")
+    if not non_cf_units.empty:
+        print(f"Non CF conform units: {non_cf_units[['out_name', 'units']]}")
     assert non_cf_units.empty
