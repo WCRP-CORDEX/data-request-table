@@ -610,4 +610,5 @@ wo,day,m s-1,Sea Water Upward Velocity,upward_sea_water_velocity,,area: mean whe
 rhop,day,kg m-3,Sea Water Potential Density,sea_water_potential_density,,area: mean where sea time: mean,,,,,,,,,ocean
 difvho,day,m2 s-1,Vertical Eddy Diffusivity,ocean_vertical_heat_diffusivity,,area: mean where sea time: mean,area: areacello volume: volcello,,,,,,,,ocean
 tos,1hr,degC,Sea Surface Temperature,sea_surface_temperature,,area: mean where sea time: point,area: areacello,,,,,,,,ocean
-tob,mon,degC,Sea Water Potential Temperature at Sea Floor,sea_water_potential_temperature_at_sea_floor,,area: mean where sea time: mean,area: areacello,longitude latitude time,real,,,,,,ocean
+tob,mon,degC,Sea Water Potential Temperature at Sea Floor,sea_water_potential_temperature_at_sea_floor,"Potential temperature at the ocean bottom-most grid cell.",area: mean where sea time: mean,area: areacello,longitude latitude time,real,,,,,,ocean
+tob,day,degC,Sea Water Potential Temperature at Sea Floor,sea_water_potential_temperature_at_sea_floor,"Potential temperature at the ocean bottom-most grid cell.",area: mean where sea time: mean,area: areacello,longitude latitude time,real,,,,,,ocean
