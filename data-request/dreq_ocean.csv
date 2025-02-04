@@ -44,4 +44,5 @@ wo,day,m s-1,Sea Water Upward Velocity,upward_sea_water_velocity,area: mean wher
 rhop,day,kg m-3,Sea Water Potential Density,sea_water_potential_density,area: mean where sea time: mean,TIER2,"3D, sigma0"
 difvho,day,m2 s-1,Vertical Eddy Diffusivity,ocean_vertical_heat_diffusivity,area: mean where sea time: mean,TIER2,"3D, useful for BGC model forcing"
 tos,1hr,degC,Sea Surface Temperature,sea_surface_temperature,area: mean where sea time: point,TIER2,2D
-tob,mon,degC,Sea Water Potential Temperature at Sea Floor,sea_water_potential_temperature_at_sea_floor,area: mean where sea time: mean,TIER2,2D
+tob,day,degC,Sea Water Potential Temperature at Sea Floor,sea_water_potential_temperature_at_sea_floor,area: mean where sea time: mean,TIER2,2D
+tob,mon,degC,Sea Water Potential Temperature at Sea Floor,sea_water_potential_temperature_at_sea_floor,area: mean where sea time: mean,TIER1,2D
