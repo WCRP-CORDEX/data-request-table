@@ -582,33 +582,33 @@ deptho,fx,m,Sea Floor Depth Below Geoid,sea_floor_depth_below_geoid,Ocean bathym
 sftof,fx,%,Sea Area Percentage,sea_area_fraction,This is the area fraction at the ocean surface.,area: mean,area: areacello,longitude latitude ,real,,,,,,ocean
 thkcello,fx,m,Ocean Model Cell Thickness,cell_thickness,,area: mean,area: areacello volume: volcello,longitude latitude olevel ,real,,,,,,ocean
 volcello,fx,m3,Ocean Grid-Cell Volume,ocean_volume,"For oceans with more than 1 mesh (e.g. staggered grids), report areas that apply to surface vertical fluxes of energy. If this field is time-dependent then save it instead as one of your Omon and Odec fields",area: sum,area: areacello volume: volcello,longitude latitude olevel ,real,,,,,,ocean
-thetao,day,degC,Sea Water Potential Temperature,sea_water_potential_temperature,,area: mean where sea time: mean,area: areacello volume: volcello,,,,,,,,ocean
-wo,mon,m s-1,Sea Water Upward Velocity,upward_sea_water_velocity,,area: mean where sea time: mean,--OPT,,,up,,,,,ocean
+thetao,day,degC,Sea Water Potential Temperature,sea_water_potential_temperature,,area: mean where sea time: mean,area: areacello volume: volcello,longitude latitude olevel time,,,,,,,ocean
+wo,mon,m s-1,Sea Water Upward Velocity,upward_sea_water_velocity,,area: mean where sea time: mean,--OPT,longitude latitude olevel time,,up,,,,,ocean
 rhop,mon,kg m-3,Sea Water Potential Density,sea_water_potential_density,,area: mean where sea time: mean,,,,,,,,,ocean
-hfds,mon,W m-2,Downward Heat Flux at Sea Water Surface,surface_downward_heat_flux_in_sea_water,,area: mean where sea time: mean,area: areacello,,,down,,,,,ocean
-hfds,day,W m-2,Downward Heat Flux at Sea Water Surface,surface_downward_heat_flux_in_sea_water,,area: mean where sea time: mean,area: areacello,,,down,,,,,ocean
+hfds,mon,W m-2,Downward Heat Flux at Sea Water Surface,surface_downward_heat_flux_in_sea_water,,area: mean where sea time: mean,area: areacello,longitude latitude time,,down,,,,,ocean
+hfds,day,W m-2,Downward Heat Flux at Sea Water Surface,surface_downward_heat_flux_in_sea_water,,area: mean where sea time: mean,area: areacello,longitude latitude time,,down,,,,,ocean
 hfcorr,mon,W m-2,Heat Flux Correction,heat_flux_correction,,area: mean where sea time: mean,area: areacello,longitude latitude time,real,down,,,,,ocean
-hfcorr,day,W m-2,Heat Flux Correction,heat_flux_correction,,area: mean where sea time: mean,area: areacello,,,,,,,,ocean
+hfcorr,day,W m-2,Heat Flux Correction,heat_flux_correction,,area: mean where sea time: mean,area: areacello,longitude latitude time,,,,,,,ocean
 rsntds,mon,W m-2,Net Downward Shortwave Radiation at Sea Water Surface,net_downward_shortwave_flux_at_sea_water_surface,,area: mean where sea time: mean,area: areacello,longitude latitude time,real,down,,,,,ocean
-rsntds,day,W m-2,Net Downward Shortwave Radiation at Sea Water Surface,net_downward_shortwave_flux_at_sea_water_surface,,area: mean where sea time: mean,area: areacello,,,down,,,,,ocean
-tauuo,mon,N m-2,Sea Water Surface Downward X Stress,downward_x_stress_at_sea_water_surface,,area: mean where sea time: mean,,,,down,,,,,ocean
-tauuo,day,N m-2,Sea Water Surface Downward X Stress,downward_x_stress_at_sea_water_surface,,area: mean where sea time: mean,,,,down,,,,,ocean
-tauvo,mon,N m-2,Sea Water Surface Downward Y Stress,downward_y_stress_at_sea_water_surface,,area: mean where sea time: mean,,,,down,,,,,ocean
-tauvo,day,N m-2,Sea Water Surface Downward Y Stress,downward_y_stress_at_sea_water_surface,,area: mean where sea time: mean,,,,down,,,,,ocean
+rsntds,day,W m-2,Net Downward Shortwave Radiation at Sea Water Surface,net_downward_shortwave_flux_at_sea_water_surface,,area: mean where sea time: mean,area: areacello,longitude latitude time,,down,,,,,ocean
+tauuo,mon,N m-2,Sea Water Surface Downward X Stress,downward_x_stress_at_sea_water_surface,,area: mean where sea time: mean,,longitude latitude time,,down,,,,,ocean
+tauuo,day,N m-2,Sea Water Surface Downward X Stress,downward_x_stress_at_sea_water_surface,,area: mean where sea time: mean,,longitude latitude time,,down,,,,,ocean
+tauvo,mon,N m-2,Sea Water Surface Downward Y Stress,downward_y_stress_at_sea_water_surface,,area: mean where sea time: mean,,longitude latitude time,,down,,,,,ocean
+tauvo,day,N m-2,Sea Water Surface Downward Y Stress,downward_y_stress_at_sea_water_surface,,area: mean where sea time: mean,,longitude latitude time,,down,,,,,ocean
 uos,day,m s-1,Surface X Velocity,surface_eastward_sea_water_velocity,,area: mean where sea time: mean,,,,,,,,,ocean
 vos,day,m s-1,Surface Y Velocity,surface_northward_sea_water_velocity,,area: mean where sea time: mean,,,,,,,,,ocean
 wfo,mon,kg m-2 s-1,Water Flux into Sea Water,water_flux_into_sea_water,,area: mean where sea time: mean,area: areacello,longitude latitude time,real,,-0.005411 s,0.03952 s,1.831e-05 s,6.051e-05 s,ocean
-wfo,day,kg m-2 s-1,Water Flux into Sea Water,water_flux_into_sea_water,,area: mean where sea time: mean,area: areacello,,,,,,,,ocean
+wfo,day,kg m-2 s-1,Water Flux into Sea Water,water_flux_into_sea_water,,area: mean where sea time: mean,area: areacello,longitude latitude time,,,,,,,ocean
 friver,mon,kg m-2 s-1,Water Flux into Sea Water from Rivers,water_flux_into_sea_water_from_rivers,,area: mean where sea time: mean,area: areacello,longitude latitude time,real,,,,,,ocean
-friver,day,kg m-2 s-1,Water Flux into Sea Water from Rivers,water_flux_into_sea_water_from_rivers,,area: mean where sea time: mean,area: areacello,,,,,,,,ocean
+friver,day,kg m-2 s-1,Water Flux into Sea Water from Rivers,water_flux_into_sea_water_from_rivers,,area: mean where sea time: mean,area: areacello,longitude latitude time,,,,,,,ocean
 wfonocorr,mon,kg m-2 s-1,Water Flux into Sea Water Without Flux Correction,water_flux_into_sea_water_without_flux_correction,,area: mean where sea time: mean,area: areacello,longitude latitude time,real,,,,,,ocean
-wfonocorr,day,kg m-2 s-1,Water Flux into Sea Water Without Flux Correction,water_flux_into_sea_water_without_flux_correction,,area: mean where sea time: mean,area: areacello,,,,,,,,ocean
-so,day,0.001,Sea Water Salinity,sea_water_salinity,,area: mean where sea time: mean,area: areacello volume: volcello,,,,,,,,ocean
-uo,day,m s-1,Sea Water X Velocity,sea_water_x_velocity,,area: mean where sea time: mean,--OPT,,,,,,,,ocean
-vo,day,m s-1,Sea Water Y Velocity,sea_water_y_velocity,,area: mean where sea time: mean,--OPT,,,,,,,,ocean
-wo,day,m s-1,Sea Water Upward Velocity,upward_sea_water_velocity,,area: mean where sea time: mean,--OPT,,,up,,,,,ocean
+wfonocorr,day,kg m-2 s-1,Water Flux into Sea Water Without Flux Correction,water_flux_into_sea_water_without_flux_correction,,area: mean where sea time: mean,area: areacello,longitude latitude time,,,,,,,ocean
+so,day,0.001,Sea Water Salinity,sea_water_salinity,,area: mean where sea time: mean,area: areacello volume: volcello,longitude latitude olevel time,,,,,,,ocean
+uo,day,m s-1,Sea Water X Velocity,sea_water_x_velocity,,area: mean where sea time: mean,--OPT,longitude latitude olevel time,,,,,,,ocean
+vo,day,m s-1,Sea Water Y Velocity,sea_water_y_velocity,,area: mean where sea time: mean,--OPT,longitude latitude olevel time,,,,,,,ocean
+wo,day,m s-1,Sea Water Upward Velocity,upward_sea_water_velocity,,area: mean where sea time: mean,--OPT,longitude latitude olevel time,,up,,,,,ocean
 rhop,day,kg m-3,Sea Water Potential Density,sea_water_potential_density,,area: mean where sea time: mean,,,,,,,,,ocean
-difvho,day,m2 s-1,Vertical Eddy Diffusivity,ocean_vertical_heat_diffusivity,,area: mean where sea time: mean,area: areacello volume: volcello,,,,,,,,ocean
-tos,1hr,degC,Sea Surface Temperature,sea_surface_temperature,,area: mean where sea time: point,area: areacello,,,,,,,,ocean
-tob,mon,degC,Sea Water Potential Temperature at Sea Floor,sea_water_potential_temperature_at_sea_floor,"Potential temperature at the ocean bottom-most grid cell.",area: mean where sea time: mean,area: areacello,longitude latitude time,real,,,,,,ocean
-tob,day,degC,Sea Water Potential Temperature at Sea Floor,sea_water_potential_temperature_at_sea_floor,"Potential temperature at the ocean bottom-most grid cell.",area: mean where sea time: mean,area: areacello,longitude latitude time,real,,,,,,ocean
+difvho,day,m2 s-1,Vertical Eddy Diffusivity,ocean_vertical_heat_diffusivity,,area: mean where sea time: mean,area: areacello volume: volcello,longitude latitude olevel time2,,,,,,,ocean
+tos,1hr,degC,Sea Surface Temperature,sea_surface_temperature,,area: mean where sea time: point,area: areacello,longitude latitude time1,,,,,,,ocean
+tob,mon,degC,Sea Water Potential Temperature at Sea Floor,sea_water_potential_temperature_at_sea_floor,Potential temperature at the ocean bottom-most grid cell.,area: mean where sea time: mean,area: areacello,longitude latitude time,real,,,,,,ocean
+tob,day,degC,Sea Water Potential Temperature at Sea Floor,sea_water_potential_temperature_at_sea_floor,Potential temperature at the ocean bottom-most grid cell.,area: mean where sea time: mean,area: areacello,longitude latitude time,real,,,,,,ocean
