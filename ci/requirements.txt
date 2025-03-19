@@ -1,2 +1,2 @@
 pandas
-data-request-tools @ git+https://github.com/WCRP-CORDEX/data-request-tools.git@v0.1.0
+data-request-tools @ git+https://github.com/WCRP-CORDEX/data-request-tools.git@v0.2.0
