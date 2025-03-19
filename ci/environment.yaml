@@ -9,6 +9,7 @@ dependencies:
   - cf-units
   - cf_xarray
   - pooch
+  - pyyaml
 # for testing
   - pytest
   - pytest-cov

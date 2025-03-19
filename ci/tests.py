@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 from cf_xarray.utils import parse_cf_standard_name_table
-from .utils import cmor_tables, tables
+from .utils import cmor_tables, tables, parse_area_type, parse_cell_methods
 
 
 @pytest.mark.parametrize("dreq_file", tables)
@@ -130,18 +130,18 @@ def test_all_units_cf_conform():
 
 def test_all_standard_names_cf_conform():
     """
+    Ensure all standard names are CF conform in the CMOR tables.
+
     This test verifies that the 'standard_name' attribute for all entries in the CMOR tables
     matches the CF standard name table. It parses the CF standard name table and compares
     it against the 'standard_name' column in the CMOR tables. Any entries with non-conforming
     or missing standard names are flagged as errors.
     """
     # source = "https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/current/src/cf-standard-name-table.xml"
-    cf_table = parse_cf_standard_name_table()
-    standard_names = list(cf_table[1].keys()) + [
-        "heat_flux_correction"
-    ]  # heat_flux_correction is an alias for "heat_flux_into_sea_water_due_to_flux_adjustment"
+    info, table, aliases = parse_cf_standard_name_table()
+    valid = list(table.keys()) + list(aliases.keys())
     df = pd.read_csv(cmor_tables)
-    non_cf_standard_names = df.loc[~df.standard_name.isin(standard_names)][
+    non_cf_standard_names = df.loc[~df.standard_name.isin(valid)][
         ["out_name", "standard_name", "realm"]
     ].drop_duplicates()
 
@@ -150,3 +150,39 @@ def test_all_standard_names_cf_conform():
             f"Non CF conform standard names: {non_cf_standard_names.standard_name.to_list()}"
         )
     assert non_cf_standard_names.empty
+
+
+def test_all_area_types_cf_conform():
+    """
+    Ensure all area types are CF conform in the CMOR tables.
+
+    This test verifies that the 'area_type' attribute for all entries in the CMOR tables
+    matches the CF area type table. It parses the CF area type table and compares it
+    against the 'area_type' column in the CMOR tables. Any entries with non-conforming
+    or missing area types are flagged as errors.
+    """
+    import pooch
+
+    downloader = pooch.HTTPDownloader(
+        # https://github.com/readthedocs/readthedocs.org/issues/11763
+        headers={"User-Agent": "data-request-validator"},
+    )
+
+    source = pooch.retrieve(
+        "https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/main/Data/area-type-table/current/src/area-type-table.xml",
+        known_hash=None,
+        downloader=downloader,
+    )
+
+    info, table, aliases = parse_cf_standard_name_table(source)
+    valid = list(table.keys()) + list(aliases.keys())
+
+    df = pd.read_csv(cmor_tables)
+
+    df["area_type"] = df.cell_methods.apply(
+        lambda x: parse_cell_methods(x).get("area")
+    ).apply(parse_area_type)
+
+    non_cf_area_types = df[(df.area_type.notnull()) & ~df.area_type.isin(valid)]
+
+    assert non_cf_area_types.empty
