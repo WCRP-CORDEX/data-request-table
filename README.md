@@ -1,6 +1,7 @@
 # CORDEX-CMIP6 data request
 
 [![CI](https://github.com/WCRP-CORDEX/data-request-table/actions/workflows/ci.yaml/badge.svg)](https://github.com/WCRP-CORDEX/data-request-table/actions/workflows/ci.yaml)
+[![cmor tables update](https://github.com/WCRP-CORDEX/data-request-table/actions/workflows/update-cmor-tables.yaml/badge.svg)](https://github.com/WCRP-CORDEX/data-request-table/actions/workflows/update-cmor-tables.yaml)
 
 This repository contains a CORDEX-CMIP6 cmor table in csv format (`cmor-table/datasets.csv`) that is used to create [CORDEX-CMIP6 cmor tables](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables). Note, that this table is represented in a [tidy format](https://book.the-turing-way.org/reproducible-research/rdm/rdm-spreadsheets.html#tidy-format-for-spreadsheets) which means that *each row represents one requested dataset*. This table contains all meta data required to be used with the [cmor](https://cmor.llnl.gov/) library to produce [CORDEX-CMIP6 compliant]( https://doi.org/10.5281/zenodo.10961069) datasets.
 
