@@ -8,6 +8,7 @@ dependencies:
   - xlsxwriter
   - cf-units
   - cf_xarray
+  - pooch
 # for testing
   - pytest
   - pytest-cov
