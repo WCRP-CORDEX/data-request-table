@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import pytest
+from cf_xarray.utils import parse_cf_standard_name_table
 from .utils import cmor_tables, tables
 
 
@@ -125,3 +126,27 @@ def test_all_units_cf_conform():
     if not non_cf_units.empty:
         print(f"Non CF conform units: {non_cf_units[['out_name', 'units']]}")
     assert non_cf_units.empty
+
+
+def test_all_standard_names_cf_conform():
+    """
+    This test verifies that the 'standard_name' attribute for all entries in the CMOR tables
+    matches the CF standard name table. It parses the CF standard name table and compares
+    it against the 'standard_name' column in the CMOR tables. Any entries with non-conforming
+    or missing standard names are flagged as errors.
+    """
+    # source = "https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/current/src/cf-standard-name-table.xml"
+    cf_table = parse_cf_standard_name_table()
+    standard_names = list(cf_table[1].keys()) + [
+        "heat_flux_correction"
+    ]  # heat_flux_correction is an alias for "heat_flux_into_sea_water_due_to_flux_adjustment"
+    df = pd.read_csv(cmor_tables)
+    non_cf_standard_names = df.loc[~df.standard_name.isin(standard_names)][
+        ["out_name", "standard_name", "realm"]
+    ].drop_duplicates()
+
+    if not non_cf_standard_names.empty:
+        print(
+            f"Non CF conform standard names: {non_cf_standard_names.standard_name.to_list()}"
+        )
+    assert non_cf_standard_names.empty
