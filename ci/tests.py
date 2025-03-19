@@ -136,12 +136,10 @@ def test_all_standard_names_cf_conform():
     or missing standard names are flagged as errors.
     """
     # source = "https://raw.githubusercontent.com/cf-convention/cf-convention.github.io/master/Data/cf-standard-names/current/src/cf-standard-name-table.xml"
-    cf_table = parse_cf_standard_name_table()
-    standard_names = list(cf_table[1].keys()) + [
-        "heat_flux_correction"
-    ]  # heat_flux_correction is an alias for "heat_flux_into_sea_water_due_to_flux_adjustment"
+    info, table, aliases = parse_cf_standard_name_table()
+    valid = list(table.keys()) + list(aliases.keys())
     df = pd.read_csv(cmor_tables)
-    non_cf_standard_names = df.loc[~df.standard_name.isin(standard_names)][
+    non_cf_standard_names = df.loc[~df.standard_name.isin(valid)][
         ["out_name", "standard_name", "realm"]
     ].drop_duplicates()
 
