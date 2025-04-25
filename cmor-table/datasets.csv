@@ -127,8 +127,8 @@ snc,6hr,%,Snow Area Percentage,surface_snow_area_fraction,,area: mean time: poin
 snd,mon,m,Snow Depth,surface_snow_thickness,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 snd,day,m,Snow Depth,surface_snow_thickness,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 snd,6hr,m,Snow Depth,surface_snow_thickness,,area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
-siconca,mon,%,Sea-Ice Area Percentage (Atmospheric Grid),sea_ice_area_fraction,Percentage of grid cell covered by sea ice,area: time: mean,area: areacella,longitude latitude time typesi,real,,,,,,atmos
-siconca,day,%,Sea-Ice Area Percentage (Atmospheric Grid),sea_ice_area_fraction,Percentage of grid cell covered by sea ice,area: time: mean,area: areacella,longitude latitude time typesi,real,,,,,,atmos
+siconca,mon,%,Sea-Ice Area Percentage (Atmospheric Grid),sea_ice_area_fraction,Percentage of grid cell covered by sea ice,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+siconca,day,%,Sea-Ice Area Percentage (Atmospheric Grid),sea_ice_area_fraction,Percentage of grid cell covered by sea ice,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 zmla,mon,m,Height of Boundary Layer,atmosphere_boundary_layer_thickness,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 zmla,day,m,Height of Boundary Layer,atmosphere_boundary_layer_thickness,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 zmla,1hr,m,Height of Boundary Layer,atmosphere_boundary_layer_thickness,,area: mean time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
