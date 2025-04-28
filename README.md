@@ -1,24 +1,24 @@
-# CORDEX-CMIP6 data request
-
 [![CI](https://github.com/WCRP-CORDEX/data-request-table/actions/workflows/ci.yaml/badge.svg)](https://github.com/WCRP-CORDEX/data-request-table/actions/workflows/ci.yaml)
 [![cmor tables update](https://github.com/WCRP-CORDEX/data-request-table/actions/workflows/update-cmor-tables.yaml/badge.svg)](https://github.com/WCRP-CORDEX/data-request-table/actions/workflows/update-cmor-tables.yaml)
 
-This repository contains a CORDEX-CMIP6 cmor table in csv format (`cmor-table/datasets.csv`) that is used to create [CORDEX-CMIP6 cmor tables](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables). Note, that this table is represented in a [tidy format](https://book.the-turing-way.org/reproducible-research/rdm/rdm-spreadsheets.html#tidy-format-for-spreadsheets) which means that *each row represents one requested dataset*. This table contains all meta data required to be used with the [cmor](https://cmor.llnl.gov/) library to produce [CORDEX-CMIP6 compliant]( https://doi.org/10.5281/zenodo.10961069) datasets.
+# CORDEX-CMIP6 data request
 
-The cmor tables, however, are independent from a (domain) specific *data request* which can be only a subset of all datasets in the cmor tables and are supposed to provide some meta data on priorities. These tables are also available in more human-readable xlsx format in the `data-request` subfolder.
+The CORDEX-CMIP6 Data Request (DR) defines all the quantities from CMIP6-driven CORDEX simulations that should be archived by the modelling groups following the [CORDEX-CMIP6 archiving specifications](https://doi.org/10.5281/zenodo.10961068).
+This repository contains a CORDEX-CMIP6 cmor table in csv format (`cmor-table/datasets.csv`) that is used to create [CORDEX-CMIP6 cmor tables](https://github.com/WCRP-CORDEX/cordex-cmip6-cmor-tables). Note, that this table is represented in a [tidy format](https://book.the-turing-way.org/reproducible-research/rdm/rdm-spreadsheets.html#tidy-format-for-spreadsheets) which means that *each row represents one requested dataset*. This table contains all meta data required to be used with the [cmor](https://cmor.llnl.gov/) library to produce [CORDEX-CMIP6 compliant]( https://doi.org/10.5281/zenodo.10961068) datasets.
+
+The cmor tables, however, are independent from a domain-specific *data request* which can be only a subset of all datasets in the cmor tables.
+Domain-specific data requests provide additionally some metadata on the variables priority (see below).
+These tables are also available in more human-readable xlsx format in the [data-request](./data-request) subfolder.
 
 ### Adding a data request
 
 > [!IMPORTANT]
-> If you want to add a data request, please open an issue. You can start with an existing data request table, e.g., `data-request/dreq_main.csv`, modify it, and create a pull request. If you are requesting a dataset that is not available in the cmor tables, please open an issue and provide appropriate meta data, especially about cell methods and frequencies. You are also very welcome to make a pull request on the overall list of datasets ([cmor-table/datasets.csv](https://github.com/WCRP-CORDEX/data-request-table/blob/main/cmor-table/datasets.csv)) and simply add new rows. Please make sure that new datasets are consistent with [CMIP6 cmor tables](https://github.com/PCMDI/cmip6-cmor-tables) (if they exist in there).
+> If you want to add a data request for your domain, please open an issue. You can start with an existing data request table (e.g. the default data request in [data-request/dreq_default.csv](./data-request/dreq_default.csv)), modify it, and create a pull request. If you are requesting a dataset that is not available in the cmor tables, please open an issue and provide appropriate meta data, especially about cell methods and frequencies. You are also very welcome to make a pull request on the overall list of datasets ([cmor-table/datasets.csv](https://github.com/WCRP-CORDEX/data-request-table/blob/main/cmor-table/datasets.csv)) and simply add new rows. Please make sure that new datasets are consistent with [CMIP6 cmor tables](https://github.com/PCMDI/cmip6-cmor-tables) (if they exist in there).
 
+## Tutorial
 
-
-## Introduction [^1]
-
-[^1]: from https://docs.google.com/document/d/1qX6tF26jPY1IYRVZQ00FLSU7AY4hZJoC.
-
-The CORDEX-CMIP6 Data Request (DR) is a simplified analog of the CMIP6 Data Request for global models and defines all the quantities from CMIP6-driven CORDEX simulations that should be archived. The CORDEX-CMIP6 DR includes a number of Variable Lists (VLs) specifying output from different components (e.g. Atmosphere, Ocean, Aerosol, Land, Sea Ice, Rivers, etc.) of Regional Climate Models (RCMs). This document provides details on i) how to select output variables and their output intervals from the CORDEX-CMIP6 Variable Lists and ii) how to archive a number of specific variables.
+The CORDEX-CMIP6 Data Request (DR) is a simplified analog of the CMIP6 Data Request for global models and defines all the quantities from CMIP6-driven CORDEX simulations that should be archived. The CORDEX-CMIP6 DR includes a number of Variable Lists (VLs) specifying output from different components (e.g. Atmosphere, Ocean, Aerosol, Land, Sea Ice, Rivers, etc.) of Regional Climate Models (RCMs).
+This tutorial provides details on i) how to select output variables and their output intervals from the CORDEX-CMIP6 Variable Lists and ii) how to archive a number of specific variables.
 
 * Currently, only the CORDEX-CMIP6 Atmosphere VL is included and VLs for other RCM components will be added when available.
 * The CORDEX-CMIP6 VLs provide information about what variables are to be archived, their output frequency, temporal aggregation, units, standard and long names. Detailed metadata for each variable (variable attributes in netcdf files) will be provided in so called Climate Model Output Rewriter (CMOR) tables when available. The format of the CORDEX-CMIP6 CMOR tables is supposed to be the same as for the [CMIP6 CMOR tables](https://github.com/PCMDI/cmip6-cmor-tables).
