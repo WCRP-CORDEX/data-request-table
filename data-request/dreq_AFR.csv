@@ -560,7 +560,7 @@ va300m,1hr,m s-1,Northward Wind at 300m,northward_wind,area: mean time: point,TI
 sftgif,fx,%,Percentage of the Grid Cell Covered by Glacier,land_ice_area_fraction,area: mean,TIER2,
 mrsofc,fx,kg m-2,Capacity of Soil to Store Water  (Field Capacity),soil_moisture_content_at_field_capacity,area: mean where land,TIER2,
 rootd,fx,m,Maximum Root Depth,root_depth,area: mean,TIER2,
-sftlaf,fx,%,Percentage of the Grid Cell Occupied by Lake,area_fraction,area: mean where lake_and_inland_sea,TIER2,not in CMIP or in CF
+sftlaf,fx,%,Percentage of the Grid Cell Occupied by Lake,area_fraction,area: mean,TIER2,not in CMIP or in CF
 sfturf,fx,%,Percentage of the Grid Cell Occupied by Urban Area,area_fraction,area: mean where urban,TIER2,not in CMIP or in CF
 dtb,fx,m,Depth to Bedrock,bedrock_depth_below_ground_level,area: mean,TIER2,not in CMIP or in CF (lower boundary of land surface models)
 areacella,fx,m2,Atmosphere Grid-Cell Area,cell_area,area: sum,TIER2,
