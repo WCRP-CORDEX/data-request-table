@@ -560,7 +560,7 @@ va300m,1hr,m s-1,Northward Wind at 300m,northward_wind,,area: mean time: point,a
 sftgif,fx,%,Percentage of the Grid Cell Covered by Glacier,land_ice_area_fraction,,area: mean,area: areacella,longitude latitude,real,,,,,,atmos
 mrsofc,fx,kg m-2,Capacity of Soil to Store Water  (Field Capacity),soil_moisture_content_at_field_capacity,,area: mean where land,area: areacella,longitude latitude,real,,,,,,atmos
 rootd,fx,m,Maximum Root Depth,root_depth,,area: mean,area: areacella,longitude latitude,real,,,,,,atmos
-sftlaf,fx,%,Percentage of the Grid Cell Occupied by Lake,area_fraction,not in CMIP or in CF,area: mean where fresh_free_water,area: areacella,longitude latitude,real,,,,,,atmos
+sftlaf,fx,%,Percentage of the Grid Cell Occupied by Lake,area_fraction,not in CMIP or in CF,area: mean,area: areacella,longitude latitude typelake,real,,,,,,atmos
 sfturf,fx,%,Percentage of the Grid Cell Occupied by Urban Area,area_fraction,not in CMIP or in CF,area: mean where urban,area: areacella,longitude latitude,real,,,,,,atmos
 dtb,fx,m,Depth to Bedrock,bedrock_depth_below_ground_level,not in CMIP or in CF (lower boundary of land surface models),area: mean,area: areacella,longitude latitude,real,,,,,,atmos
 areacella,fx,m2,Atmosphere Grid-Cell Area,cell_area,,area: sum,area: areacella,longitude latitude,real,,,,,,atmos
