@@ -186,3 +186,47 @@ def test_all_area_types_cf_conform():
     non_cf_area_types = df[(df.area_type.notnull()) & ~df.area_type.isin(valid)]
 
     assert non_cf_area_types.empty
+
+
+def test_area_variables_no_self_reference():
+    """
+    Ensure area measurement variables like areacella and areacello don't have self-references 
+    in their cell_measures attribute.
+    
+    This test prevents regression of the issue where areacella had "area: areacella" 
+    in its cell_measures, which causes CMOR to translate this self-reference into 
+    the external_variables global attribute.
+    
+    See: https://github.com/PCMDI/cmor/issues/853
+    """
+    df = pd.read_csv(cmor_tables)
+    
+    # Find area measurement variables (areacella, areacello)
+    area_measurement_vars = df[df.out_name.isin(["areacella", "areacello"])]
+    
+    # Check for self-references in cell_measures
+    for _, row in area_measurement_vars.iterrows():
+        var_name = row['out_name']
+        cell_measures = row['cell_measures']
+        
+        # cell_measures should be empty/null for area measurement variables
+        if pd.notna(cell_measures) and cell_measures.strip():
+            # Check for self-reference patterns
+            if f"area: {var_name}" in cell_measures:
+                pytest.fail(f"Variable '{var_name}' has self-reference in cell_measures: '{cell_measures}'. "
+                           f"Area measurement variables should have empty cell_measures to avoid CMOR "
+                           f"translating self-references to external_variables.")
+    
+    # Specifically check that areacella and areacello have empty cell_measures
+    areacella_rows = df[df.out_name == "areacella"]
+    areacello_rows = df[df.out_name == "areacello"]
+    
+    for _, row in areacella_rows.iterrows():
+        cell_measures = row['cell_measures']
+        assert pd.isna(cell_measures) or cell_measures.strip() == "", \
+            f"areacella should have empty cell_measures, got: '{cell_measures}'"
+    
+    for _, row in areacello_rows.iterrows():
+        cell_measures = row['cell_measures']
+        assert pd.isna(cell_measures) or cell_measures.strip() == "", \
+            f"areacello should have empty cell_measures, got: '{cell_measures}'"
