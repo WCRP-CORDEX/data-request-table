@@ -562,6 +562,7 @@ mrsofc,fx,kg m-2,Capacity of Soil to Store Water  (Field Capacity),soil_moisture
 rootd,fx,m,Maximum Root Depth,root_depth,,area: mean,area: areacella,longitude latitude,real,,,,,,atmos
 sftlaf,fx,%,Percentage of the Grid Cell Occupied by Lake,area_fraction,not in CMIP or in CF,area: mean,area: areacella,longitude latitude typelake,real,,,,,,atmos
 sfturf,fx,%,Percentage of the Grid Cell Occupied by Urban Area,area_fraction,not in CMIP or in CF,area: mean,area: areacella,longitude latitude typeurban,real,,,,,,atmos
+sfturf,mon,%,Percentage of the Grid Cell Occupied by Urban Area,area_fraction,not in CMIP or in CF,area: mean,area: areacella,longitude latitude typeurban,real,,,,,,atmos
 dtb,fx,m,Depth to Bedrock,bedrock_depth_below_ground_level,not in CMIP or in CF (lower boundary of land surface models),area: mean,area: areacella,longitude latitude,real,,,,,,atmos
 areacella,fx,m2,Atmosphere Grid-Cell Area,cell_area,,area: sum,,longitude latitude,real,,,,,,atmos
 thetao,mon,degC,Sea Water Potential Temperature,sea_water_potential_temperature,Diagnostic should be contributed even for models using conservative temperature as prognostic field.,area: mean where sea time: mean,area: areacello volume: volcello,longitude latitude olevel time,real,,,,,,ocean
