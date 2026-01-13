@@ -2,7 +2,8 @@ import numpy as np
 import pandas as pd
 import pytest
 from cf_xarray.utils import parse_cf_standard_name_table
-from .utils import cmor_tables, tables, parse_area_type, parse_cell_methods
+from .utils import cmor_tables, tables, parse_area_type
+from data_request_tools import parse_cell_methods
 
 
 @pytest.mark.parametrize("dreq_file", tables)
@@ -186,3 +187,18 @@ def test_all_area_types_cf_conform():
     non_cf_area_types = df[(df.area_type.notnull()) & ~df.area_type.isin(valid)]
 
     assert non_cf_area_types.empty
+
+
+def test_time_point_rows_have_time1_in_dimensions():
+    df = pd.read_csv(cmor_tables)
+    df["time_cell_method"] = df["cell_methods"].apply(parse_cell_methods).str["time"]
+    df["dims_split"] = df["dimensions"].str.split()
+
+    # point -> time1
+    mask_point = df["time_cell_method"] == "point"
+    subset_point = df.loc[mask_point, "dims_split"].dropna()
+    assert subset_point.apply(
+        lambda dims: "time1" in dims
+    ).all(), (
+        "Found rows where time_cell_method == 'point' but 'time1' not in dimensions"
+    )
