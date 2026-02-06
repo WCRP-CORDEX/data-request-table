@@ -4,7 +4,7 @@ channels:
   - nodefaults
 dependencies:
   - pip
-  - pandas<3
+  - pandas
   - openpyxl
   - xlsxwriter
   - cf-units
