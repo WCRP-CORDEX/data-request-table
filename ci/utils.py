@@ -24,7 +24,7 @@ def parse_cell_methods(cm_string):
 
 
 def parse_area_type(area=None):
-    if area is None:
+    if not area:
         return None
     split = area.split(" ")
     if len(split) == 3 and split[1] == "where":
