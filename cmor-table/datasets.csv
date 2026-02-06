@@ -1,30 +1,30 @@
 out_name,frequency,units,long_name,standard_name,comment,cell_methods,cell_measures,dimensions,type,positive,valid_min,valid_max,ok_min_mean_abs,ok_max_mean_abs,realm
-tas,mon,K,Near-Surface Air Temperature,air_temperature,,area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
+tas,mon,K,Near-Surface Air Temperature,air_temperature,quantity averaged over ice sheet (grounded ice sheet and floating ice shelf) only. Needed to analyse the impact of downscaling methods,area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
 tas,day,K,Near-Surface Air Temperature,air_temperature,,area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
-tas,1hr,K,Near-Surface Air Temperature,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 height2m,real,,,,,,atmos
-tasmax,mon,K,Daily Maximum Near-Surface Air Temperature,air_temperature,maximum from all integrated time steps per day,area: mean time: maximum within days time: mean over days,area: areacella,longitude latitude time height2m,real,,,,,,atmos
-tasmax,day,K,Daily Maximum Near-Surface Air Temperature,air_temperature,maximum from all integrated time steps per day,area: mean time: maximum,area: areacella,longitude latitude time height2m,real,,,,,,atmos
-tasmin,mon,K,Daily Minimum Near-Surface Air Temperature,air_temperature,minimum from all integrated time steps per day,area: mean time: minimum within days time: mean over days,area: areacella,longitude latitude time height2m,real,,,,,,atmos
-tasmin,day,K,Daily Minimum Near-Surface Air Temperature,air_temperature,minimum from all integrated time steps per day,area: mean time: minimum,area: areacella,longitude latitude time height2m,real,,,,,,atmos
-pr,mon,kg m-2 s-1,Precipitation,precipitation_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-pr,day,kg m-2 s-1,Precipitation,precipitation_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-pr,1hr,kg m-2 s-1,Precipitation,precipitation_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-evspsbl,mon,kg m-2 s-1,Evaporation Including Sublimation and Transpiration,water_evapotranspiration_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+tas,1hr,K,Near-Surface Air Temperature,air_temperature,Temperature at surface,area: mean time: point,area: areacella,longitude latitude time1 height2m,real,,,,,,atmos
+tasmax,mon,K,Daily Maximum Near-Surface Air Temperature,air_temperature,monthly mean of the daily-maximum near-surface air temperature.,area: mean time: maximum within days time: mean over days,area: areacella,longitude latitude time height2m,real,,,,,,atmos
+tasmax,day,K,Daily Maximum Near-Surface Air Temperature,air_temperature,,area: mean time: maximum,area: areacella,longitude latitude time height2m,real,,,,,,atmos
+tasmin,mon,K,Daily Minimum Near-Surface Air Temperature,air_temperature,monthly mean of the daily-minimum near-surface air temperature.,area: mean time: minimum within days time: mean over days,area: areacella,longitude latitude time height2m,real,,,,,,atmos
+tasmin,day,K,Daily Minimum Near-Surface Air Temperature,air_temperature,,area: mean time: minimum,area: areacella,longitude latitude time height2m,real,,,,,,atmos
+pr,mon,kg m-2 s-1,Precipitation,precipitation_flux,at surface; includes both liquid and solid phases from all types of clouds (both large-scale and convective),area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+pr,day,kg m-2 s-1,Precipitation,precipitation_flux,at surface; includes both liquid and solid phases from all types of clouds (both large-scale and convective),area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+pr,1hr,kg m-2 s-1,Precipitation,precipitation_flux,Total precipitation flux,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+evspsbl,mon,kg m-2 s-1,Evaporation Including Sublimation and Transpiration,water_evapotranspiration_flux,at surface; flux of water into the atmosphere due to conversion of both liquid and solid phases to vapor (from underlying surface and vegetation),area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 evspsbl,day,kg m-2 s-1,Evaporation Including Sublimation and Transpiration,water_evapotranspiration_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 evspsbl,1hr,kg m-2 s-1,Evaporation Including Sublimation and Transpiration,water_evapotranspiration_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 huss,mon,1,Near-Surface Specific Humidity,specific_humidity,,area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
 huss,day,1,Near-Surface Specific Humidity,specific_humidity,,area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
 huss,1hr,1,Near-Surface Specific Humidity,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 height2m,real,,,,,,atmos
-hurs,mon,%,Near-Surface Relative Humidity,relative_humidity,,area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
-hurs,day,%,Near-Surface Relative Humidity,relative_humidity,,area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
+hurs,mon,%,Near-Surface Relative Humidity,relative_humidity,"This is the relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
+hurs,day,%,Near-Surface Relative Humidity,relative_humidity,"This is the relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
 hurs,1hr,%,Near-Surface Relative Humidity,relative_humidity,,area: mean time: point,area: areacella,longitude latitude time1 height2m,real,,,,,,atmos
 ps,mon,Pa,Surface Air Pressure,surface_air_pressure,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 ps,day,Pa,Surface Air Pressure,surface_air_pressure,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 ps,1hr,Pa,Surface Air Pressure,surface_air_pressure,,area: mean time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
-psl,mon,Pa,Sea Level Pressure,air_pressure_at_mean_sea_level,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+psl,mon,Pa,Sea Level Pressure,air_pressure_at_mean_sea_level,"not, in general, the same as surface pressure",area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 psl,day,Pa,Sea Level Pressure,air_pressure_at_mean_sea_level,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 psl,1hr,Pa,Sea Level Pressure,air_pressure_at_mean_sea_level,,area: mean time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
-sfcWind,mon,m s-1,Near-Surface Wind Speed,wind_speed,,area: time: mean,area: areacella,longitude latitude time height10m,real,,,,,,atmos
+sfcWind,mon,m s-1,Near-Surface Wind Speed,wind_speed,"This is the mean of the speed, not the speed computed from the mean u and v components of wind",area: time: mean,area: areacella,longitude latitude time height10m,real,,,,,,atmos
 sfcWind,day,m s-1,Near-Surface Wind Speed,wind_speed,,area: time: mean,area: areacella,longitude latitude time height10m,real,,,,,,atmos
 sfcWind,1hr,m s-1,Near-Surface Wind Speed,wind_speed,,area: mean time: point,area: areacella,longitude latitude time1 height10m,real,,,,,,atmos
 uas,mon,m s-1,Eastward Near-Surface Wind,eastward_wind,,area: time: mean,area: areacella,longitude latitude time height10m,real,,,,,,atmos
@@ -33,8 +33,8 @@ uas,1hr,m s-1,Eastward Near-Surface Wind,eastward_wind,,area: mean time: point,a
 vas,mon,m s-1,Northward Near-Surface Wind,northward_wind,,area: time: mean,area: areacella,longitude latitude time height10m,real,,,,,,atmos
 vas,day,m s-1,Northward Near-Surface Wind,northward_wind,,area: time: mean,area: areacella,longitude latitude time height10m,real,,,,,,atmos
 vas,1hr,m s-1,Northward Near-Surface Wind,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height10m,real,,,,,,atmos
-clt,mon,%,Total Cloud Cover Percentage,cloud_area_fraction,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-clt,day,%,Total Cloud Cover Percentage,cloud_area_fraction,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+clt,mon,%,Total Cloud Cover Percentage,cloud_area_fraction,"for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Include both large-scale and convective cloud.",area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+clt,day,%,Total Cloud Cover Percentage,cloud_area_fraction,"for the whole atmospheric column, as seen from the surface or the top of the atmosphere. Includes both large-scale and convective cloud.",area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 clt,1hr,%,Total Cloud Cover Percentage,cloud_area_fraction,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 rsds,mon,W m-2,Surface Downwelling Shortwave Radiation,surface_downwelling_shortwave_flux_in_air,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 rsds,day,W m-2,Surface Downwelling Shortwave Radiation,surface_downwelling_shortwave_flux_in_air,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
@@ -42,40 +42,40 @@ rsds,1hr,W m-2,Surface Downwelling Shortwave Radiation,surface_downwelling_short
 rlds,mon,W m-2,Surface Downwelling Longwave Radiation,surface_downwelling_longwave_flux_in_air,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 rlds,day,W m-2,Surface Downwelling Longwave Radiation,surface_downwelling_longwave_flux_in_air,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 rlds,1hr,W m-2,Surface Downwelling Longwave Radiation,surface_downwelling_longwave_flux_in_air,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
-orog,fx,m,Surface Altitude,surface_altitude,,area: mean,area: areacella,longitude latitude,real,,,,,,atmos
+orog,fx,m,Surface Altitude,surface_altitude,"height above the geoid; as defined here, ""the geoid"" is a surface of constant geopotential that, if the ocean were at rest, would coincide with mean sea level. Under this definition, the geoid changes as the mean volume of the ocean changes (e.g., due to glacial melt, or global warming of the ocean).  Reported here is the height above the present-day geoid (0.0 over ocean).",area: mean,area: areacella,longitude latitude,real,,,,,,atmos
 sftlf,fx,%,Percentage of the Grid Cell Occupied by Land,land_area_fraction,,area: mean,area: areacella,longitude latitude,real,,,,,,atmos
-ts,mon,K,Surface Temperature,surface_temperature,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-ts,day,K,Surface Temperature,surface_temperature,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+ts,mon,K,Surface Temperature,surface_temperature,quantity averaged over ice sheet (grounded ice sheet and floating ice shelf) only. Needed to analyse the impact of downscaling methods,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+ts,day,K,Surface Temperature,surface_temperature,Surface temperature (skin for open ocean),area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 ts,1hr,K,Surface Temperature,surface_temperature,,area: mean time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
-tsl,mon,K,Temperature of Soil,soil_temperature,Temperature of each soil layer (3D variable). Reported as missing for grid cells with no land.,area: mean where land time: mean,area: areacella,longitude latitude sdepth time,real,,,,,,atmos
-tsl,day,K,Temperature of Soil,soil_temperature,Temperature of each soil layer (3D variable). Reported as missing for grid cells with no land.,area: mean where land time: mean,area: areacella,longitude latitude sdepth time,real,,,,,,atmos
-tsl,6hr,K,Temperature of Soil,soil_temperature,Temperature of each soil layer (3D variable). Reported as missing for grid cells with no land.,area: mean where land time: point,area: areacella,longitude latitude sdepth time1,real,,,,,,atmos
-prc,mon,kg m-2 s-1,Convective Precipitation,convective_precipitation_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-prc,day,kg m-2 s-1,Convective Precipitation,convective_precipitation_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-prc,1hr,kg m-2 s-1,Convective Precipitation,convective_precipitation_flux,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-prhmax,day,kg m-2 s-1,Daily Maximum Hourly Precipitation Rate,precipitation_flux,Defined as maximum of the precipitation rate averaged over the whole hour.,area: mean time: mean within hours time: maximum over hours,area: areacella,longitude latitude time,real,,,,,,atmos
+tsl,mon,K,Temperature of Soil,soil_temperature,"Temperature of each soil layer.  Reported as ""missing"" for grid cells occupied entirely by ""sea"".",area: mean where land time: mean,area: areacella,longitude latitude sdepth time,real,,,,,,atmos
+tsl,day,K,Temperature of Soil,soil_temperature,"Temperature of each soil layer.  Reported as ""missing"" for grid cells occupied entirely by ""sea"".",area: mean where land time: mean,area: areacella,longitude latitude sdepth time,real,,,,,,atmos
+tsl,6hr,K,Temperature of Soil,soil_temperature,,area: mean where land time: point,area: areacella,longitude latitude sdepth time1,real,,,,,,atmos
+prc,mon,kg m-2 s-1,Convective Precipitation,convective_precipitation_flux,at surface; includes both liquid and solid phases.,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+prc,day,kg m-2 s-1,Convective Precipitation,convective_precipitation_flux,at surface; includes both liquid and solid phases.,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+prc,1hr,kg m-2 s-1,Convective Precipitation,convective_precipitation_flux,Convective precipitation flux,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+prhmax,day,kg m-2 s-1,Daily Maximum Hourly Precipitation Rate,precipitation_flux,Daily Maximum Hourly Precipitation Rate,area: mean time: mean within hours time: maximum over hours,area: areacella,longitude latitude time,real,,,,,,atmos
 prsn,mon,kg m-2 s-1,Snowfall Flux,snowfall_flux,At surface; includes precipitation of all forms of water in the solid phase,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 prsn,day,kg m-2 s-1,Snowfall Flux,snowfall_flux,At surface; includes precipitation of all forms of water in the solid phase,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 prsn,1hr,kg m-2 s-1,Snowfall Flux,snowfall_flux,At surface; includes precipitation of all forms of water in the solid phase,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-mrros,mon,kg m-2 s-1,Surface Runoff,surface_runoff_flux,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-mrros,day,kg m-2 s-1,Surface Runoff,surface_runoff_flux,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+mrros,mon,kg m-2 s-1,Surface Runoff,surface_runoff_flux,the total surface runoff leaving the land portion of the grid cell.,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+mrros,day,kg m-2 s-1,Surface Runoff,surface_runoff_flux,surface_runoff_flux,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 mrros,6hr,kg m-2 s-1,Surface Runoff,surface_runoff_flux,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-mrro,mon,kg m-2 s-1,Total Runoff,runoff_flux,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-mrro,day,kg m-2 s-1,Total Runoff,runoff_flux,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+mrro,mon,kg m-2 s-1,Total Runoff,runoff_flux,"the total runoff (including ""drainage"" through the base of the soil model) leaving the land portion of the grid cell.",area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+mrro,day,kg m-2 s-1,Total Runoff,runoff_flux,"computed as the total runoff (including ""drainage"" through the base of the soil model) leaving the land portion of the grid cell divided by the land area in the grid cell.",area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 mrro,6hr,kg m-2 s-1,Total Runoff,runoff_flux,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-snm,mon,kg m-2 s-1,Surface Snow Melt,surface_snow_melt_flux,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-snm,day,kg m-2 s-1,Surface Snow Melt,surface_snow_melt_flux,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+snm,mon,kg m-2 s-1,Surface Snow Melt,surface_snow_melt_flux,Computed as the total surface melt water on the land portion of the grid cell divided by the land area in the grid cell; report as 0.0 for snow-free land regions; report as missing where the land fraction is 0.,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+snm,day,kg m-2 s-1,Surface Snow Melt,surface_snow_melt_flux,surface_snow_and_ice_melt_flux,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 snm,6hr,kg m-2 s-1,Surface Snow Melt,surface_snow_melt_flux,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 tauu,mon,Pa,Surface Downward Eastward Wind Stress,surface_downward_eastward_stress,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 tauu,day,Pa,Surface Downward Eastward Wind Stress,surface_downward_eastward_stress,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 tauu,1hr,Pa,Surface Downward Eastward Wind Stress,surface_downward_eastward_stress,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 tauv,mon,Pa,Surface Downward Northward Wind Stress,surface_downward_northward_stress,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
-tauv,day,Pa,Surface Downward Northward Wind Stress,surface_downward_northward_stress,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
+tauv,day,Pa,Surface Downward Northward Wind Stress,surface_downward_northward_stress,"surface, now requesting daily output.",area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 tauv,1hr,Pa,Surface Downward Northward Wind Stress,surface_downward_northward_stress,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
-sfcWindmax,mon,m s-1,Daily Maximum Near-Surface Wind Speed,wind_speed,Maximum from all integrated time steps per day,area: mean time: maximum within days time: mean over days,area: areacella,longitude latitude time height10m,real,,,,,,atmos
-sfcWindmax,day,m s-1,Daily Maximum Near-Surface Wind Speed,wind_speed,Maximum from all integrated time steps per day,area: mean time: maximum,area: areacella,longitude latitude time height10m,real,,,,,,atmos
-sund,mon,s,Daily Duration of Sunshine,duration_of_sunshine,"The WMO definition of sunshine is that the surface incident radiative flux from the solar beam (i.e. excluding diffuse skylight) exceeds 120 W m-2. ""Duration"" is the length of time for which a condition holds.",time: sum within days time: mean over days,area: areacella,longitude latitude time,real,,,,,,atmos
-sund,day,s,Daily Duration of Sunshine,duration_of_sunshine,"The WMO definition of sunshine is that the surface incident radiative flux from the solar beam (i.e. excluding diffuse skylight) exceeds 120 W m-2. ""Duration"" is the length of time for which a condition holds.",time: sum,area: areacella,longitude latitude time,real,,,,,,atmos
+sfcWindmax,mon,m s-1,Daily Maximum Near-Surface Wind Speed,wind_speed,,area: mean time: maximum within days time: mean over days,area: areacella,longitude latitude time height10m,real,,,,,,atmos
+sfcWindmax,day,m s-1,Daily Maximum Near-Surface Wind Speed,wind_speed,,area: mean time: maximum,area: areacella,longitude latitude time height10m,real,,,,,,atmos
+sund,mon,s,Daily Duration of Sunshine,duration_of_sunshine,,time: sum within days time: mean over days,area: areacella,longitude latitude time,real,,,,,,atmos
+sund,day,s,Daily Duration of Sunshine,duration_of_sunshine,,time: sum,area: areacella,longitude latitude time,real,,,,,,atmos
 rsdsdir,mon,W m-2,Surface Direct Downwelling Shortwave Radiation,surface_direct_downwelling_shortwave_flux_in_air,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 rsdsdir,day,W m-2,Surface Direct Downwelling Shortwave Radiation,surface_direct_downwelling_shortwave_flux_in_air,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 rsdsdir,1hr,W m-2,Surface Direct Downwelling Shortwave Radiation,surface_direct_downwelling_shortwave_flux_in_air,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
@@ -86,9 +86,9 @@ rlus,mon,W m-2,Surface Upwelling Longwave Radiation,surface_upwelling_longwave_f
 rlus,day,W m-2,Surface Upwelling Longwave Radiation,surface_upwelling_longwave_flux_in_air,,area: time: mean,area: areacella,longitude latitude time,real,up,,,,,atmos
 rlus,1hr,W m-2,Surface Upwelling Longwave Radiation,surface_upwelling_longwave_flux_in_air,,area: time: mean,area: areacella,longitude latitude time,real,up,,,,,atmos
 rlut,mon,W m-2,TOA Outgoing Longwave Radiation,toa_outgoing_longwave_flux,,area: time: mean,area: areacella,longitude latitude time,real,up,,,,,atmos
-rlut,day,W m-2,TOA Outgoing Longwave Radiation,toa_outgoing_longwave_flux,,area: time: mean,area: areacella,longitude latitude time,real,up,,,,,atmos
+rlut,day,W m-2,TOA Outgoing Longwave Radiation,toa_outgoing_longwave_flux,at the top of the atmosphere.,area: time: mean,area: areacella,longitude latitude time,real,up,,,,,atmos
 rlut,1hr,W m-2,TOA Outgoing Longwave Radiation,toa_outgoing_longwave_flux,,area: time: mean,area: areacella,longitude latitude time,real,up,,,,,atmos
-rsdt,mon,W m-2,TOA Incident Shortwave Radiation,toa_incoming_shortwave_flux,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
+rsdt,mon,W m-2,TOA Incident Shortwave Radiation,toa_incoming_shortwave_flux,at the top of the atmosphere,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 rsdt,day,W m-2,TOA Incident Shortwave Radiation,toa_incoming_shortwave_flux,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 rsdt,1hr,W m-2,TOA Incident Shortwave Radiation,toa_incoming_shortwave_flux,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 rsut,mon,W m-2,TOA Outgoing Shortwave Radiation,toa_outgoing_shortwave_flux,,area: time: mean,area: areacella,longitude latitude time,real,up,,,,,atmos
@@ -100,46 +100,46 @@ hfls,1hr,W m-2,Surface Upward Latent Heat Flux,surface_upward_latent_heat_flux,,
 hfss,mon,W m-2,Surface Upward Sensible Heat Flux,surface_upward_sensible_heat_flux,,area: time: mean,area: areacella,longitude latitude time,real,up,,,,,atmos
 hfss,day,W m-2,Surface Upward Sensible Heat Flux,surface_upward_sensible_heat_flux,,area: time: mean,area: areacella,longitude latitude time,real,up,,,,,atmos
 hfss,1hr,W m-2,Surface Upward Sensible Heat Flux,surface_upward_sensible_heat_flux,,area: time: mean,area: areacella,longitude latitude time,real,up,,,,,atmos
-mrfso,mon,kg m-2,Soil Frozen Water Content,soil_frozen_water_content,"The mass of frozen water per unit area, summed over all soil layers. Reported as missing for grid cells with no land.",area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-mrfso,day,kg m-2,Soil Frozen Water Content,soil_frozen_water_content,"The mass of frozen water per unit area, summed over all soil layers. Reported as missing for grid cells with no land.",area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-mrfso,6hr,kg m-2,Soil Frozen Water Content,soil_frozen_water_content,"The mass of frozen water per unit area, summed over all soil layers. Reported as missing for grid cells with no land.",area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
-mrfsos,mon,kg m-2,Frozen Water Content in Upper Portion of Soil Column,frozen_water_content_of_soil_layer,The mass of frosen water in the upper 10cm of the soil layer. Reported as missing for grid cells with no land. (not in CMIP),area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-mrfsos,day,kg m-2,Frozen Water Content in Upper Portion of Soil Column,frozen_water_content_of_soil_layer,The mass of frosen water in the upper 10cm of the soil layer. Reported as missing for grid cells with no land. (not in CMIP),area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-mrfsos,1hr,kg m-2,Frozen Water Content in Upper Portion of Soil Column,frozen_water_content_of_soil_layer,The mass of frosen water in the upper 10cm of the soil layer. Reported as missing for grid cells with no land. (not in CMIP),area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
-mrsfl,mon,kg m-2,Frozen Water Content of Soil Layer,frozen_water_content_of_soil_layer,"The mass of frosen water in each soil layer (3D variable). Reported as missing for grid cells with no land. (not in CMIP) [mrfsol -> mrsfl, 2022.09.22, https://github.com/WCRP-CORDEX/cordex-cmip6-data-request/issues/2 ]",area: mean where land time: mean,area: areacella,longitude latitude sdepth time,real,,,,,,atmos
-mrsfl,day,kg m-2,Frozen Water Content of Soil Layer,frozen_water_content_of_soil_layer,"The mass of frosen water in each soil layer (3D variable). Reported as missing for grid cells with no land. (not in CMIP) [mrfsol -> mrsfl, 2022.09.22, https://github.com/WCRP-CORDEX/cordex-cmip6-data-request/issues/2 ]",area: mean where land time: mean,area: areacella,longitude latitude sdepth time,real,,,,,,atmos
-mrsfl,6hr,kg m-2,Frozen Water Content of Soil Layer,frozen_water_content_of_soil_layer,"The mass of frosen water in each soil layer (3D variable). Reported as missing for grid cells with no land. (not in CMIP) [mrfsol -> mrsfl, 2022.09.22, https://github.com/WCRP-CORDEX/cordex-cmip6-data-request/issues/2 ]",area: mean where land time: point,area: areacella,longitude latitude sdepth time1,real,,,,,,atmos
-mrso,mon,kg m-2,Total Soil Moisture Content,mass_content_of_water_in_soil,"The mass of water in all phases per unit area, summed over all soil layers.",area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-mrso,day,kg m-2,Total Soil Moisture Content,mass_content_of_water_in_soil,"The mass of water in all phases per unit area, summed over all soil layers.",area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-mrso,6hr,kg m-2,Total Soil Moisture Content,mass_content_of_water_in_soil,"The mass of water in all phases per unit area, summed over all soil layers.",area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
-mrsos,mon,kg m-2,Moisture in Upper Portion of Soil Column,mass_content_of_water_in_soil_layer,The mass of water in all phases in the upper 10cm of the soil layer. Reported as missing for grid cells with no land.,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-mrsos,day,kg m-2,Moisture in Upper Portion of Soil Column,mass_content_of_water_in_soil_layer,The mass of water in all phases in the upper 10cm of the soil layer. Reported as missing for grid cells with no land.,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-mrsos,1hr,kg m-2,Moisture in Upper Portion of Soil Column,mass_content_of_water_in_soil_layer,The mass of water in all phases in the upper 10cm of the soil layer. Reported as missing for grid cells with no land.,area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
-mrsol,mon,kg m-2,Total Water Content of Soil Layer,mass_content_of_water_in_soil_layer,The mass of water in all phases in each soil layer (3D variable). Reported as missing for grid cells with no land.,area: mean where land time: mean,area: areacella,longitude latitude sdepth time,real,,,,,,atmos
-mrsol,day,kg m-2,Total Water Content of Soil Layer,mass_content_of_water_in_soil_layer,The mass of water in all phases in each soil layer (3D variable). Reported as missing for grid cells with no land.,area: mean where land time: mean,area: areacella,longitude latitude sdepth time,real,,,,,,atmos
-mrsol,6hr,kg m-2,Total Water Content of Soil Layer,mass_content_of_water_in_soil_layer,The mass of water in all phases in each soil layer (3D variable). Reported as missing for grid cells with no land.,area: mean where land time: point,area: areacella,longitude latitude sdepth time1,real,,,,,,atmos
-snw,mon,kg m-2,Surface Snow Amount,surface_snow_amount,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-snw,day,kg m-2,Surface Snow Amount,surface_snow_amount,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+mrfso,mon,kg m-2,Soil Frozen Water Content,soil_frozen_water_content,the mass (summed over all all layers) of frozen water.,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+mrfso,day,kg m-2,Soil Frozen Water Content,soil_frozen_water_content,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+mrfso,6hr,kg m-2,Soil Frozen Water Content,soil_frozen_water_content,,area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
+mrfsos,mon,kg m-2,Frozen Water Content in Upper Portion of Soil Column,frozen_water_content_of_soil_layer,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+mrfsos,day,kg m-2,Frozen Water Content in Upper Portion of Soil Column,frozen_water_content_of_soil_layer,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+mrfsos,1hr,kg m-2,Frozen Water Content in Upper Portion of Soil Column,frozen_water_content_of_soil_layer,,area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
+mrsfl,mon,kg m-2,Frozen Water Content of Soil Layer,frozen_water_content_of_soil_layer,,area: mean where land time: mean,area: areacella,longitude latitude sdepth time,real,,,,,,atmos
+mrsfl,day,kg m-2,Frozen Water Content of Soil Layer,frozen_water_content_of_soil_layer,,area: mean where land time: mean,area: areacella,longitude latitude sdepth time,real,,,,,,atmos
+mrsfl,6hr,kg m-2,Frozen Water Content of Soil Layer,frozen_water_content_of_soil_layer,,area: mean where land time: point,area: areacella,longitude latitude sdepth time1,real,,,,,,atmos
+mrso,mon,kg m-2,Total Soil Moisture Content,mass_content_of_water_in_soil,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+mrso,day,kg m-2,Total Soil Moisture Content,mass_content_of_water_in_soil,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+mrso,6hr,kg m-2,Total Soil Moisture Content,mass_content_of_water_in_soil,,area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
+mrsos,mon,kg m-2,Moisture in Upper Portion of Soil Column,mass_content_of_water_in_soil_layer,the mass of water in all phases in a thin surface soil layer.,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+mrsos,day,kg m-2,Moisture in Upper Portion of Soil Column,mass_content_of_water_in_soil_layer,the mass of water in all phases in a thin surface soil layer.,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+mrsos,1hr,kg m-2,Moisture in Upper Portion of Soil Column,mass_content_of_water_in_soil_layer,,area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
+mrsol,mon,kg m-2,Total Water Content of Soil Layer,mass_content_of_water_in_soil_layer,,area: mean where land time: mean,area: areacella,longitude latitude sdepth time,real,,,,,,atmos
+mrsol,day,kg m-2,Total Water Content of Soil Layer,mass_content_of_water_in_soil_layer,,area: mean where land time: mean,area: areacella,longitude latitude sdepth time,real,,,,,,atmos
+mrsol,6hr,kg m-2,Total Water Content of Soil Layer,mass_content_of_water_in_soil_layer,,area: mean where land time: point,area: areacella,longitude latitude sdepth time1,real,,,,,,atmos
+snw,mon,kg m-2,Surface Snow Amount,surface_snow_amount,Computed as the mass of surface snow on the land portion of the grid cell divided by the land area in the grid cell; reported as missing where the land fraction is 0; excluded is snow on vegetation canopy or on sea ice.,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+snw,day,kg m-2,Surface Snow Amount,surface_snow_amount,the mass of surface snow on the land portion of the grid cell divided by the land area in the grid cell; reported as missing where the land fraction is 0; excludes snow on vegetation canopy or on sea ice.,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 snw,6hr,kg m-2,Surface Snow Amount,surface_snow_amount,,area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
-snc,mon,%,Snow Area Percentage,surface_snow_area_fraction,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+snc,mon,%,Snow Area Percentage,surface_snow_area_fraction,Fraction of each grid cell that is occupied by snow that rests on land portion of cell.,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 snc,day,%,Snow Area Percentage,surface_snow_area_fraction,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 snc,6hr,%,Snow Area Percentage,surface_snow_area_fraction,,area: mean time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
-snd,mon,m,Snow Depth,surface_snow_thickness,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+snd,mon,m,Snow Depth,surface_snow_thickness,"where land over land, this is computed as the mean thickness of snow in the land portion of the grid cell (averaging over the entire land portion, including the snow-free fraction).  Reported as missing where the land fraction is 0.",area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 snd,day,m,Snow Depth,surface_snow_thickness,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 snd,6hr,m,Snow Depth,surface_snow_thickness,,area: mean where land time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
 siconca,mon,%,Sea-Ice Area Percentage (Atmospheric Grid),sea_ice_area_fraction,Percentage of grid cell covered by sea ice,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 siconca,day,%,Sea-Ice Area Percentage (Atmospheric Grid),sea_ice_area_fraction,Percentage of grid cell covered by sea ice,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 zmla,mon,m,Height of Boundary Layer,atmosphere_boundary_layer_thickness,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-zmla,day,m,Height of Boundary Layer,atmosphere_boundary_layer_thickness,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+zmla,day,m,Height of Boundary Layer,atmosphere_boundary_layer_thickness,Height of Boundary Layer,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 zmla,1hr,m,Height of Boundary Layer,atmosphere_boundary_layer_thickness,,area: mean time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
 prw,mon,kg m-2,Water Vapor Path,atmosphere_mass_content_of_water_vapor,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 prw,day,kg m-2,Water Vapor Path,atmosphere_mass_content_of_water_vapor,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 prw,1hr,kg m-2,Water Vapor Path,atmosphere_mass_content_of_water_vapor,,area: mean time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
-clwvi,mon,kg m-2,Condensed Water Path,atmosphere_mass_content_of_cloud_condensed_water,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-clwvi,day,kg m-2,Condensed Water Path,atmosphere_mass_content_of_cloud_condensed_water,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+clwvi,mon,kg m-2,Condensed Water Path,atmosphere_mass_content_of_cloud_condensed_water,mass of condensed (liquid + ice) water in the column divided by the area of the column (not just the area of the cloudy portion of the column). Includes precipitating hydrometeors ONLY if the precipitating hydrometeor affects the calculation of radiative transfer in model.,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+clwvi,day,kg m-2,Condensed Water Path,atmosphere_mass_content_of_cloud_condensed_water,calculate mass of condensed (liquid + ice) water in the column divided by the area of the column (not just the area of the cloudy portion of the column). This includes precipitating hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model.,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 clwvi,1hr,kg m-2,Condensed Water Path,atmosphere_mass_content_of_cloud_condensed_water,,area: mean time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
 clivi,mon,kg m-2,Ice Water Path,atmosphere_mass_content_of_cloud_ice,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-clivi,day,kg m-2,Ice Water Path,atmosphere_mass_content_of_cloud_ice,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+clivi,day,kg m-2,Ice Water Path,atmosphere_mass_content_of_cloud_ice,calculate mass of ice water in the column divided by the area of the column (not just the area of the cloudy portion of the column). This includes precipitating frozen hydrometeors ONLY if the precipitating hydrometeors affect the calculation of radiative transfer in model.,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 clivi,1hr,kg m-2,Ice Water Path,atmosphere_mass_content_of_cloud_ice,,area: mean time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
 ua1000,mon,m s-1,Eastward Wind at 1000hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
 ua1000,day,m s-1,Eastward Wind at 1000hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
@@ -238,7 +238,7 @@ hus925,mon,1,Specific Humidity at 925hPa,specific_humidity,,area: time: mean,are
 hus925,day,1,Specific Humidity at 925hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p925,real,,,,,,atmos
 hus925,6hr,1,Specific Humidity at 925hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,,,,,,atmos
 hus850,mon,1,Specific Humidity at 850hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
-hus850,day,1,Specific Humidity at 850hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
+hus850,day,1,Specific Humidity at 850hPa,specific_humidity,Specific Humidity,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
 hus850,6hr,1,Specific Humidity at 850hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,,,,,,atmos
 hus700,mon,1,Specific Humidity at 700hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
 hus700,day,1,Specific Humidity at 700hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
@@ -339,26 +339,26 @@ va100m,1hr,m s-1,Northward Wind at 100m,northward_wind,,area: mean time: point,a
 va150m,mon,m s-1,Northward Wind at 150m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height150m,real,,,,,,atmos
 va150m,day,m s-1,Northward Wind at 150m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height150m,real,,,,,,atmos
 va150m,1hr,m s-1,Northward Wind at 150m,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height150m,real,,,,,,atmos
-ta50m,mon,K,Air Temperature at 50m,air_temperature,requested for urban modeling,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
-ta50m,day,K,Air Temperature at 50m,air_temperature,requested for urban modeling,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
-ta50m,1hr,K,Air Temperature at 50m,air_temperature,requested for urban modeling,area: mean time: point,area: areacella,longitude latitude time1 height50m,real,,,,,,atmos
-hus50m,mon,1,Specific Humidity at 50m,specific_humidity,requested for urban modeling,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
-hus50m,day,1,Specific Humidity at 50m,specific_humidity,requested for urban modeling,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
-hus50m,1hr,1,Specific Humidity at 50m,specific_humidity,requested for urban modeling,area: mean time: point,area: areacella,longitude latitude time1 height50m,real,,,,,,atmos
+ta50m,mon,K,Air Temperature at 50m,air_temperature,,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
+ta50m,day,K,Air Temperature at 50m,air_temperature,,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
+ta50m,1hr,K,Air Temperature at 50m,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 height50m,real,,,,,,atmos
+hus50m,mon,1,Specific Humidity at 50m,specific_humidity,,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
+hus50m,day,1,Specific Humidity at 50m,specific_humidity,,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
+hus50m,1hr,1,Specific Humidity at 50m,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 height50m,real,,,,,,atmos
 evspsblpot,mon,kg m-2 s-1,Potential Evapotranspiration,water_potential_evaporation_flux,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-evspsblpot,day,kg m-2 s-1,Potential Evapotranspiration,water_potential_evaporation_flux,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+evspsblpot,day,kg m-2 s-1,Potential Evapotranspiration,water_potential_evaporation_flux,water_potential_evapotranspiration_flux,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 evspsblpot,1hr,kg m-2 s-1,Potential Evapotranspiration,water_potential_evaporation_flux,,area: mean where land time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 wsgsmax,mon,m s-1,Daily Maximum Near-Surface Wind Speed of Gust,wind_speed_of_gust,,area: mean time: maximum within days time: mean over days,area: areacella,longitude latitude time height10m,real,,,,,,atmos
 wsgsmax,day,m s-1,Daily Maximum Near-Surface Wind Speed of Gust,wind_speed_of_gust,,area: mean time: maximum,area: areacella,longitude latitude time height10m,real,,,,,,atmos
-clh,mon,%,High Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,above 440 hPa,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-clh,day,%,High Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,above 440 hPa,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-clh,6hr,%,High Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,above 440 hPa,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-clm,mon,%,Mid Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,between 680 and 440 hPa,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-clm,day,%,Mid Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,between 680 and 440 hPa,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-clm,6hr,%,Mid Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,between 680 and 440 hPa,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-cll,mon,%,Low Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,below 680 hPa,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-cll,day,%,Low Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,below 680 hPa,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
-cll,6hr,%,Low Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,below 680 hPa,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+clh,mon,%,High Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+clh,day,%,High Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+clh,6hr,%,High Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+clm,mon,%,Mid Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+clm,day,%,Mid Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+clm,6hr,%,Mid Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+cll,mon,%,Low Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+cll,day,%,Low Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+cll,6hr,%,Low Level Cloud Fraction,cloud_area_fraction_in_atmosphere_layer,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 rsdscs,mon,W m-2,Surface Downwelling Clear-Sky Shortwave Radiation,surface_downwelling_shortwave_flux_in_air_assuming_clear_sky,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 rsdscs,day,W m-2,Surface Downwelling Clear-Sky Shortwave Radiation,surface_downwelling_shortwave_flux_in_air_assuming_clear_sky,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 rsdscs,6hr,W m-2,Surface Downwelling Clear-Sky Shortwave Radiation,surface_downwelling_shortwave_flux_in_air_assuming_clear_sky,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
@@ -394,7 +394,7 @@ limax,mon,K,Daily Maximum Lifted Index,temperature_difference_between_ambient_ai
 limax,day,K,Daily Maximum Lifted Index,temperature_difference_between_ambient_air_and_air_lifted_adiabatically_from_the_surface,,area: mean time: maximum,area: areacella,longitude latitude time,real,,,,,,atmos
 cinmax,mon,J kg-1,Daily Maximum Convective Inhibition,atmosphere_convective_inhibition_wrt_surface,,area: mean time: maximum within days time: mean over days,area: areacella,longitude latitude time,real,,,,,,atmos
 cinmax,day,J kg-1,Daily Maximum Convective Inhibition,atmosphere_convective_inhibition_wrt_surface,,area: mean time: maximum,area: areacella,longitude latitude time,real,,,,,,atmos
-od550aer,mon,1,Ambient Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,"long_name fixed, 2022.09.22  https://github.com/WCRP-CORDEX/cordex-cmip6-data-request/issues/6",area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
+od550aer,mon,1,Ambient Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,"AOD from ambient aerosols (i.e., includes aerosol water).  Does not include AOD from stratospheric aerosols if these are prescribed but includes other possible background aerosol types. Needs a comment attribute ""wavelength: 550 nm""",area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 ua150,mon,m s-1,Eastward Wind at 150hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p150,real,,,,,,atmos
 ua150,day,m s-1,Eastward Wind at 150hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p150,real,,,,,,atmos
 ua150,6hr,m s-1,Eastward Wind at 150hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p150,real,,,,,,atmos
@@ -498,7 +498,7 @@ zg20,mon,m,Geopotential Height at 20hPa,geopotential_height,,area: time: mean,ar
 zg20,day,m,Geopotential Height at 20hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p20,real,,,,,,atmos
 zg20,6hr,m,Geopotential Height at 20hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p20,real,,,,,,atmos
 zg10,mon,m,Geopotential Height at 10hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p10,real,,,,,,atmos
-zg10,day,m,Geopotential Height at 10hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p10,real,,,,,,atmos
+zg10,day,m,Geopotential Height at 10hPa,geopotential_height,Geopotential height on the 10 hPa surface,area: time: mean,area: areacella,longitude latitude time p10,real,,,,,,atmos
 zg10,6hr,m,Geopotential Height at 10hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p10,real,,,,,,atmos
 wa150,mon,m s-1,Upward Air Velocity at 150hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p150,real,up,,,,,atmos
 wa150,day,m s-1,Upward Air Velocity at 150hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p150,real,up,,,,,atmos
@@ -557,14 +557,14 @@ va250m,1hr,m s-1,Northward Wind at 250m,northward_wind,,area: mean time: point,a
 va300m,mon,m s-1,Northward Wind at 300m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height300m,real,,,,,,atmos
 va300m,day,m s-1,Northward Wind at 300m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height300m,real,,,,,,atmos
 va300m,1hr,m s-1,Northward Wind at 300m,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height300m,real,,,,,,atmos
-sftgif,fx,%,Percentage of the Grid Cell Covered by Glacier,land_ice_area_fraction,,area: mean,area: areacella,longitude latitude,real,,,,,,atmos
-mrsofc,fx,kg m-2,Capacity of Soil to Store Water  (Field Capacity),soil_moisture_content_at_field_capacity,,area: mean where land,area: areacella,longitude latitude,real,,,,,,atmos
-rootd,fx,m,Maximum Root Depth,root_depth,,area: mean,area: areacella,longitude latitude,real,,,,,,atmos
-sftlaf,fx,%,Percentage of the Grid Cell Occupied by Lake,area_fraction,not in CMIP or in CF,area: mean,area: areacella,longitude latitude typelake,real,,,,,,atmos
-sfturf,fx,%,Percentage of the Grid Cell Occupied by Urban Area,area_fraction,not in CMIP or in CF,area: mean,area: areacella,longitude latitude typeurban,real,,,,,,atmos
-sfturf,mon,%,Percentage of the Grid Cell Occupied by Urban Area,area_fraction,not in CMIP or in CF,area: time: mean,area: areacella,longitude latitude time typeurban,real,,,,,,atmos
-dtb,fx,m,Depth to Bedrock,bedrock_depth_below_ground_level,not in CMIP or in CF (lower boundary of land surface models),area: mean,area: areacella,longitude latitude,real,,,,,,atmos
-areacella,fx,m2,Atmosphere Grid-Cell Area,cell_area,,area: sum,,longitude latitude,real,,,,,,atmos
+sftgif,fx,%,Percentage of the Grid Cell Covered by Glacier,land_ice_area_fraction,"fraction of grid cell occupied by ""permanent"" ice (i.e., glaciers).",area: mean,area: areacella,longitude latitude,real,,,,,,atmos
+mrsofc,fx,kg m-2,Capacity of Soil to Store Water  (Field Capacity),soil_moisture_content_at_field_capacity,"reported ""where land"": divide the total water holding capacity of all the soil in the grid cell by the land area in the grid cell;  reported as ""missing"" where the land fraction is 0.",area: mean where land,area: areacella,longitude latitude,real,,,,,,atmos
+rootd,fx,m,Maximum Root Depth,root_depth,"report the maximum soil depth reachable by plant roots (if defined in model), i.e., the maximum soil depth from which they can extract moisture; report as ""missing"" where the land fraction is 0.",area: mean,area: areacella,longitude latitude,real,,,,,,atmos
+sftlaf,fx,%,Percentage of the Grid Cell Occupied by Lake,area_fraction,,area: mean,area: areacella,longitude latitude typelake,real,,,,,,atmos
+sfturf,fx,%,Percentage of the Grid Cell Occupied by Urban Area,area_fraction,,area: mean,area: areacella,longitude latitude typeurban,real,,,,,,atmos
+sfturf,mon,%,Percentage of the Grid Cell Occupied by Urban Area,area_fraction,,area: time: mean,area: areacella,longitude latitude time typeurban,real,,,,,,atmos
+dtb,fx,m,Depth to Bedrock,bedrock_depth_below_ground_level,,area: mean,area: areacella,longitude latitude,real,,,,,,atmos
+areacella,fx,m2,Atmosphere Grid-Cell Area,cell_area,"Cell areas for any grid used to report atmospheric variables and any other variable using that grid (e.g., soil moisture content). These cell areas should be defined to enable exact calculation of global integrals (e.g., of vertical fluxes of energy at the surface and top of the atmosphere).",area: sum,,longitude latitude,real,,,,,,atmos
 thetao,mon,degC,Sea Water Potential Temperature,sea_water_potential_temperature,Diagnostic should be contributed even for models using conservative temperature as prognostic field.,area: mean where sea time: mean,area: areacello volume: volcello,longitude latitude olevel time,real,,,,,,ocean
 so,mon,0.001,Sea Water Salinity,sea_water_salinity,"Sea water salinity is the salt content of sea water, often on the Practical Salinity Scale of 1978. However, the unqualified term 'salinity' is generic and does not necessarily imply any particular method of calculation. The units of salinity are dimensionless and the units attribute should normally be given as 1e-3 or 0.001 i.e. parts per thousand. ",area: mean where sea time: mean,area: areacello volume: volcello,longitude latitude olevel time,real,,-0.001 r,100.0 r,28.0 r,40.0 r,ocean
 uo,mon,m s-1,Sea Water X Velocity,sea_water_x_velocity,Prognostic x-ward velocity component resolved by the model.,time: mean,--OPT,longitude latitude olevel time,real,,,,,,ocean
