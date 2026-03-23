@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - nodefaults
 dependencies:
+  - pip
   - pandas
   - openpyxl
   - xlsxwriter
@@ -14,3 +15,5 @@ dependencies:
   - pytest
   - pytest-cov
   - pytest-env
+  - pip:
+    - git+https://github.com/WCRP-CORDEX/data-request-tools.git

@@ -18,16 +18,16 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - name: checkout data request
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: checkout cordex cmor tables
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         repository: WCRP-CORDEX/cordex-cmip6-cmor-tables
         path: tables
         token: ${{ secrets.TABLE_ACCESS_TOKEN }}
 
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@v6
       with:
         python-version: '3.12'
 
