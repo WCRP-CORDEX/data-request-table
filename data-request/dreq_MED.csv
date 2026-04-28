@@ -1,3 +1,5 @@
+TO BE DONE ADAPTING WITH THE OFFICIAL MED-CORDEX LIST. Done only for tas 1hr CORE -> TIER1
+
 out_name,frequency,units,long_name,standard_name,cell_methods,priority,comment
 tas,mon,K,Near-Surface Air Temperature,air_temperature,area: time: mean,CORE,
 tas,day,K,Near-Surface Air Temperature,air_temperature,area: time: mean,CORE,
