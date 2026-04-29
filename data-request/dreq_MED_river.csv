@@ -1,0 +1,8 @@
+out_name,frequency,units,long_name,standard_name,cell_methods,priority,comment
+rivo,mon,m3 s-1,River Discharge,water_flux_to_downstream,area: mean time: mean,CORE,
+mrro,mon,kg m-2 s-1,Total Runoff,runoff_flux,area: mean time: mean,CORE,
+areacellr,fx,m2,Grid-Cell Area for River Model Variables,cell_area,,CORE,
+rivo,day,m3 s-1,River Discharge,water_flux_to_downstream,area: mean time: mean,CORE,
+mrro,day,kg m-2 s-1,Total Runoff,runoff_flux,area: mean time: mean,CORE,
+mrros,mon,kg m-2 s-1,Surface Runoff,surface_runoff_flux,area: mean time: mean,TIER 1,
+mrros,day,kg m-2 s-1,Surface Runoff,surface_runoff_flux,area: mean time: mean,TIER 1,
