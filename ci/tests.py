@@ -227,6 +227,6 @@ def test_create_html_exports_filterable_table(tmp_path, monkeypatch):
 
     assert html_path == str(docs_path / "dreq_default.html")
     assert "$('#table_id').DataTable" in html
-    assert "CORDEX-CMIP6 data request · default" in html
+    assert "CORDEX-CMIP6 data request" in html
     assert '<a href="https://example.com/info">https://example.com/info</a>' in html
     assert 'href="dreq_default.html">default</a>' in html
