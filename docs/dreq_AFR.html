@@ -1,0 +1,5794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="J. Fernandez" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORDEX-CMIP6 data request (&lt;span style=&#x27;color: #0969da;&#x27;&gt;AFR&lt;/span&gt;)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <style>
+body {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 600px;
+}
+tr:hover {background-color:#f5f5f5;}
+th, td {text-align: left; padding: 2px;}
+table {border-collapse: collapse;}
+span.tag {
+  background-color: #c5def5;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px !important;
+  border: 1px solid transparent;
+  border-radius: 2em;
+}
+span.selected {color: #3399FF}
+span.planned {color: #F54d4d; font-weight: bold}
+span.running {color: #009900; font-weight: bold}
+span.completed {color: #17202a; font-weight: bold}
+span.published {color: #3399FF; font-weight: bold}
+span.warning {color: #FF0000; font-weight: bold}
+a {color: DodgerBlue}
+a:link {text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover {text-decoration: underline; }
+a:active { text-decoration: underline; }
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.nav-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 4px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  color: #0969da;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.nav-button:hover {
+  background-color: #0969da;
+  color: white;
+  text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="https://cordex.org/wp-content/uploads/2025/02/CORDEX_RGB_logo_baseline_positive-300x133.png" alt="CORDEX Logo" >
+        <h1>CORDEX-CMIP6 data request (<span style='color: #0969da;'>AFR</span>)</h1>
+    </div>
+    <div style='text-align: center; margin: 1em 0;'><a class="nav-button" href="dreq_AFR.html">AFR</a><a class="nav-button" href="dreq_default.html">default</a><a class="nav-button" href="dreq_ocean.html">ocean</a><a class="nav-button" href="dreq_river.html">river</a></div>This is the CORDEX-CMIP6 RCM data request for AFR. The browsable list shows the available variables, frequencies and other properties. For more information about the data request, see <a href='https://github.com/WCRP-CORDEX/data-request-table#tutorial'>https://github.com/WCRP-CORDEX/data-request-table</a>. CSV and Excel versions of the data request can be found <a href='https://github.com/WCRP-CORDEX/data-request-table/data-request'>here</a>.<p>
+    <table id="table_id" class="display">
+        <thead>
+            <tr>
+        <th>out_name</th>
+        <th>frequency</th>
+        <th>units</th>
+        <th>long_name</th>
+        <th>standard_name</th>
+        <th>cell_methods</th>
+        <th>priority</th>
+        <th>comment</th>
+            </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td>tas</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Near-Surface Air Temperature</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>tas</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Near-Surface Air Temperature</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>tas</td>
+        <td>1hr</td>
+        <td>K</td>
+        <td>Near-Surface Air Temperature</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>tasmax</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Daily Maximum Near-Surface Air Temperature</td>
+        <td>air_temperature</td>
+        <td>area: mean time: maximum within days time: mean over days</td>
+        <td>CORE</td>
+        <td>maximum from all integrated time steps per day</td>
+      </tr>
+      <tr>
+        <td>tasmax</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Daily Maximum Near-Surface Air Temperature</td>
+        <td>air_temperature</td>
+        <td>area: mean time: maximum</td>
+        <td>CORE</td>
+        <td>maximum from all integrated time steps per day</td>
+      </tr>
+      <tr>
+        <td>tasmin</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Daily Minimum Near-Surface Air Temperature</td>
+        <td>air_temperature</td>
+        <td>area: mean time: minimum within days time: mean over days</td>
+        <td>CORE</td>
+        <td>minimum from all integrated time steps per day</td>
+      </tr>
+      <tr>
+        <td>tasmin</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Daily Minimum Near-Surface Air Temperature</td>
+        <td>air_temperature</td>
+        <td>area: mean time: minimum</td>
+        <td>CORE</td>
+        <td>minimum from all integrated time steps per day</td>
+      </tr>
+      <tr>
+        <td>pr</td>
+        <td>mon</td>
+        <td>kg m-2 s-1</td>
+        <td>Precipitation</td>
+        <td>precipitation_flux</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>pr</td>
+        <td>day</td>
+        <td>kg m-2 s-1</td>
+        <td>Precipitation</td>
+        <td>precipitation_flux</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>pr</td>
+        <td>1hr</td>
+        <td>kg m-2 s-1</td>
+        <td>Precipitation</td>
+        <td>precipitation_flux</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>evspsbl</td>
+        <td>mon</td>
+        <td>kg m-2 s-1</td>
+        <td>Evaporation Including Sublimation and Transpiration</td>
+        <td>water_evapotranspiration_flux</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>evspsbl</td>
+        <td>day</td>
+        <td>kg m-2 s-1</td>
+        <td>Evaporation Including Sublimation and Transpiration</td>
+        <td>water_evapotranspiration_flux</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>evspsbl</td>
+        <td>1hr</td>
+        <td>kg m-2 s-1</td>
+        <td>Evaporation Including Sublimation and Transpiration</td>
+        <td>water_evapotranspiration_flux</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>huss</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Near-Surface Specific Humidity</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>huss</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Near-Surface Specific Humidity</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>huss</td>
+        <td>1hr</td>
+        <td>1</td>
+        <td>Near-Surface Specific Humidity</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hurs</td>
+        <td>mon</td>
+        <td>%</td>
+        <td>Near-Surface Relative Humidity</td>
+        <td>relative_humidity</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hurs</td>
+        <td>day</td>
+        <td>%</td>
+        <td>Near-Surface Relative Humidity</td>
+        <td>relative_humidity</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hurs</td>
+        <td>1hr</td>
+        <td>%</td>
+        <td>Near-Surface Relative Humidity</td>
+        <td>relative_humidity</td>
+        <td>area: mean time: point</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ps</td>
+        <td>mon</td>
+        <td>Pa</td>
+        <td>Surface Air Pressure</td>
+        <td>surface_air_pressure</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ps</td>
+        <td>day</td>
+        <td>Pa</td>
+        <td>Surface Air Pressure</td>
+        <td>surface_air_pressure</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ps</td>
+        <td>1hr</td>
+        <td>Pa</td>
+        <td>Surface Air Pressure</td>
+        <td>surface_air_pressure</td>
+        <td>area: mean time: point</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>psl</td>
+        <td>mon</td>
+        <td>Pa</td>
+        <td>Sea Level Pressure</td>
+        <td>air_pressure_at_mean_sea_level</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>psl</td>
+        <td>day</td>
+        <td>Pa</td>
+        <td>Sea Level Pressure</td>
+        <td>air_pressure_at_mean_sea_level</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>psl</td>
+        <td>1hr</td>
+        <td>Pa</td>
+        <td>Sea Level Pressure</td>
+        <td>air_pressure_at_mean_sea_level</td>
+        <td>area: mean time: point</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>sfcWind</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Near-Surface Wind Speed</td>
+        <td>wind_speed</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>sfcWind</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Near-Surface Wind Speed</td>
+        <td>wind_speed</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>sfcWind</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Near-Surface Wind Speed</td>
+        <td>wind_speed</td>
+        <td>area: mean time: point</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>uas</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Near-Surface Wind</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>uas</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Near-Surface Wind</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>uas</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Eastward Near-Surface Wind</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>vas</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Near-Surface Wind</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>vas</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Near-Surface Wind</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>vas</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Northward Near-Surface Wind</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>clt</td>
+        <td>mon</td>
+        <td>%</td>
+        <td>Total Cloud Cover Percentage</td>
+        <td>cloud_area_fraction</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>clt</td>
+        <td>day</td>
+        <td>%</td>
+        <td>Total Cloud Cover Percentage</td>
+        <td>cloud_area_fraction</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>clt</td>
+        <td>1hr</td>
+        <td>%</td>
+        <td>Total Cloud Cover Percentage</td>
+        <td>cloud_area_fraction</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsds</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>Surface Downwelling Shortwave Radiation</td>
+        <td>surface_downwelling_shortwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsds</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>Surface Downwelling Shortwave Radiation</td>
+        <td>surface_downwelling_shortwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsds</td>
+        <td>1hr</td>
+        <td>W m-2</td>
+        <td>Surface Downwelling Shortwave Radiation</td>
+        <td>surface_downwelling_shortwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rlds</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>Surface Downwelling Longwave Radiation</td>
+        <td>surface_downwelling_longwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rlds</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>Surface Downwelling Longwave Radiation</td>
+        <td>surface_downwelling_longwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rlds</td>
+        <td>1hr</td>
+        <td>W m-2</td>
+        <td>Surface Downwelling Longwave Radiation</td>
+        <td>surface_downwelling_longwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>orog</td>
+        <td>fx</td>
+        <td>m</td>
+        <td>Surface Altitude</td>
+        <td>surface_altitude</td>
+        <td>area: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>sftlf</td>
+        <td>fx</td>
+        <td>%</td>
+        <td>Percentage of the Grid Cell Occupied by Land</td>
+        <td>land_area_fraction</td>
+        <td>area: mean</td>
+        <td>CORE</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ts</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Surface Temperature</td>
+        <td>surface_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ts</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Surface Temperature</td>
+        <td>surface_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ts</td>
+        <td>1hr</td>
+        <td>K</td>
+        <td>Surface Temperature</td>
+        <td>surface_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>tsl</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Temperature of Soil</td>
+        <td>soil_temperature</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>Temperature of each soil layer (3D variable). Reported as missing for grid cells with no land.</td>
+      </tr>
+      <tr>
+        <td>tsl</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Temperature of Soil</td>
+        <td>soil_temperature</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>Temperature of each soil layer (3D variable). Reported as missing for grid cells with no land.</td>
+      </tr>
+      <tr>
+        <td>tsl</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Temperature of Soil</td>
+        <td>soil_temperature</td>
+        <td>area: mean where land time: point</td>
+        <td>TIER1</td>
+        <td>Temperature of each soil layer (3D variable). Reported as missing for grid cells with no land.</td>
+      </tr>
+      <tr>
+        <td>prc</td>
+        <td>mon</td>
+        <td>kg m-2 s-1</td>
+        <td>Convective Precipitation</td>
+        <td>convective_precipitation_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>prc</td>
+        <td>day</td>
+        <td>kg m-2 s-1</td>
+        <td>Convective Precipitation</td>
+        <td>convective_precipitation_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>prc</td>
+        <td>1hr</td>
+        <td>kg m-2 s-1</td>
+        <td>Convective Precipitation</td>
+        <td>convective_precipitation_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>prhmax</td>
+        <td>day</td>
+        <td>kg m-2 s-1</td>
+        <td>Daily Maximum Hourly Precipitation Rate</td>
+        <td>precipitation_flux</td>
+        <td>area: mean time: mean within hours time: maximum over hours</td>
+        <td>TIER1</td>
+        <td>Defined as maximum of the precipitation rate averaged over the whole hour.</td>
+      </tr>
+      <tr>
+        <td>prsn</td>
+        <td>mon</td>
+        <td>kg m-2 s-1</td>
+        <td>Snowfall Flux</td>
+        <td>snowfall_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>prsn</td>
+        <td>day</td>
+        <td>kg m-2 s-1</td>
+        <td>Snowfall Flux</td>
+        <td>snowfall_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>prsn</td>
+        <td>1hr</td>
+        <td>kg m-2 s-1</td>
+        <td>Snowfall Flux</td>
+        <td>snowfall_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>mrros</td>
+        <td>mon</td>
+        <td>kg m-2 s-1</td>
+        <td>Surface Runoff</td>
+        <td>surface_runoff_flux</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>mrros</td>
+        <td>day</td>
+        <td>kg m-2 s-1</td>
+        <td>Surface Runoff</td>
+        <td>surface_runoff_flux</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>mrros</td>
+        <td>6hr</td>
+        <td>kg m-2 s-1</td>
+        <td>Surface Runoff</td>
+        <td>surface_runoff_flux</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>mrro</td>
+        <td>mon</td>
+        <td>kg m-2 s-1</td>
+        <td>Total Runoff</td>
+        <td>runoff_flux</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>mrro</td>
+        <td>day</td>
+        <td>kg m-2 s-1</td>
+        <td>Total Runoff</td>
+        <td>runoff_flux</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>mrro</td>
+        <td>6hr</td>
+        <td>kg m-2 s-1</td>
+        <td>Total Runoff</td>
+        <td>runoff_flux</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>snm</td>
+        <td>mon</td>
+        <td>kg m-2 s-1</td>
+        <td>Surface Snow Melt</td>
+        <td>surface_snow_melt_flux</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>snm</td>
+        <td>day</td>
+        <td>kg m-2 s-1</td>
+        <td>Surface Snow Melt</td>
+        <td>surface_snow_melt_flux</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>snm</td>
+        <td>6hr</td>
+        <td>kg m-2 s-1</td>
+        <td>Surface Snow Melt</td>
+        <td>surface_snow_melt_flux</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>tauu</td>
+        <td>mon</td>
+        <td>Pa</td>
+        <td>Surface Downward Eastward Wind Stress</td>
+        <td>surface_downward_eastward_stress</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>tauu</td>
+        <td>day</td>
+        <td>Pa</td>
+        <td>Surface Downward Eastward Wind Stress</td>
+        <td>surface_downward_eastward_stress</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>tauu</td>
+        <td>1hr</td>
+        <td>Pa</td>
+        <td>Surface Downward Eastward Wind Stress</td>
+        <td>surface_downward_eastward_stress</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>tauv</td>
+        <td>mon</td>
+        <td>Pa</td>
+        <td>Surface Downward Northward Wind Stress</td>
+        <td>surface_downward_northward_stress</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>tauv</td>
+        <td>day</td>
+        <td>Pa</td>
+        <td>Surface Downward Northward Wind Stress</td>
+        <td>surface_downward_northward_stress</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>tauv</td>
+        <td>1hr</td>
+        <td>Pa</td>
+        <td>Surface Downward Northward Wind Stress</td>
+        <td>surface_downward_northward_stress</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>sfcWindmax</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Daily Maximum Near-Surface Wind Speed</td>
+        <td>wind_speed</td>
+        <td>area: mean time: maximum within days time: mean over days</td>
+        <td>TIER1</td>
+        <td>Maximum from all integrated time steps per day</td>
+      </tr>
+      <tr>
+        <td>sfcWindmax</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Daily Maximum Near-Surface Wind Speed</td>
+        <td>wind_speed</td>
+        <td>area: mean time: maximum</td>
+        <td>TIER1</td>
+        <td>Maximum from all integrated time steps per day</td>
+      </tr>
+      <tr>
+        <td>sund</td>
+        <td>mon</td>
+        <td>s</td>
+        <td>Daily Duration of Sunshine</td>
+        <td>duration_of_sunshine</td>
+        <td>time: sum within days time: mean over days</td>
+        <td>TIER1</td>
+        <td>The WMO definition of sunshine is that the surface incident radiative flux from the solar beam (i.e. excluding diffuse skylight) exceeds 120 W m-2. &quot;Duration&quot; is the length of time for which a condition holds.</td>
+      </tr>
+      <tr>
+        <td>sund</td>
+        <td>day</td>
+        <td>s</td>
+        <td>Daily Duration of Sunshine</td>
+        <td>duration_of_sunshine</td>
+        <td>time: sum</td>
+        <td>TIER1</td>
+        <td>The WMO definition of sunshine is that the surface incident radiative flux from the solar beam (i.e. excluding diffuse skylight) exceeds 120 W m-2. &quot;Duration&quot; is the length of time for which a condition holds.</td>
+      </tr>
+      <tr>
+        <td>rsdsdir</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>Surface Direct Downwelling Shortwave Radiation</td>
+        <td>surface_direct_downwelling_shortwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsdsdir</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>Surface Direct Downwelling Shortwave Radiation</td>
+        <td>surface_direct_downwelling_shortwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsdsdir</td>
+        <td>1hr</td>
+        <td>W m-2</td>
+        <td>Surface Direct Downwelling Shortwave Radiation</td>
+        <td>surface_direct_downwelling_shortwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsus</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>Surface Upwelling Shortwave Radiation</td>
+        <td>surface_upwelling_shortwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsus</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>Surface Upwelling Shortwave Radiation</td>
+        <td>surface_upwelling_shortwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsus</td>
+        <td>1hr</td>
+        <td>W m-2</td>
+        <td>Surface Upwelling Shortwave Radiation</td>
+        <td>surface_upwelling_shortwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rlus</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>Surface Upwelling Longwave Radiation</td>
+        <td>surface_upwelling_longwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rlus</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>Surface Upwelling Longwave Radiation</td>
+        <td>surface_upwelling_longwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rlus</td>
+        <td>1hr</td>
+        <td>W m-2</td>
+        <td>Surface Upwelling Longwave Radiation</td>
+        <td>surface_upwelling_longwave_flux_in_air</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rlut</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>TOA Outgoing Longwave Radiation</td>
+        <td>toa_outgoing_longwave_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rlut</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>TOA Outgoing Longwave Radiation</td>
+        <td>toa_outgoing_longwave_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rlut</td>
+        <td>1hr</td>
+        <td>W m-2</td>
+        <td>TOA Outgoing Longwave Radiation</td>
+        <td>toa_outgoing_longwave_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsdt</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>TOA Incident Shortwave Radiation</td>
+        <td>toa_incoming_shortwave_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsdt</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>TOA Incident Shortwave Radiation</td>
+        <td>toa_incoming_shortwave_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsdt</td>
+        <td>1hr</td>
+        <td>W m-2</td>
+        <td>TOA Incident Shortwave Radiation</td>
+        <td>toa_incoming_shortwave_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsut</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>TOA Outgoing Shortwave Radiation</td>
+        <td>toa_outgoing_shortwave_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsut</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>TOA Outgoing Shortwave Radiation</td>
+        <td>toa_outgoing_shortwave_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsut</td>
+        <td>1hr</td>
+        <td>W m-2</td>
+        <td>TOA Outgoing Shortwave Radiation</td>
+        <td>toa_outgoing_shortwave_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hfls</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>Surface Upward Latent Heat Flux</td>
+        <td>surface_upward_latent_heat_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hfls</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>Surface Upward Latent Heat Flux</td>
+        <td>surface_upward_latent_heat_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hfls</td>
+        <td>1hr</td>
+        <td>W m-2</td>
+        <td>Surface Upward Latent Heat Flux</td>
+        <td>surface_upward_latent_heat_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hfss</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>Surface Upward Sensible Heat Flux</td>
+        <td>surface_upward_sensible_heat_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hfss</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>Surface Upward Sensible Heat Flux</td>
+        <td>surface_upward_sensible_heat_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hfss</td>
+        <td>1hr</td>
+        <td>W m-2</td>
+        <td>Surface Upward Sensible Heat Flux</td>
+        <td>surface_upward_sensible_heat_flux</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>mrfso</td>
+        <td>mon</td>
+        <td>kg m-2</td>
+        <td>Soil Frozen Water Content</td>
+        <td>soil_frozen_water_content</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>The mass of frozen water per unit area, summed over all soil layers. Reported as missing for grid cells with no land.</td>
+      </tr>
+      <tr>
+        <td>mrfso</td>
+        <td>day</td>
+        <td>kg m-2</td>
+        <td>Soil Frozen Water Content</td>
+        <td>soil_frozen_water_content</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>The mass of frozen water per unit area, summed over all soil layers. Reported as missing for grid cells with no land.</td>
+      </tr>
+      <tr>
+        <td>mrfso</td>
+        <td>6hr</td>
+        <td>kg m-2</td>
+        <td>Soil Frozen Water Content</td>
+        <td>soil_frozen_water_content</td>
+        <td>area: mean where land time: point</td>
+        <td>TIER1</td>
+        <td>The mass of frozen water per unit area, summed over all soil layers. Reported as missing for grid cells with no land.</td>
+      </tr>
+      <tr>
+        <td>mrfsos</td>
+        <td>mon</td>
+        <td>kg m-2</td>
+        <td>Frozen Water Content in Upper Portion of Soil Column</td>
+        <td>frozen_water_content_of_soil_layer</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>The mass of frosen water in the upper 10cm of the soil layer. Reported as missing for grid cells with no land. (not in CMIP)</td>
+      </tr>
+      <tr>
+        <td>mrfsos</td>
+        <td>day</td>
+        <td>kg m-2</td>
+        <td>Frozen Water Content in Upper Portion of Soil Column</td>
+        <td>frozen_water_content_of_soil_layer</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>The mass of frosen water in the upper 10cm of the soil layer. Reported as missing for grid cells with no land. (not in CMIP)</td>
+      </tr>
+      <tr>
+        <td>mrfsos</td>
+        <td>1hr</td>
+        <td>kg m-2</td>
+        <td>Frozen Water Content in Upper Portion of Soil Column</td>
+        <td>frozen_water_content_of_soil_layer</td>
+        <td>area: mean where land time: point</td>
+        <td>TIER1</td>
+        <td>The mass of frosen water in the upper 10cm of the soil layer. Reported as missing for grid cells with no land. (not in CMIP)</td>
+      </tr>
+      <tr>
+        <td>mrsfl</td>
+        <td>mon</td>
+        <td>kg m-2</td>
+        <td>Frozen Water Content of Soil Layer</td>
+        <td>frozen_water_content_of_soil_layer</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>The mass of frosen water in each soil layer (3D variable). Reported as missing for grid cells with no land. (not in CMIP) [mrfsol -&gt; mrsfl, 2022.09.22, https://github.com/WCRP-CORDEX/cordex-cmip6-data-request/issues/2 ]</td>
+      </tr>
+      <tr>
+        <td>mrsfl</td>
+        <td>day</td>
+        <td>kg m-2</td>
+        <td>Frozen Water Content of Soil Layer</td>
+        <td>frozen_water_content_of_soil_layer</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>The mass of frosen water in each soil layer (3D variable). Reported as missing for grid cells with no land. (not in CMIP) [mrfsol -&gt; mrsfl, 2022.09.22, https://github.com/WCRP-CORDEX/cordex-cmip6-data-request/issues/2 ]</td>
+      </tr>
+      <tr>
+        <td>mrsfl</td>
+        <td>6hr</td>
+        <td>kg m-2</td>
+        <td>Frozen Water Content of Soil Layer</td>
+        <td>frozen_water_content_of_soil_layer</td>
+        <td>area: mean where land time: point</td>
+        <td>TIER1</td>
+        <td>The mass of frosen water in each soil layer (3D variable). Reported as missing for grid cells with no land. (not in CMIP) [mrfsol -&gt; mrsfl, 2022.09.22, https://github.com/WCRP-CORDEX/cordex-cmip6-data-request/issues/2 ]</td>
+      </tr>
+      <tr>
+        <td>mrso</td>
+        <td>mon</td>
+        <td>kg m-2</td>
+        <td>Total Soil Moisture Content</td>
+        <td>mass_content_of_water_in_soil</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>The mass of water in all phases per unit area, summed over all soil layers.</td>
+      </tr>
+      <tr>
+        <td>mrso</td>
+        <td>day</td>
+        <td>kg m-2</td>
+        <td>Total Soil Moisture Content</td>
+        <td>mass_content_of_water_in_soil</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>The mass of water in all phases per unit area, summed over all soil layers.</td>
+      </tr>
+      <tr>
+        <td>mrso</td>
+        <td>6hr</td>
+        <td>kg m-2</td>
+        <td>Total Soil Moisture Content</td>
+        <td>mass_content_of_water_in_soil</td>
+        <td>area: mean where land time: point</td>
+        <td>TIER1</td>
+        <td>The mass of water in all phases per unit area, summed over all soil layers.</td>
+      </tr>
+      <tr>
+        <td>mrsos</td>
+        <td>mon</td>
+        <td>kg m-2</td>
+        <td>Moisture in Upper Portion of Soil Column</td>
+        <td>mass_content_of_water_in_soil_layer</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>The mass of water in all phases in the upper 10cm of the soil layer. Reported as missing for grid cells with no land.</td>
+      </tr>
+      <tr>
+        <td>mrsos</td>
+        <td>day</td>
+        <td>kg m-2</td>
+        <td>Moisture in Upper Portion of Soil Column</td>
+        <td>mass_content_of_water_in_soil_layer</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>The mass of water in all phases in the upper 10cm of the soil layer. Reported as missing for grid cells with no land.</td>
+      </tr>
+      <tr>
+        <td>mrsos</td>
+        <td>1hr</td>
+        <td>kg m-2</td>
+        <td>Moisture in Upper Portion of Soil Column</td>
+        <td>mass_content_of_water_in_soil_layer</td>
+        <td>area: mean where land time: point</td>
+        <td>TIER1</td>
+        <td>The mass of water in all phases in the upper 10cm of the soil layer. Reported as missing for grid cells with no land.</td>
+      </tr>
+      <tr>
+        <td>mrsol</td>
+        <td>mon</td>
+        <td>kg m-2</td>
+        <td>Total Water Content of Soil Layer</td>
+        <td>mass_content_of_water_in_soil_layer</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>The mass of water in all phases in each soil layer (3D variable). Reported as missing for grid cells with no land.</td>
+      </tr>
+      <tr>
+        <td>mrsol</td>
+        <td>day</td>
+        <td>kg m-2</td>
+        <td>Total Water Content of Soil Layer</td>
+        <td>mass_content_of_water_in_soil_layer</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td>The mass of water in all phases in each soil layer (3D variable). Reported as missing for grid cells with no land.</td>
+      </tr>
+      <tr>
+        <td>mrsol</td>
+        <td>6hr</td>
+        <td>kg m-2</td>
+        <td>Total Water Content of Soil Layer</td>
+        <td>mass_content_of_water_in_soil_layer</td>
+        <td>area: mean where land time: point</td>
+        <td>TIER1</td>
+        <td>The mass of water in all phases in each soil layer (3D variable). Reported as missing for grid cells with no land.</td>
+      </tr>
+      <tr>
+        <td>snw</td>
+        <td>mon</td>
+        <td>kg m-2</td>
+        <td>Surface Snow Amount</td>
+        <td>surface_snow_amount</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>snw</td>
+        <td>day</td>
+        <td>kg m-2</td>
+        <td>Surface Snow Amount</td>
+        <td>surface_snow_amount</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>snw</td>
+        <td>6hr</td>
+        <td>kg m-2</td>
+        <td>Surface Snow Amount</td>
+        <td>surface_snow_amount</td>
+        <td>area: mean where land time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>snc</td>
+        <td>mon</td>
+        <td>%</td>
+        <td>Snow Area Percentage</td>
+        <td>surface_snow_area_fraction</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>snc</td>
+        <td>day</td>
+        <td>%</td>
+        <td>Snow Area Percentage</td>
+        <td>surface_snow_area_fraction</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>snc</td>
+        <td>6hr</td>
+        <td>%</td>
+        <td>Snow Area Percentage</td>
+        <td>surface_snow_area_fraction</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>snd</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Snow Depth</td>
+        <td>surface_snow_thickness</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>snd</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Snow Depth</td>
+        <td>surface_snow_thickness</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>snd</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Snow Depth</td>
+        <td>surface_snow_thickness</td>
+        <td>area: mean where land time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>siconca</td>
+        <td>mon</td>
+        <td>%</td>
+        <td>Sea-Ice Area Percentage (Atmospheric Grid)</td>
+        <td>sea_ice_area_fraction</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td>daily and monthly means</td>
+      </tr>
+      <tr>
+        <td>siconca</td>
+        <td>day</td>
+        <td>%</td>
+        <td>Sea-Ice Area Percentage (Atmospheric Grid)</td>
+        <td>sea_ice_area_fraction</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td>daily and monthly means</td>
+      </tr>
+      <tr>
+        <td>zmla</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Height of Boundary Layer</td>
+        <td>atmosphere_boundary_layer_thickness</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zmla</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Height of Boundary Layer</td>
+        <td>atmosphere_boundary_layer_thickness</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zmla</td>
+        <td>1hr</td>
+        <td>m</td>
+        <td>Height of Boundary Layer</td>
+        <td>atmosphere_boundary_layer_thickness</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>prw</td>
+        <td>mon</td>
+        <td>kg m-2</td>
+        <td>Water Vapor Path</td>
+        <td>atmosphere_mass_content_of_water_vapor</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>prw</td>
+        <td>day</td>
+        <td>kg m-2</td>
+        <td>Water Vapor Path</td>
+        <td>atmosphere_mass_content_of_water_vapor</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>prw</td>
+        <td>1hr</td>
+        <td>kg m-2</td>
+        <td>Water Vapor Path</td>
+        <td>atmosphere_mass_content_of_water_vapor</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>clwvi</td>
+        <td>mon</td>
+        <td>kg m-2</td>
+        <td>Condensed Water Path</td>
+        <td>atmosphere_mass_content_of_cloud_condensed_water</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>clwvi</td>
+        <td>day</td>
+        <td>kg m-2</td>
+        <td>Condensed Water Path</td>
+        <td>atmosphere_mass_content_of_cloud_condensed_water</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>clwvi</td>
+        <td>1hr</td>
+        <td>kg m-2</td>
+        <td>Condensed Water Path</td>
+        <td>atmosphere_mass_content_of_cloud_condensed_water</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>clivi</td>
+        <td>mon</td>
+        <td>kg m-2</td>
+        <td>Ice Water Path</td>
+        <td>atmosphere_mass_content_of_cloud_ice</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>clivi</td>
+        <td>day</td>
+        <td>kg m-2</td>
+        <td>Ice Water Path</td>
+        <td>atmosphere_mass_content_of_cloud_ice</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>clivi</td>
+        <td>1hr</td>
+        <td>kg m-2</td>
+        <td>Ice Water Path</td>
+        <td>atmosphere_mass_content_of_cloud_ice</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua1000</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 1000hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua1000</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 1000hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua1000</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 1000hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua925</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 925hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua925</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 925hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua925</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 925hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua850</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 850hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua850</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 850hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua850</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 850hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua700</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 700hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua700</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 700hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua700</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 700hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua600</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 600hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua600</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 600hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua600</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 600hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua500</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 500hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua500</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 500hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua500</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 500hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua400</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 400hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua400</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 400hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua400</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 400hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua300</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 300hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua300</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 300hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua300</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 300hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua250</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 250hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua250</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 250hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua250</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 250hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua200</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 200hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua200</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 200hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua200</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 200hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va1000</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 1000hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va1000</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 1000hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va1000</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 1000hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va925</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 925hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va925</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 925hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va925</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 925hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va850</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 850hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va850</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 850hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va850</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 850hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va700</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 700hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va700</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 700hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va700</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 700hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va600</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 600hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va600</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 600hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va600</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 600hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va500</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 500hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va500</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 500hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va500</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 500hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va400</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 400hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va400</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 400hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va400</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 400hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va300</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 300hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va300</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 300hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va300</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 300hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va250</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 250hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va250</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 250hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va250</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 250hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va200</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 200hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va200</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 200hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va200</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 200hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta1000</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 1000hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta1000</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 1000hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta1000</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 1000hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta925</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 925hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta925</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 925hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta925</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 925hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta850</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 850hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta850</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 850hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta850</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 850hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta700</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 700hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta700</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 700hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta700</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 700hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta600</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 600hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta600</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 600hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta600</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 600hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta500</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 500hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta500</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 500hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta500</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 500hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta400</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 400hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta400</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 400hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta400</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 400hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta300</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 300hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta300</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 300hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta300</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 300hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta250</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 250hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta250</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 250hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta250</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 250hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta200</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 200hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta200</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 200hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta200</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 200hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus1000</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 1000hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus1000</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 1000hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus1000</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 1000hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus925</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 925hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus925</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 925hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus925</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 925hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus850</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 850hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus850</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 850hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus850</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 850hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus700</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 700hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus700</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 700hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus700</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 700hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus600</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 600hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus600</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 600hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus600</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 600hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus500</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 500hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus500</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 500hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus500</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 500hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus400</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 400hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus400</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 400hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus400</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 400hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus300</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 300hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus300</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 300hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus300</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 300hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus250</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 250hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus250</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 250hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus250</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 250hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus200</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 200hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus200</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 200hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus200</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 200hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg1000</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 1000hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg1000</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 1000hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg1000</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 1000hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg925</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 925hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg925</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 925hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg925</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 925hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg850</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 850hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg850</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 850hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg850</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 850hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg700</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 700hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg700</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 700hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg700</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 700hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg600</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 600hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg600</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 600hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg600</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 600hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg500</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 500hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg500</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 500hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg500</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 500hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg400</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 400hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg400</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 400hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg400</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 400hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg300</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 300hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg300</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 300hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg300</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 300hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg250</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 250hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg250</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 250hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg250</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 250hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg200</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 200hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg200</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 200hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg200</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 200hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa1000</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 1000hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa1000</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 1000hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa1000</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 1000hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa925</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 925hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa925</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 925hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa925</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 925hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa850</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 850hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa850</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 850hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa850</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 850hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa700</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 700hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa700</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 700hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa700</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 700hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa600</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 600hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa600</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 600hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa600</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 600hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa500</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 500hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa500</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 500hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa500</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 500hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa400</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 400hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa400</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 400hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa400</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 400hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa300</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 300hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa300</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 300hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa300</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 300hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa250</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 250hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa250</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 250hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa250</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 250hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa200</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 200hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa200</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 200hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa200</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 200hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua50m</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 50m</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua50m</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 50m</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua50m</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 50m</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua100m</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 100m</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua100m</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 100m</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua100m</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 100m</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua150m</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 150m</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua150m</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 150m</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua150m</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 150m</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va50m</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 50m</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va50m</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 50m</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va50m</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 50m</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va100m</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 100m</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va100m</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 100m</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va100m</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 100m</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va150m</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 150m</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va150m</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 150m</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va150m</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 150m</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta50m</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 50m</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td>requested for urban modeling</td>
+      </tr>
+      <tr>
+        <td>ta50m</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 50m</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td>requested for urban modeling</td>
+      </tr>
+      <tr>
+        <td>ta50m</td>
+        <td>1hr</td>
+        <td>K</td>
+        <td>Air Temperature at 50m</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td>requested for urban modeling</td>
+      </tr>
+      <tr>
+        <td>hus50m</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 50m</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td>requested for urban modeling</td>
+      </tr>
+      <tr>
+        <td>hus50m</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 50m</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER1</td>
+        <td>requested for urban modeling</td>
+      </tr>
+      <tr>
+        <td>hus50m</td>
+        <td>1hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 50m</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER1</td>
+        <td>requested for urban modeling</td>
+      </tr>
+      <tr>
+        <td>evspsblpot</td>
+        <td>mon</td>
+        <td>kg m-2 s-1</td>
+        <td>Potential Evapotranspiration</td>
+        <td>water_potential_evaporation_flux</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>evspsblpot</td>
+        <td>day</td>
+        <td>kg m-2 s-1</td>
+        <td>Potential Evapotranspiration</td>
+        <td>water_potential_evaporation_flux</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>evspsblpot</td>
+        <td>1hr</td>
+        <td>kg m-2 s-1</td>
+        <td>Potential Evapotranspiration</td>
+        <td>water_potential_evaporation_flux</td>
+        <td>area: mean where land time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wsgsmax</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Daily Maximum Near-Surface Wind Speed of Gust</td>
+        <td>wind_speed_of_gust</td>
+        <td>area: mean time: maximum within days time: mean over days</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wsgsmax</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Daily Maximum Near-Surface Wind Speed of Gust</td>
+        <td>wind_speed_of_gust</td>
+        <td>area: mean time: maximum</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>clh</td>
+        <td>mon</td>
+        <td>%</td>
+        <td>High Level Cloud Fraction</td>
+        <td>cloud_area_fraction_in_atmosphere_layer</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>above 440 hPa</td>
+      </tr>
+      <tr>
+        <td>clh</td>
+        <td>day</td>
+        <td>%</td>
+        <td>High Level Cloud Fraction</td>
+        <td>cloud_area_fraction_in_atmosphere_layer</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>above 440 hPa</td>
+      </tr>
+      <tr>
+        <td>clh</td>
+        <td>6hr</td>
+        <td>%</td>
+        <td>High Level Cloud Fraction</td>
+        <td>cloud_area_fraction_in_atmosphere_layer</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>above 440 hPa</td>
+      </tr>
+      <tr>
+        <td>clm</td>
+        <td>mon</td>
+        <td>%</td>
+        <td>Mid Level Cloud Fraction</td>
+        <td>cloud_area_fraction_in_atmosphere_layer</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>between 680 and 440 hPa</td>
+      </tr>
+      <tr>
+        <td>clm</td>
+        <td>day</td>
+        <td>%</td>
+        <td>Mid Level Cloud Fraction</td>
+        <td>cloud_area_fraction_in_atmosphere_layer</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>between 680 and 440 hPa</td>
+      </tr>
+      <tr>
+        <td>clm</td>
+        <td>6hr</td>
+        <td>%</td>
+        <td>Mid Level Cloud Fraction</td>
+        <td>cloud_area_fraction_in_atmosphere_layer</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>between 680 and 440 hPa</td>
+      </tr>
+      <tr>
+        <td>cll</td>
+        <td>mon</td>
+        <td>%</td>
+        <td>Low Level Cloud Fraction</td>
+        <td>cloud_area_fraction_in_atmosphere_layer</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>below 680 hPa</td>
+      </tr>
+      <tr>
+        <td>cll</td>
+        <td>day</td>
+        <td>%</td>
+        <td>Low Level Cloud Fraction</td>
+        <td>cloud_area_fraction_in_atmosphere_layer</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>below 680 hPa</td>
+      </tr>
+      <tr>
+        <td>cll</td>
+        <td>6hr</td>
+        <td>%</td>
+        <td>Low Level Cloud Fraction</td>
+        <td>cloud_area_fraction_in_atmosphere_layer</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>below 680 hPa</td>
+      </tr>
+      <tr>
+        <td>rsdscs</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>Surface Downwelling Clear-Sky Shortwave Radiation</td>
+        <td>surface_downwelling_shortwave_flux_in_air_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsdscs</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>Surface Downwelling Clear-Sky Shortwave Radiation</td>
+        <td>surface_downwelling_shortwave_flux_in_air_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsdscs</td>
+        <td>6hr</td>
+        <td>W m-2</td>
+        <td>Surface Downwelling Clear-Sky Shortwave Radiation</td>
+        <td>surface_downwelling_shortwave_flux_in_air_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rldscs</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>Surface Downwelling Clear-Sky Longwave Radiation</td>
+        <td>surface_downwelling_longwave_flux_in_air_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rldscs</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>Surface Downwelling Clear-Sky Longwave Radiation</td>
+        <td>surface_downwelling_longwave_flux_in_air_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rldscs</td>
+        <td>6hr</td>
+        <td>W m-2</td>
+        <td>Surface Downwelling Clear-Sky Longwave Radiation</td>
+        <td>surface_downwelling_longwave_flux_in_air_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsuscs</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>Surface Upwelling Clear-Sky Shortwave Radiation</td>
+        <td>surface_upwelling_shortwave_flux_in_air_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsuscs</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>Surface Upwelling Clear-Sky Shortwave Radiation</td>
+        <td>surface_upwelling_shortwave_flux_in_air_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsuscs</td>
+        <td>6hr</td>
+        <td>W m-2</td>
+        <td>Surface Upwelling Clear-Sky Shortwave Radiation</td>
+        <td>surface_upwelling_shortwave_flux_in_air_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rluscs</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>Surface Upwelling Clear-Sky Longwave Radiation</td>
+        <td>surface_upwelling_longwave_flux_in_air_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rluscs</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>Surface Upwelling Clear-Sky Longwave Radiation</td>
+        <td>surface_upwelling_longwave_flux_in_air_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rluscs</td>
+        <td>6hr</td>
+        <td>W m-2</td>
+        <td>Surface Upwelling Clear-Sky Longwave Radiation</td>
+        <td>surface_upwelling_longwave_flux_in_air_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsutcs</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>TOA Outgoing Clear-Sky Shortwave Radiation</td>
+        <td>toa_outgoing_shortwave_flux_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsutcs</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>TOA Outgoing Clear-Sky Shortwave Radiation</td>
+        <td>toa_outgoing_shortwave_flux_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rsutcs</td>
+        <td>6hr</td>
+        <td>W m-2</td>
+        <td>TOA Outgoing Clear-Sky Shortwave Radiation</td>
+        <td>toa_outgoing_shortwave_flux_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rlutcs</td>
+        <td>mon</td>
+        <td>W m-2</td>
+        <td>TOA Outgoing Clear-Sky Longwave Radiation</td>
+        <td>toa_outgoing_longwave_flux_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rlutcs</td>
+        <td>day</td>
+        <td>W m-2</td>
+        <td>TOA Outgoing Clear-Sky Longwave Radiation</td>
+        <td>toa_outgoing_longwave_flux_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rlutcs</td>
+        <td>6hr</td>
+        <td>W m-2</td>
+        <td>TOA Outgoing Clear-Sky Longwave Radiation</td>
+        <td>toa_outgoing_longwave_flux_assuming_clear_sky</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>z0</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Surface Roughness Length</td>
+        <td>surface_roughness_length</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>z0</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Surface Roughness Length</td>
+        <td>surface_roughness_length</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>cape</td>
+        <td>mon</td>
+        <td>J kg-1</td>
+        <td>Convective Available Potential Energy</td>
+        <td>atmosphere_convective_available_potential_energy_wrt_surface</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>cape</td>
+        <td>day</td>
+        <td>J kg-1</td>
+        <td>Convective Available Potential Energy</td>
+        <td>atmosphere_convective_available_potential_energy_wrt_surface</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>cape</td>
+        <td>1hr</td>
+        <td>J kg-1</td>
+        <td>Convective Available Potential Energy</td>
+        <td>atmosphere_convective_available_potential_energy_wrt_surface</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>li</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Lifted Index</td>
+        <td>temperature_difference_between_ambient_air_and_air_lifted_adiabatically_from_the_surface</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>li</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Lifted Index</td>
+        <td>temperature_difference_between_ambient_air_and_air_lifted_adiabatically_from_the_surface</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>li</td>
+        <td>1hr</td>
+        <td>K</td>
+        <td>Lifted Index</td>
+        <td>temperature_difference_between_ambient_air_and_air_lifted_adiabatically_from_the_surface</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>cin</td>
+        <td>mon</td>
+        <td>J kg-1</td>
+        <td>Convective Inhibition</td>
+        <td>atmosphere_convective_inhibition_wrt_surface</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>cin</td>
+        <td>day</td>
+        <td>J kg-1</td>
+        <td>Convective Inhibition</td>
+        <td>atmosphere_convective_inhibition_wrt_surface</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>cin</td>
+        <td>1hr</td>
+        <td>J kg-1</td>
+        <td>Convective Inhibition</td>
+        <td>atmosphere_convective_inhibition_wrt_surface</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>capemax</td>
+        <td>mon</td>
+        <td>J kg-1</td>
+        <td>Daily Maximum Convective Available Potential Energy</td>
+        <td>atmosphere_convective_available_potential_energy_wrt_surface</td>
+        <td>area: mean time: maximum within days time: mean over days</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>capemax</td>
+        <td>day</td>
+        <td>J kg-1</td>
+        <td>Daily Maximum Convective Available Potential Energy</td>
+        <td>atmosphere_convective_available_potential_energy_wrt_surface</td>
+        <td>area: mean time: maximum</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>limax</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Daily Maximum Lifted Index</td>
+        <td>temperature_difference_between_ambient_air_and_air_lifted_adiabatically_from_the_surface</td>
+        <td>area: mean time: maximum within days time: mean over days</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>limax</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Daily Maximum Lifted Index</td>
+        <td>temperature_difference_between_ambient_air_and_air_lifted_adiabatically_from_the_surface</td>
+        <td>area: mean time: maximum</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>cinmax</td>
+        <td>mon</td>
+        <td>J kg-1</td>
+        <td>Daily Maximum Convective Inhibition</td>
+        <td>atmosphere_convective_inhibition_wrt_surface</td>
+        <td>area: mean time: maximum within days time: mean over days</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>cinmax</td>
+        <td>day</td>
+        <td>J kg-1</td>
+        <td>Daily Maximum Convective Inhibition</td>
+        <td>atmosphere_convective_inhibition_wrt_surface</td>
+        <td>area: mean time: maximum</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>od550aer</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Ambient Aerosol Optical Thickness at 550nm</td>
+        <td>atmosphere_optical_thickness_due_to_ambient_aerosol_particles</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>long_name fixed, 2022.09.22  https://github.com/WCRP-CORDEX/cordex-cmip6-data-request/issues/6</td>
+      </tr>
+      <tr>
+        <td>ua150</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 150hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua150</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 150hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua150</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 150hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua100</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 100hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua100</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 100hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua100</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 100hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua70</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 70hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua70</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 70hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua70</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 70hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua50</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 50hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua50</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 50hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua50</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 50hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua30</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 30hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua30</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 30hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua30</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 30hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua20</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 20hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua20</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 20hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua20</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 20hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua10</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 10hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua10</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 10hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua10</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 10hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va150</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 150hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va150</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 150hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va150</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 150hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va100</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 100hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va100</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 100hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va100</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 100hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va70</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 70hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va70</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 70hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va70</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 70hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va50</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 50hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va50</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 50hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va50</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 50hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va30</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 30hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va30</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 30hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va30</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 30hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va20</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 20hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va20</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 20hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va20</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 20hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va10</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 10hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va10</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 10hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va10</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 10hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta150</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 150hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta150</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 150hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta150</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 150hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta100</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 100hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta100</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 100hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta100</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 100hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta70</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 70hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta70</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 70hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta70</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 70hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta50</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 50hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta50</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 50hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta50</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 50hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta30</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 30hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta30</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 30hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta30</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 30hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta20</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 20hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta20</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 20hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta20</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 20hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta10</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 10hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta10</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 10hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ta10</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 10hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus150</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 150hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus150</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 150hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus150</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 150hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus100</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 100hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus100</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 100hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus100</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 100hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus70</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 70hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus70</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 70hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus70</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 70hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus50</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 50hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus50</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 50hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus50</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 50hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus30</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 30hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus30</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 30hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus30</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 30hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus20</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 20hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus20</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 20hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus20</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 20hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus10</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 10hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus10</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 10hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>hus10</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 10hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg150</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 150hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg150</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 150hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg150</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 150hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg100</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 100hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg100</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 100hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg100</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 100hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg70</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 70hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg70</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 70hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg70</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 70hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg50</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 50hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg50</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 50hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg50</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 50hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg30</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 30hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg30</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 30hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg30</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 30hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg20</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 20hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg20</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 20hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg20</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 20hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg10</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 10hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg10</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 10hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>zg10</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 10hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa150</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 150hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa150</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 150hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa150</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 150hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa100</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 100hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa100</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 100hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa100</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 100hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa70</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 70hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa70</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 70hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa70</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 70hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa50</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 50hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa50</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 50hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa50</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 50hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa30</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 30hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa30</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 30hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa30</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 30hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa20</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 20hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa20</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 20hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa20</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 20hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa10</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 10hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa10</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 10hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>wa10</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 10hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua750</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 750hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>ua750</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 750hPa</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>ua750</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 750hPa</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>va750</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 750hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>va750</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 750hPa</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>va750</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 750hPa</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>ta750</td>
+        <td>mon</td>
+        <td>K</td>
+        <td>Air Temperature at 750hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>ta750</td>
+        <td>day</td>
+        <td>K</td>
+        <td>Air Temperature at 750hPa</td>
+        <td>air_temperature</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>ta750</td>
+        <td>6hr</td>
+        <td>K</td>
+        <td>Air Temperature at 750hPa</td>
+        <td>air_temperature</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>hus750</td>
+        <td>mon</td>
+        <td>1</td>
+        <td>Specific Humidity at 750hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>hus750</td>
+        <td>day</td>
+        <td>1</td>
+        <td>Specific Humidity at 750hPa</td>
+        <td>specific_humidity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>hus750</td>
+        <td>6hr</td>
+        <td>1</td>
+        <td>Specific Humidity at 750hPa</td>
+        <td>specific_humidity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>zg750</td>
+        <td>mon</td>
+        <td>m</td>
+        <td>Geopotential Height at 750hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>zg750</td>
+        <td>day</td>
+        <td>m</td>
+        <td>Geopotential Height at 750hPa</td>
+        <td>geopotential_height</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>zg750</td>
+        <td>6hr</td>
+        <td>m</td>
+        <td>Geopotential Height at 750hPa</td>
+        <td>geopotential_height</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>wa750</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 750hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>wa750</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 750hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>wa750</td>
+        <td>6hr</td>
+        <td>m s-1</td>
+        <td>Upward Air Velocity at 750hPa</td>
+        <td>upward_air_velocity</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td>requested by CORDEX-Africa</td>
+      </tr>
+      <tr>
+        <td>ua200m</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 200m</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua200m</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 200m</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua200m</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 200m</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua250m</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 250m</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua250m</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 250m</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua250m</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 250m</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua300m</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 300m</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua300m</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 300m</td>
+        <td>eastward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ua300m</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Eastward Wind at 300m</td>
+        <td>eastward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va200m</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 200m</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va200m</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 200m</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va200m</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 200m</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va250m</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 250m</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va250m</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 250m</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va250m</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 250m</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va300m</td>
+        <td>mon</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 300m</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va300m</td>
+        <td>day</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 300m</td>
+        <td>northward_wind</td>
+        <td>area: time: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>va300m</td>
+        <td>1hr</td>
+        <td>m s-1</td>
+        <td>Northward Wind at 300m</td>
+        <td>northward_wind</td>
+        <td>area: mean time: point</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>sftgif</td>
+        <td>fx</td>
+        <td>%</td>
+        <td>Percentage of the Grid Cell Covered by Glacier</td>
+        <td>land_ice_area_fraction</td>
+        <td>area: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>mrsofc</td>
+        <td>fx</td>
+        <td>kg m-2</td>
+        <td>Capacity of Soil to Store Water  (Field Capacity)</td>
+        <td>soil_moisture_content_at_field_capacity</td>
+        <td>area: mean where land</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>rootd</td>
+        <td>fx</td>
+        <td>m</td>
+        <td>Maximum Root Depth</td>
+        <td>root_depth</td>
+        <td>area: mean</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>sftlaf</td>
+        <td>fx</td>
+        <td>%</td>
+        <td>Percentage of the Grid Cell Occupied by Lake</td>
+        <td>area_fraction</td>
+        <td>area: mean</td>
+        <td>TIER2</td>
+        <td>not in CMIP or in CF</td>
+      </tr>
+      <tr>
+        <td>sfturf</td>
+        <td>fx</td>
+        <td>%</td>
+        <td>Percentage of the Grid Cell Occupied by Urban Area</td>
+        <td>area_fraction</td>
+        <td>area: mean</td>
+        <td>TIER2</td>
+        <td>not in CMIP or in CF</td>
+      </tr>
+      <tr>
+        <td>dtb</td>
+        <td>fx</td>
+        <td>m</td>
+        <td>Depth to Bedrock</td>
+        <td>bedrock_depth_below_ground_level</td>
+        <td>area: mean</td>
+        <td>TIER2</td>
+        <td>not in CMIP or in CF (lower boundary of land surface models)</td>
+      </tr>
+      <tr>
+        <td>areacella</td>
+        <td>fx</td>
+        <td>m2</td>
+        <td>Atmosphere Grid-Cell Area</td>
+        <td>cell_area</td>
+        <td>area: sum</td>
+        <td>TIER2</td>
+        <td></td>
+      </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function getParam(name) {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name) || '';
+        }
+
+        function setParam(name, value) {
+            var url = new URL(window.location);
+            if (value && value !== '') {
+                url.searchParams.set(name, value);
+            } else {
+                url.searchParams.delete(name);
+            }
+            window.history.replaceState({}, '', url);
+        }
+
+        $(document).ready(function() {
+            var initialSearch = getParam('search');
+            var initialLength = parseInt(getParam('length'), 10) || 20;
+            var initialOrder = getParam('order');
+            var initialOrderArray = [[0, 'asc']];
+
+            if (initialOrder) {
+                try {
+                    initialOrderArray = JSON.parse(initialOrder);
+                } catch (error) {
+                    console.log('Could not parse order parameter');
+                }
+            }
+
+            var table = $('#table_id').DataTable({
+                pageLength: initialLength,
+                lengthMenu: [20, 50, 100, 200, 500],
+                order: initialOrderArray,
+                searching: true
+            });
+
+            if (initialSearch) {
+                table.search(initialSearch).draw();
+            }
+
+            table.on('search.dt', function() {
+                setParam('search', table.search());
+            });
+
+            table.on('length.dt', function(event, settings, len) {
+                setParam('length', len === 20 ? '' : len);
+            });
+
+            table.on('order.dt', function() {
+                setParam('order', JSON.stringify(table.order()));
+            });
+        });
+    </script>
+</body>
+</html>

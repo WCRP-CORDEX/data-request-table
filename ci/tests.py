@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 from cf_xarray.utils import parse_cf_standard_name_table
+from . import utils
 from .utils import cmor_tables, tables, parse_area_type
 from data_request_tools import parse_cell_methods
 
@@ -202,3 +203,30 @@ def test_time_point_rows_have_time1_in_dimensions():
     ).all(), (
         "Found rows where time_cell_method == 'point' but 'time1' not in dimensions"
     )
+
+
+def test_create_html_exports_filterable_table(tmp_path, monkeypatch):
+    csv_path = tmp_path / "dreq_default.csv"
+    docs_path = tmp_path / "docs"
+    pd.DataFrame(
+        [
+            {
+                "out_name": "tas",
+                "frequency": "day",
+                "comment": "https://example.com/info",
+                "priority": "CORE",
+            }
+        ]
+    ).to_csv(csv_path, index=False)
+
+    monkeypatch.setattr(utils, "tables", [str(csv_path)])
+    monkeypatch.setattr(utils, "html_dir", str(docs_path))
+
+    html_path = utils.create_html(str(csv_path))
+    html = (docs_path / "dreq_default.html").read_text(encoding="utf-8")
+
+    assert html_path == str(docs_path / "dreq_default.html")
+    assert "$('#table_id').DataTable" in html
+    assert "CORDEX-CMIP6 data request · default" in html
+    assert '<a href="https://example.com/info">https://example.com/info</a>' in html
+    assert 'href="dreq_default.html">default</a>' in html

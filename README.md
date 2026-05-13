@@ -8,7 +8,7 @@ This repository contains a CORDEX-CMIP6 cmor table in csv format (`cmor-table/da
 
 The cmor tables, however, are independent from a domain-specific *data request* which can be only a subset of all datasets in the cmor tables.
 Domain-specific data requests provide additionally some metadata on the variables priority (see below).
-These tables are also available in more human-readable xlsx format in the [data-request](./data-request) subfolder.
+These tables are also available in more human-readable xlsx format in the [data-request](./data-request) subfolder and as browsable html tables <a href="https://wcrp-cordex.github.io/data-request-table/dreq_default.html>here</a>.
 
 ### Adding a data request
 

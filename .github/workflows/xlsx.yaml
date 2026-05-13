@@ -1,5 +1,5 @@
 
-name: create xlsx
+name: create table exports
 on:
   push:
     paths:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   create_xlsx:
-    name: Create and update xlsx tables
+    name: Create and update table exports
     runs-on: ${{ matrix.os }}
     defaults:
       run:
@@ -41,7 +41,7 @@ jobs:
         run: |
           conda info -a
           conda list
-      - name: Create xlsx
+      - name: Create xlsx and html
         timeout-minutes: 5
         run: python ci/utils.py
       - name: Check if there are any changes
@@ -54,7 +54,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           #(pre-commit run --all-files) || true
-          git add data-request/*.xlsx
-          git commit data-request/*.xlsx -m "update xlsx"
+          git add data-request/*.xlsx docs/*.html
+          git commit data-request/*.xlsx docs/*.html -m "update table exports"
           git status
           git push
