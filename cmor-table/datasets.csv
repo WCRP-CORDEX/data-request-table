@@ -161,6 +161,7 @@ ua925,6hr,m s-1,Eastward Wind at 925hPa,eastward_wind,,area: mean time: point,ar
 ua850,mon,m s-1,Eastward Wind at 850hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
 ua850,day,m s-1,Eastward Wind at 850hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
 ua850,6hr,m s-1,Eastward Wind at 850hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,,,,,,atmos
+ua850,3hr,m s-1,Eastward Wind at 850hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,,,,,,atmos
 ua700,mon,m s-1,Eastward Wind at 700hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
 ua700,day,m s-1,Eastward Wind at 700hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
 ua700,6hr,m s-1,Eastward Wind at 700hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p700,real,,,,,,atmos
@@ -230,6 +231,7 @@ ta600,6hr,K,Air Temperature at 600hPa,air_temperature,,area: mean time: point,ar
 ta500,mon,K,Air Temperature at 500hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p500,real,,,,,,atmos
 ta500,day,K,Air Temperature at 500hPa,air_temperature,Temperature on the 500 hPa surface,area: time: mean,area: areacella,longitude latitude time p500,real,,,,,,atmos
 ta500,6hr,K,Air Temperature at 500hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p500,real,,,,,,atmos
+ta500,3hr,K,Air Temperature at 500hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p500,real,,,,,,atmos
 ta400,mon,K,Air Temperature at 400hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p400,real,,,,,,atmos
 ta400,day,K,Air Temperature at 400hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p400,real,,,,,,atmos
 ta400,6hr,K,Air Temperature at 400hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p400,real,,,,,,atmos
@@ -275,6 +277,7 @@ hus200,6hr,1,Specific Humidity at 200hPa,specific_humidity,,area: mean time: poi
 zg1000,mon,m,Geopotential Height at 1000hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
 zg1000,day,m,Geopotential Height at 1000hPa,geopotential_height,Geopotential height on the 1000 hPa surface,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
 zg1000,6hr,m,Geopotential Height at 1000hPa,geopotential_height,Geopotential height on the 1000 hPa surface,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,,,,,,atmos
+zg1000,3hr,m,Geopotential Height at 1000hPa,geopotential_height,Geopotential height on the 1000 hPa surface,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,,,,,,atmos
 zg925,mon,m,Geopotential Height at 925hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p925,real,,,,,,atmos
 zg925,day,m,Geopotential Height at 925hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p925,real,,,,,,atmos
 zg925,6hr,m,Geopotential Height at 925hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,,,,,,atmos
