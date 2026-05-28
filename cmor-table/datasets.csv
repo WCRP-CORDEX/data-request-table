@@ -245,78 +245,60 @@ hurs,1hr,%,Near-Surface Relative Humidity,relative_humidity,,area: mean time: po
 hus10,mon,1,Specific Humidity at 10hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p10,real,,,,,,atmos
 hus10,day,1,Specific Humidity at 10hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p10,real,,,,,,atmos
 hus10,6hr,1,Specific Humidity at 10hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p10,real,,,,,,atmos
-hus10,3hr,1,Specific Humidity at 10hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p10,real,,,,,,atmos
 hus100,mon,1,Specific Humidity at 100hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p100,real,,,,,,atmos
 hus100,day,1,Specific Humidity at 100hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p100,real,,,,,,atmos
 hus100,6hr,1,Specific Humidity at 100hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p100,real,,,,,,atmos
-hus100,3hr,1,Specific Humidity at 100hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p100,real,,,,,,atmos
 hus1000,mon,1,Specific Humidity at 1000hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
 hus1000,day,1,Specific Humidity at 1000hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
 hus1000,6hr,1,Specific Humidity at 1000hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,,,,,,atmos
-hus1000,3hr,1,Specific Humidity at 1000hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,,,,,,atmos
 hus150,mon,1,Specific Humidity at 150hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p150,real,,,,,,atmos
 hus150,day,1,Specific Humidity at 150hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p150,real,,,,,,atmos
 hus150,6hr,1,Specific Humidity at 150hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p150,real,,,,,,atmos
-hus150,3hr,1,Specific Humidity at 150hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p150,real,,,,,,atmos
 hus20,mon,1,Specific Humidity at 20hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p20,real,,,,,,atmos
 hus20,day,1,Specific Humidity at 20hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p20,real,,,,,,atmos
 hus20,6hr,1,Specific Humidity at 20hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p20,real,,,,,,atmos
-hus20,3hr,1,Specific Humidity at 20hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p20,real,,,,,,atmos
 hus200,mon,1,Specific Humidity at 200hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p200,real,,,,,,atmos
 hus200,day,1,Specific Humidity at 200hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p200,real,,,,,,atmos
 hus200,6hr,1,Specific Humidity at 200hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p200,real,,,,,,atmos
-hus200,3hr,1,Specific Humidity at 200hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p200,real,,,,,,atmos
 hus250,mon,1,Specific Humidity at 250hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p250,real,,,,,,atmos
 hus250,day,1,Specific Humidity at 250hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p250,real,,,,,,atmos
 hus250,6hr,1,Specific Humidity at 250hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p250,real,,,,,,atmos
-hus250,3hr,1,Specific Humidity at 250hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p250,real,,,,,,atmos
 hus30,mon,1,Specific Humidity at 30hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p30,real,,,,,,atmos
 hus30,day,1,Specific Humidity at 30hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p30,real,,,,,,atmos
 hus30,6hr,1,Specific Humidity at 30hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p30,real,,,,,,atmos
-hus30,3hr,1,Specific Humidity at 30hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p30,real,,,,,,atmos
 hus300,mon,1,Specific Humidity at 300hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p300,real,,,,,,atmos
 hus300,day,1,Specific Humidity at 300hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p300,real,,,,,,atmos
 hus300,6hr,1,Specific Humidity at 300hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p300,real,,,,,,atmos
-hus300,3hr,1,Specific Humidity at 300hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p300,real,,,,,,atmos
 hus400,mon,1,Specific Humidity at 400hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p400,real,,,,,,atmos
 hus400,day,1,Specific Humidity at 400hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p400,real,,,,,,atmos
 hus400,6hr,1,Specific Humidity at 400hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p400,real,,,,,,atmos
-hus400,3hr,1,Specific Humidity at 400hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p400,real,,,,,,atmos
 hus50,mon,1,Specific Humidity at 50hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p50,real,,,,,,atmos
 hus50,day,1,Specific Humidity at 50hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p50,real,,,,,,atmos
 hus50,6hr,1,Specific Humidity at 50hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p50,real,,,,,,atmos
-hus50,3hr,1,Specific Humidity at 50hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p50,real,,,,,,atmos
 hus500,mon,1,Specific Humidity at 500hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p500,real,,,,,,atmos
 hus500,day,1,Specific Humidity at 500hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p500,real,,,,,,atmos
 hus500,6hr,1,Specific Humidity at 500hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p500,real,,,,,,atmos
-hus500,3hr,1,Specific Humidity at 500hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p500,real,,,,,,atmos
 hus50m,mon,1,Specific Humidity at 50m,specific_humidity,,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
 hus50m,day,1,Specific Humidity at 50m,specific_humidity,,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
 hus50m,1hr,1,Specific Humidity at 50m,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 height50m,real,,,,,,atmos
 hus600,mon,1,Specific Humidity at 600hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p600,real,,,,,,atmos
 hus600,day,1,Specific Humidity at 600hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p600,real,,,,,,atmos
 hus600,6hr,1,Specific Humidity at 600hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p600,real,,,,,,atmos
-hus600,3hr,1,Specific Humidity at 600hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p600,real,,,,,,atmos
 hus70,mon,1,Specific Humidity at 70hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p70,real,,,,,,atmos
 hus70,day,1,Specific Humidity at 70hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p70,real,,,,,,atmos
 hus70,6hr,1,Specific Humidity at 70hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p70,real,,,,,,atmos
-hus70,3hr,1,Specific Humidity at 70hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p70,real,,,,,,atmos
 hus700,mon,1,Specific Humidity at 700hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
 hus700,day,1,Specific Humidity at 700hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
 hus700,6hr,1,Specific Humidity at 700hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p700,real,,,,,,atmos
-hus700,3hr,1,Specific Humidity at 700hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p700,real,,,,,,atmos
 hus750,mon,1,Specific Humidity at 750hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p750,real,,,,,,atmos
 hus750,day,1,Specific Humidity at 750hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p750,real,,,,,,atmos
 hus750,6hr,1,Specific Humidity at 750hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p750,real,,,,,,atmos
-hus750,3hr,1,Specific Humidity at 750hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p750,real,,,,,,atmos
 hus850,mon,1,Specific Humidity at 850hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
 hus850,day,1,Specific Humidity at 850hPa,specific_humidity,Specific humidity is the mass fraction of water vapor in (moist) air.,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
 hus850,6hr,1,Specific Humidity at 850hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,,,,,,atmos
-hus850,3hr,1,Specific Humidity at 850hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,,,,,,atmos
 hus925,mon,1,Specific Humidity at 925hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p925,real,,,,,,atmos
 hus925,day,1,Specific Humidity at 925hPa,specific_humidity,,area: time: mean,area: areacella,longitude latitude time p925,real,,,,,,atmos
 hus925,6hr,1,Specific Humidity at 925hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,,,,,,atmos
-hus925,3hr,1,Specific Humidity at 925hPa,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,,,,,,atmos
 huss,mon,1,Near-Surface Specific Humidity,specific_humidity,"Near-surface (usually, 2 meter) specific humidity.",area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
 huss,day,1,Near-Surface Specific Humidity,specific_humidity,"Near-surface (usually, 2 meter) specific humidity.",area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
 huss,1hr,1,Near-Surface Specific Humidity,specific_humidity,,area: mean time: point,area: areacella,longitude latitude time1 height2m,real,,,,,,atmos
@@ -674,78 +656,60 @@ sund,day,s,Daily Duration of Sunshine,duration_of_sunshine,,time: sum,area: area
 ta10,mon,K,Air Temperature at 10hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p10,real,,,,,,atmos
 ta10,day,K,Air Temperature at 10hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p10,real,,,,,,atmos
 ta10,6hr,K,Air Temperature at 10hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p10,real,,,,,,atmos
-ta10,3hr,K,Air Temperature at 10hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p10,real,,,,,,atmos
 ta100,mon,K,Air Temperature at 100hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p100,real,,,,,,atmos
 ta100,day,K,Air Temperature at 100hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p100,real,,,,,,atmos
 ta100,6hr,K,Air Temperature at 100hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p100,real,,,,,,atmos
-ta100,3hr,K,Air Temperature at 100hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p100,real,,,,,,atmos
 ta1000,mon,K,Air Temperature at 1000hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
 ta1000,day,K,Air Temperature at 1000hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
 ta1000,6hr,K,Air Temperature at 1000hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,,,,,,atmos
-ta1000,3hr,K,Air Temperature at 1000hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,,,,,,atmos
 ta150,mon,K,Air Temperature at 150hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p150,real,,,,,,atmos
 ta150,day,K,Air Temperature at 150hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p150,real,,,,,,atmos
 ta150,6hr,K,Air Temperature at 150hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p150,real,,,,,,atmos
-ta150,3hr,K,Air Temperature at 150hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p150,real,,,,,,atmos
 ta20,mon,K,Air Temperature at 20hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p20,real,,,,,,atmos
 ta20,day,K,Air Temperature at 20hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p20,real,,,,,,atmos
 ta20,6hr,K,Air Temperature at 20hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p20,real,,,,,,atmos
-ta20,3hr,K,Air Temperature at 20hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p20,real,,,,,,atmos
 ta200,mon,K,Air Temperature at 200hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p200,real,,,,,,atmos
 ta200,day,K,Air Temperature at 200hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p200,real,,,,,,atmos
 ta200,6hr,K,Air Temperature at 200hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p200,real,,,,,,atmos
-ta200,3hr,K,Air Temperature at 200hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p200,real,,,,,,atmos
 ta250,mon,K,Air Temperature at 250hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p250,real,,,,,,atmos
 ta250,day,K,Air Temperature at 250hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p250,real,,,,,,atmos
 ta250,6hr,K,Air Temperature at 250hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p250,real,,,,,,atmos
-ta250,3hr,K,Air Temperature at 250hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p250,real,,,,,,atmos
 ta30,mon,K,Air Temperature at 30hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p30,real,,,,,,atmos
 ta30,day,K,Air Temperature at 30hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p30,real,,,,,,atmos
 ta30,6hr,K,Air Temperature at 30hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p30,real,,,,,,atmos
-ta30,3hr,K,Air Temperature at 30hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p30,real,,,,,,atmos
 ta300,mon,K,Air Temperature at 300hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p300,real,,,,,,atmos
 ta300,day,K,Air Temperature at 300hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p300,real,,,,,,atmos
 ta300,6hr,K,Air Temperature at 300hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p300,real,,,,,,atmos
-ta300,3hr,K,Air Temperature at 300hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p300,real,,,,,,atmos
 ta400,mon,K,Air Temperature at 400hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p400,real,,,,,,atmos
 ta400,day,K,Air Temperature at 400hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p400,real,,,,,,atmos
 ta400,6hr,K,Air Temperature at 400hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p400,real,,,,,,atmos
-ta400,3hr,K,Air Temperature at 400hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p400,real,,,,,,atmos
 ta50,mon,K,Air Temperature at 50hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p50,real,,,,,,atmos
 ta50,day,K,Air Temperature at 50hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p50,real,,,,,,atmos
 ta50,6hr,K,Air Temperature at 50hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p50,real,,,,,,atmos
-ta50,3hr,K,Air Temperature at 50hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p50,real,,,,,,atmos
 ta500,mon,K,Air Temperature at 500hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p500,real,,,,,,atmos
 ta500,day,K,Air Temperature at 500hPa,air_temperature,Temperature on the 500 hPa surface,area: time: mean,area: areacella,longitude latitude time p500,real,,,,,,atmos
 ta500,6hr,K,Air Temperature at 500hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p500,real,,,,,,atmos
-ta500,3hr,K,Air Temperature at 500hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p500,real,,,,,,atmos
 ta50m,mon,K,Air Temperature at 50m,air_temperature,,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
 ta50m,day,K,Air Temperature at 50m,air_temperature,,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
 ta50m,1hr,K,Air Temperature at 50m,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 height50m,real,,,,,,atmos
 ta600,mon,K,Air Temperature at 600hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p600,real,,,,,,atmos
 ta600,day,K,Air Temperature at 600hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p600,real,,,,,,atmos
 ta600,6hr,K,Air Temperature at 600hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p600,real,,,,,,atmos
-ta600,3hr,K,Air Temperature at 600hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p600,real,,,,,,atmos
 ta70,mon,K,Air Temperature at 70hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p70,real,,,,,,atmos
 ta70,day,K,Air Temperature at 70hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p70,real,,,,,,atmos
 ta70,6hr,K,Air Temperature at 70hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p70,real,,,,,,atmos
-ta70,3hr,K,Air Temperature at 70hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p70,real,,,,,,atmos
 ta700,mon,K,Air Temperature at 700hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
 ta700,day,K,Air Temperature at 700hPa,air_temperature,Air temperature at 700hPa,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
 ta700,6hr,K,Air Temperature at 700hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p700,real,,,,,,atmos
-ta700,3hr,K,Air Temperature at 700hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p700,real,,,,,,atmos
 ta750,mon,K,Air Temperature at 750hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p750,real,,,,,,atmos
 ta750,day,K,Air Temperature at 750hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p750,real,,,,,,atmos
 ta750,6hr,K,Air Temperature at 750hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p750,real,,,,,,atmos
-ta750,3hr,K,Air Temperature at 750hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p750,real,,,,,,atmos
 ta850,mon,K,Air Temperature at 850hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
 ta850,day,K,Air Temperature at 850hPa,air_temperature,Air temperature at 850hPa,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
 ta850,6hr,K,Air Temperature at 850hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,,,,,,atmos
-ta850,3hr,K,Air Temperature at 850hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,,,,,,atmos
 ta925,mon,K,Air Temperature at 925hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p925,real,,,,,,atmos
 ta925,day,K,Air Temperature at 925hPa,air_temperature,,area: time: mean,area: areacella,longitude latitude time p925,real,,,,,,atmos
 ta925,6hr,K,Air Temperature at 925hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,,,,,,atmos
-ta925,3hr,K,Air Temperature at 925hPa,air_temperature,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,,,,,,atmos
 tas,mon,K,Near-Surface Air Temperature,air_temperature,"near-surface (usually, 2 meter) air temperature",area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
 tas,day,K,Near-Surface Air Temperature,air_temperature,"near-surface (usually, 2 meter) air temperature",area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
 tas,1hr,K,Near-Surface Air Temperature,air_temperature,"near-surface (usually, 2 meter) air temperature",area: mean time: point,area: areacella,longitude latitude time1 height2m,real,,,,,,atmos
@@ -783,93 +747,75 @@ tsl,6hr,K,Temperature of Soil,soil_temperature,Temperature of soil. Reported as 
 ua10,mon,m s-1,Eastward Wind at 10hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p10,real,,,,,,atmos
 ua10,day,m s-1,Eastward Wind at 10hPa,eastward_wind,Zonal wind on the 10 hPa surface,area: time: mean,area: areacella,longitude latitude time p10,real,,,,,,atmos
 ua10,6hr,m s-1,Eastward Wind at 10hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p10,real,,,,,,atmos
-ua10,3hr,m s-1,Eastward Wind at 10hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p10,real,,,,,,atmos
 ua100,mon,m s-1,Eastward Wind at 100hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p100,real,,,,,,atmos
 ua100,day,m s-1,Eastward Wind at 100hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p100,real,,,,,,atmos
 ua100,6hr,m s-1,Eastward Wind at 100hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p100,real,,,,,,atmos
-ua100,3hr,m s-1,Eastward Wind at 100hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p100,real,,,,,,atmos
 ua1000,mon,m s-1,Eastward Wind at 1000hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
 ua1000,day,m s-1,Eastward Wind at 1000hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
 ua1000,6hr,m s-1,Eastward Wind at 1000hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,,,,,,atmos
-ua1000,3hr,m s-1,Eastward Wind at 1000hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,,,,,,atmos
 ua100m,mon,m s-1,Eastward Wind at 100m,eastward_wind,,area: time: mean,area: areacella,longitude latitude time height100m,real,,,,,,atmos
 ua100m,day,m s-1,Eastward Wind at 100m,eastward_wind,,area: time: mean,area: areacella,longitude latitude time height100m,real,,,,,,atmos
 ua100m,1hr,m s-1,Eastward Wind at 100m,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height100m,real,,,,,,atmos
 ua150,mon,m s-1,Eastward Wind at 150hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p150,real,,,,,,atmos
 ua150,day,m s-1,Eastward Wind at 150hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p150,real,,,,,,atmos
 ua150,6hr,m s-1,Eastward Wind at 150hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p150,real,,,,,,atmos
-ua150,3hr,m s-1,Eastward Wind at 150hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p150,real,,,,,,atmos
 ua150m,mon,m s-1,Eastward Wind at 150m,eastward_wind,,area: time: mean,area: areacella,longitude latitude time height150m,real,,,,,,atmos
 ua150m,day,m s-1,Eastward Wind at 150m,eastward_wind,,area: time: mean,area: areacella,longitude latitude time height150m,real,,,,,,atmos
 ua150m,1hr,m s-1,Eastward Wind at 150m,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height150m,real,,,,,,atmos
 ua20,mon,m s-1,Eastward Wind at 20hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p20,real,,,,,,atmos
 ua20,day,m s-1,Eastward Wind at 20hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p20,real,,,,,,atmos
 ua20,6hr,m s-1,Eastward Wind at 20hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p20,real,,,,,,atmos
-ua20,3hr,m s-1,Eastward Wind at 20hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p20,real,,,,,,atmos
 ua200,mon,m s-1,Eastward Wind at 200hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p200,real,,,,,,atmos
 ua200,day,m s-1,Eastward Wind at 200hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p200,real,,,,,,atmos
 ua200,6hr,m s-1,Eastward Wind at 200hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p200,real,,,,,,atmos
-ua200,3hr,m s-1,Eastward Wind at 200hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p200,real,,,,,,atmos
 ua200m,mon,m s-1,Eastward Wind at 200m,eastward_wind,,area: time: mean,area: areacella,longitude latitude time height200m,real,,,,,,atmos
 ua200m,day,m s-1,Eastward Wind at 200m,eastward_wind,,area: time: mean,area: areacella,longitude latitude time height200m,real,,,,,,atmos
 ua200m,1hr,m s-1,Eastward Wind at 200m,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height200m,real,,,,,,atmos
 ua250,mon,m s-1,Eastward Wind at 250hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p250,real,,,,,,atmos
 ua250,day,m s-1,Eastward Wind at 250hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p250,real,,,,,,atmos
 ua250,6hr,m s-1,Eastward Wind at 250hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p250,real,,,,,,atmos
-ua250,3hr,m s-1,Eastward Wind at 250hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p250,real,,,,,,atmos
 ua250m,mon,m s-1,Eastward Wind at 250m,eastward_wind,,area: time: mean,area: areacella,longitude latitude time height250m,real,,,,,,atmos
 ua250m,day,m s-1,Eastward Wind at 250m,eastward_wind,,area: time: mean,area: areacella,longitude latitude time height250m,real,,,,,,atmos
 ua250m,1hr,m s-1,Eastward Wind at 250m,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height250m,real,,,,,,atmos
 ua30,mon,m s-1,Eastward Wind at 30hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p30,real,,,,,,atmos
 ua30,day,m s-1,Eastward Wind at 30hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p30,real,,,,,,atmos
 ua30,6hr,m s-1,Eastward Wind at 30hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p30,real,,,,,,atmos
-ua30,3hr,m s-1,Eastward Wind at 30hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p30,real,,,,,,atmos
 ua300,mon,m s-1,Eastward Wind at 300hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p300,real,,,,,,atmos
 ua300,day,m s-1,Eastward Wind at 300hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p300,real,,,,,,atmos
 ua300,6hr,m s-1,Eastward Wind at 300hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p300,real,,,,,,atmos
-ua300,3hr,m s-1,Eastward Wind at 300hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p300,real,,,,,,atmos
 ua300m,mon,m s-1,Eastward Wind at 300m,eastward_wind,,area: time: mean,area: areacella,longitude latitude time height300m,real,,,,,,atmos
 ua300m,day,m s-1,Eastward Wind at 300m,eastward_wind,,area: time: mean,area: areacella,longitude latitude time height300m,real,,,,,,atmos
 ua300m,1hr,m s-1,Eastward Wind at 300m,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height300m,real,,,,,,atmos
 ua400,mon,m s-1,Eastward Wind at 400hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p400,real,,,,,,atmos
 ua400,day,m s-1,Eastward Wind at 400hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p400,real,,,,,,atmos
 ua400,6hr,m s-1,Eastward Wind at 400hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p400,real,,,,,,atmos
-ua400,3hr,m s-1,Eastward Wind at 400hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p400,real,,,,,,atmos
 ua50,mon,m s-1,Eastward Wind at 50hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p50,real,,,,,,atmos
 ua50,day,m s-1,Eastward Wind at 50hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p50,real,,,,,,atmos
 ua50,6hr,m s-1,Eastward Wind at 50hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p50,real,,,,,,atmos
-ua50,3hr,m s-1,Eastward Wind at 50hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p50,real,,,,,,atmos
 ua500,mon,m s-1,Eastward Wind at 500hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p500,real,,,,,,atmos
 ua500,day,m s-1,Eastward Wind at 500hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p500,real,,,,,,atmos
 ua500,6hr,m s-1,Eastward Wind at 500hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p500,real,,,,,,atmos
-ua500,3hr,m s-1,Eastward Wind at 500hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p500,real,,,,,,atmos
 ua50m,mon,m s-1,Eastward Wind at 50m,eastward_wind,,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
 ua50m,day,m s-1,Eastward Wind at 50m,eastward_wind,,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
 ua50m,1hr,m s-1,Eastward Wind at 50m,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height50m,real,,,,,,atmos
 ua600,mon,m s-1,Eastward Wind at 600hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p600,real,,,,,,atmos
 ua600,day,m s-1,Eastward Wind at 600hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p600,real,,,,,,atmos
 ua600,6hr,m s-1,Eastward Wind at 600hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p600,real,,,,,,atmos
-ua600,3hr,m s-1,Eastward Wind at 600hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p600,real,,,,,,atmos
 ua70,mon,m s-1,Eastward Wind at 70hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p70,real,,,,,,atmos
 ua70,day,m s-1,Eastward Wind at 70hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p70,real,,,,,,atmos
 ua70,6hr,m s-1,Eastward Wind at 70hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p70,real,,,,,,atmos
-ua70,3hr,m s-1,Eastward Wind at 70hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p70,real,,,,,,atmos
 ua700,mon,m s-1,Eastward Wind at 700hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
 ua700,day,m s-1,Eastward Wind at 700hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
 ua700,6hr,m s-1,Eastward Wind at 700hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p700,real,,,,,,atmos
-ua700,3hr,m s-1,Eastward Wind at 700hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p700,real,,,,,,atmos
 ua750,mon,m s-1,Eastward Wind at 750hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p750,real,,,,,,atmos
 ua750,day,m s-1,Eastward Wind at 750hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p750,real,,,,,,atmos
 ua750,6hr,m s-1,Eastward Wind at 750hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p750,real,,,,,,atmos
-ua750,3hr,m s-1,Eastward Wind at 750hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p750,real,,,,,,atmos
 ua850,mon,m s-1,Eastward Wind at 850hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
 ua850,day,m s-1,Eastward Wind at 850hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
 ua850,6hr,m s-1,Eastward Wind at 850hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,,,,,,atmos
-ua850,3hr,m s-1,Eastward Wind at 850hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,,,,,,atmos
 ua925,mon,m s-1,Eastward Wind at 925hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p925,real,,,,,,atmos
 ua925,day,m s-1,Eastward Wind at 925hPa,eastward_wind,,area: time: mean,area: areacella,longitude latitude time p925,real,,,,,,atmos
 ua925,6hr,m s-1,Eastward Wind at 925hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,,,,,,atmos
-ua925,3hr,m s-1,Eastward Wind at 925hPa,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,,,,,,atmos
 uas,mon,m s-1,Eastward Near-Surface Wind,eastward_wind,"Eastward component of the near-surface (usually, 10 meters)  wind",area: time: mean,area: areacella,longitude latitude time height10m,real,,,,,,atmos
 uas,day,m s-1,Eastward Near-Surface Wind,eastward_wind,"Eastward component of the near-surface (usually, 10 meters)  wind",area: time: mean,area: areacella,longitude latitude time height10m,real,,,,,,atmos
 uas,1hr,m s-1,Eastward Near-Surface Wind,eastward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height10m,real,,,,,,atmos
@@ -879,93 +825,75 @@ uos,day,m s-1,Surface X Velocity,surface_eastward_sea_water_velocity,,area: mean
 va10,mon,m s-1,Northward Wind at 10hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p10,real,,,,,,atmos
 va10,day,m s-1,Northward Wind at 10hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p10,real,,,,,,atmos
 va10,6hr,m s-1,Northward Wind at 10hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p10,real,,,,,,atmos
-va10,3hr,m s-1,Northward Wind at 10hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p10,real,,,,,,atmos
 va100,mon,m s-1,Northward Wind at 100hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p100,real,,,,,,atmos
 va100,day,m s-1,Northward Wind at 100hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p100,real,,,,,,atmos
 va100,6hr,m s-1,Northward Wind at 100hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p100,real,,,,,,atmos
-va100,3hr,m s-1,Northward Wind at 100hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p100,real,,,,,,atmos
 va1000,mon,m s-1,Northward Wind at 1000hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
 va1000,day,m s-1,Northward Wind at 1000hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
 va1000,6hr,m s-1,Northward Wind at 1000hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,,,,,,atmos
-va1000,3hr,m s-1,Northward Wind at 1000hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,,,,,,atmos
 va100m,mon,m s-1,Northward Wind at 100m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height100m,real,,,,,,atmos
 va100m,day,m s-1,Northward Wind at 100m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height100m,real,,,,,,atmos
 va100m,1hr,m s-1,Northward Wind at 100m,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height100m,real,,,,,,atmos
 va150,mon,m s-1,Northward Wind at 150hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p150,real,,,,,,atmos
 va150,day,m s-1,Northward Wind at 150hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p150,real,,,,,,atmos
 va150,6hr,m s-1,Northward Wind at 150hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p150,real,,,,,,atmos
-va150,3hr,m s-1,Northward Wind at 150hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p150,real,,,,,,atmos
 va150m,mon,m s-1,Northward Wind at 150m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height150m,real,,,,,,atmos
 va150m,day,m s-1,Northward Wind at 150m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height150m,real,,,,,,atmos
 va150m,1hr,m s-1,Northward Wind at 150m,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height150m,real,,,,,,atmos
 va20,mon,m s-1,Northward Wind at 20hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p20,real,,,,,,atmos
 va20,day,m s-1,Northward Wind at 20hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p20,real,,,,,,atmos
 va20,6hr,m s-1,Northward Wind at 20hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p20,real,,,,,,atmos
-va20,3hr,m s-1,Northward Wind at 20hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p20,real,,,,,,atmos
 va200,mon,m s-1,Northward Wind at 200hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p200,real,,,,,,atmos
 va200,day,m s-1,Northward Wind at 200hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p200,real,,,,,,atmos
 va200,6hr,m s-1,Northward Wind at 200hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p200,real,,,,,,atmos
-va200,3hr,m s-1,Northward Wind at 200hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p200,real,,,,,,atmos
 va200m,mon,m s-1,Northward Wind at 200m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height200m,real,,,,,,atmos
 va200m,day,m s-1,Northward Wind at 200m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height200m,real,,,,,,atmos
 va200m,1hr,m s-1,Northward Wind at 200m,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height200m,real,,,,,,atmos
 va250,mon,m s-1,Northward Wind at 250hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p250,real,,,,,,atmos
 va250,day,m s-1,Northward Wind at 250hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p250,real,,,,,,atmos
 va250,6hr,m s-1,Northward Wind at 250hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p250,real,,,,,,atmos
-va250,3hr,m s-1,Northward Wind at 250hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p250,real,,,,,,atmos
 va250m,mon,m s-1,Northward Wind at 250m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height250m,real,,,,,,atmos
 va250m,day,m s-1,Northward Wind at 250m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height250m,real,,,,,,atmos
 va250m,1hr,m s-1,Northward Wind at 250m,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height250m,real,,,,,,atmos
 va30,mon,m s-1,Northward Wind at 30hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p30,real,,,,,,atmos
 va30,day,m s-1,Northward Wind at 30hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p30,real,,,,,,atmos
 va30,6hr,m s-1,Northward Wind at 30hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p30,real,,,,,,atmos
-va30,3hr,m s-1,Northward Wind at 30hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p30,real,,,,,,atmos
 va300,mon,m s-1,Northward Wind at 300hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p300,real,,,,,,atmos
 va300,day,m s-1,Northward Wind at 300hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p300,real,,,,,,atmos
 va300,6hr,m s-1,Northward Wind at 300hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p300,real,,,,,,atmos
-va300,3hr,m s-1,Northward Wind at 300hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p300,real,,,,,,atmos
 va300m,mon,m s-1,Northward Wind at 300m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height300m,real,,,,,,atmos
 va300m,day,m s-1,Northward Wind at 300m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height300m,real,,,,,,atmos
 va300m,1hr,m s-1,Northward Wind at 300m,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height300m,real,,,,,,atmos
 va400,mon,m s-1,Northward Wind at 400hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p400,real,,,,,,atmos
 va400,day,m s-1,Northward Wind at 400hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p400,real,,,,,,atmos
 va400,6hr,m s-1,Northward Wind at 400hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p400,real,,,,,,atmos
-va400,3hr,m s-1,Northward Wind at 400hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p400,real,,,,,,atmos
 va50,mon,m s-1,Northward Wind at 50hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p50,real,,,,,,atmos
 va50,day,m s-1,Northward Wind at 50hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p50,real,,,,,,atmos
 va50,6hr,m s-1,Northward Wind at 50hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p50,real,,,,,,atmos
-va50,3hr,m s-1,Northward Wind at 50hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p50,real,,,,,,atmos
 va500,mon,m s-1,Northward Wind at 500hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p500,real,,,,,,atmos
 va500,day,m s-1,Northward Wind at 500hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p500,real,,,,,,atmos
 va500,6hr,m s-1,Northward Wind at 500hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p500,real,,,,,,atmos
-va500,3hr,m s-1,Northward Wind at 500hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p500,real,,,,,,atmos
 va50m,mon,m s-1,Northward Wind at 50m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
 va50m,day,m s-1,Northward Wind at 50m,northward_wind,,area: time: mean,area: areacella,longitude latitude time height50m,real,,,,,,atmos
 va50m,1hr,m s-1,Northward Wind at 50m,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height50m,real,,,,,,atmos
 va600,mon,m s-1,Northward Wind at 600hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p600,real,,,,,,atmos
 va600,day,m s-1,Northward Wind at 600hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p600,real,,,,,,atmos
 va600,6hr,m s-1,Northward Wind at 600hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p600,real,,,,,,atmos
-va600,3hr,m s-1,Northward Wind at 600hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p600,real,,,,,,atmos
 va70,mon,m s-1,Northward Wind at 70hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p70,real,,,,,,atmos
 va70,day,m s-1,Northward Wind at 70hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p70,real,,,,,,atmos
 va70,6hr,m s-1,Northward Wind at 70hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p70,real,,,,,,atmos
-va70,3hr,m s-1,Northward Wind at 70hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p70,real,,,,,,atmos
 va700,mon,m s-1,Northward Wind at 700hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
 va700,day,m s-1,Northward Wind at 700hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
 va700,6hr,m s-1,Northward Wind at 700hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p700,real,,,,,,atmos
-va700,3hr,m s-1,Northward Wind at 700hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p700,real,,,,,,atmos
 va750,mon,m s-1,Northward Wind at 750hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p750,real,,,,,,atmos
 va750,day,m s-1,Northward Wind at 750hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p750,real,,,,,,atmos
 va750,6hr,m s-1,Northward Wind at 750hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p750,real,,,,,,atmos
-va750,3hr,m s-1,Northward Wind at 750hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p750,real,,,,,,atmos
 va850,mon,m s-1,Northward Wind at 850hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
 va850,day,m s-1,Northward Wind at 850hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
 va850,6hr,m s-1,Northward Wind at 850hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,,,,,,atmos
-va850,3hr,m s-1,Northward Wind at 850hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,,,,,,atmos
 va925,mon,m s-1,Northward Wind at 925hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p925,real,,,,,,atmos
 va925,day,m s-1,Northward Wind at 925hPa,northward_wind,,area: time: mean,area: areacella,longitude latitude time p925,real,,,,,,atmos
 va925,6hr,m s-1,Northward Wind at 925hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,,,,,,atmos
-va925,3hr,m s-1,Northward Wind at 925hPa,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,,,,,,atmos
 vas,mon,m s-1,Northward Near-Surface Wind,northward_wind,Northward component of the near surface wind,area: time: mean,area: areacella,longitude latitude time height10m,real,,,,,,atmos
 vas,day,m s-1,Northward Near-Surface Wind,northward_wind,Northward component of the near surface wind,area: time: mean,area: areacella,longitude latitude time height10m,real,,,,,,atmos
 vas,1hr,m s-1,Northward Near-Surface Wind,northward_wind,,area: mean time: point,area: areacella,longitude latitude time1 height10m,real,,,,,,atmos
@@ -976,75 +904,57 @@ vos,day,m s-1,Surface Y Velocity,surface_northward_sea_water_velocity,,area: mea
 wa10,mon,m s-1,Upward Air Velocity at 10hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p10,real,up,,,,,atmos
 wa10,day,m s-1,Upward Air Velocity at 10hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p10,real,up,,,,,atmos
 wa10,6hr,m s-1,Upward Air Velocity at 10hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p10,real,up,,,,,atmos
-wa10,3hr,m s-1,Upward Air Velocity at 10hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p10,real,up,,,,,atmos
 wa100,mon,m s-1,Upward Air Velocity at 100hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p100,real,up,,,,,atmos
 wa100,day,m s-1,Upward Air Velocity at 100hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p100,real,up,,,,,atmos
 wa100,6hr,m s-1,Upward Air Velocity at 100hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p100,real,up,,,,,atmos
-wa100,3hr,m s-1,Upward Air Velocity at 100hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p100,real,up,,,,,atmos
 wa1000,mon,m s-1,Upward Air Velocity at 1000hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p1000,real,up,,,,,atmos
 wa1000,day,m s-1,Upward Air Velocity at 1000hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p1000,real,up,,,,,atmos
 wa1000,6hr,m s-1,Upward Air Velocity at 1000hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,up,,,,,atmos
-wa1000,3hr,m s-1,Upward Air Velocity at 1000hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,up,,,,,atmos
 wa150,mon,m s-1,Upward Air Velocity at 150hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p150,real,up,,,,,atmos
 wa150,day,m s-1,Upward Air Velocity at 150hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p150,real,up,,,,,atmos
 wa150,6hr,m s-1,Upward Air Velocity at 150hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p150,real,up,,,,,atmos
-wa150,3hr,m s-1,Upward Air Velocity at 150hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p150,real,up,,,,,atmos
 wa20,mon,m s-1,Upward Air Velocity at 20hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p20,real,up,,,,,atmos
 wa20,day,m s-1,Upward Air Velocity at 20hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p20,real,up,,,,,atmos
 wa20,6hr,m s-1,Upward Air Velocity at 20hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p20,real,up,,,,,atmos
-wa20,3hr,m s-1,Upward Air Velocity at 20hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p20,real,up,,,,,atmos
 wa200,mon,m s-1,Upward Air Velocity at 200hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p200,real,up,,,,,atmos
 wa200,day,m s-1,Upward Air Velocity at 200hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p200,real,up,,,,,atmos
 wa200,6hr,m s-1,Upward Air Velocity at 200hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p200,real,up,,,,,atmos
-wa200,3hr,m s-1,Upward Air Velocity at 200hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p200,real,up,,,,,atmos
 wa250,mon,m s-1,Upward Air Velocity at 250hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p250,real,up,,,,,atmos
 wa250,day,m s-1,Upward Air Velocity at 250hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p250,real,up,,,,,atmos
 wa250,6hr,m s-1,Upward Air Velocity at 250hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p250,real,up,,,,,atmos
-wa250,3hr,m s-1,Upward Air Velocity at 250hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p250,real,up,,,,,atmos
 wa30,mon,m s-1,Upward Air Velocity at 30hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p30,real,up,,,,,atmos
 wa30,day,m s-1,Upward Air Velocity at 30hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p30,real,up,,,,,atmos
 wa30,6hr,m s-1,Upward Air Velocity at 30hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p30,real,up,,,,,atmos
-wa30,3hr,m s-1,Upward Air Velocity at 30hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p30,real,up,,,,,atmos
 wa300,mon,m s-1,Upward Air Velocity at 300hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p300,real,up,,,,,atmos
 wa300,day,m s-1,Upward Air Velocity at 300hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p300,real,up,,,,,atmos
 wa300,6hr,m s-1,Upward Air Velocity at 300hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p300,real,up,,,,,atmos
-wa300,3hr,m s-1,Upward Air Velocity at 300hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p300,real,up,,,,,atmos
 wa400,mon,m s-1,Upward Air Velocity at 400hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p400,real,up,,,,,atmos
 wa400,day,m s-1,Upward Air Velocity at 400hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p400,real,up,,,,,atmos
 wa400,6hr,m s-1,Upward Air Velocity at 400hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p400,real,up,,,,,atmos
-wa400,3hr,m s-1,Upward Air Velocity at 400hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p400,real,up,,,,,atmos
 wa50,mon,m s-1,Upward Air Velocity at 50hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p50,real,up,,,,,atmos
 wa50,day,m s-1,Upward Air Velocity at 50hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p50,real,up,,,,,atmos
 wa50,6hr,m s-1,Upward Air Velocity at 50hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p50,real,up,,,,,atmos
-wa50,3hr,m s-1,Upward Air Velocity at 50hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p50,real,up,,,,,atmos
 wa500,mon,m s-1,Upward Air Velocity at 500hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p500,real,up,,,,,atmos
 wa500,day,m s-1,Upward Air Velocity at 500hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p500,real,up,,,,,atmos
 wa500,6hr,m s-1,Upward Air Velocity at 500hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p500,real,up,,,,,atmos
-wa500,3hr,m s-1,Upward Air Velocity at 500hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p500,real,up,,,,,atmos
 wa600,mon,m s-1,Upward Air Velocity at 600hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p600,real,up,,,,,atmos
 wa600,day,m s-1,Upward Air Velocity at 600hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p600,real,up,,,,,atmos
 wa600,6hr,m s-1,Upward Air Velocity at 600hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p600,real,up,,,,,atmos
-wa600,3hr,m s-1,Upward Air Velocity at 600hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p600,real,up,,,,,atmos
 wa70,mon,m s-1,Upward Air Velocity at 70hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p70,real,up,,,,,atmos
 wa70,day,m s-1,Upward Air Velocity at 70hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p70,real,up,,,,,atmos
 wa70,6hr,m s-1,Upward Air Velocity at 70hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p70,real,up,,,,,atmos
-wa70,3hr,m s-1,Upward Air Velocity at 70hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p70,real,up,,,,,atmos
 wa700,mon,m s-1,Upward Air Velocity at 700hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p700,real,up,,,,,atmos
 wa700,day,m s-1,Upward Air Velocity at 700hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p700,real,up,,,,,atmos
 wa700,6hr,m s-1,Upward Air Velocity at 700hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p700,real,up,,,,,atmos
-wa700,3hr,m s-1,Upward Air Velocity at 700hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p700,real,up,,,,,atmos
 wa750,mon,m s-1,Upward Air Velocity at 750hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p750,real,up,,,,,atmos
 wa750,day,m s-1,Upward Air Velocity at 750hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p750,real,up,,,,,atmos
 wa750,6hr,m s-1,Upward Air Velocity at 750hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p750,real,up,,,,,atmos
-wa750,3hr,m s-1,Upward Air Velocity at 750hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p750,real,up,,,,,atmos
 wa850,mon,m s-1,Upward Air Velocity at 850hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p850,real,up,,,,,atmos
 wa850,day,m s-1,Upward Air Velocity at 850hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p850,real,up,,,,,atmos
 wa850,6hr,m s-1,Upward Air Velocity at 850hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,up,,,,,atmos
-wa850,3hr,m s-1,Upward Air Velocity at 850hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,up,,,,,atmos
 wa925,mon,m s-1,Upward Air Velocity at 925hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p925,real,up,,,,,atmos
 wa925,day,m s-1,Upward Air Velocity at 925hPa,upward_air_velocity,,area: time: mean,area: areacella,longitude latitude time p925,real,up,,,,,atmos
 wa925,6hr,m s-1,Upward Air Velocity at 925hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,up,,,,,atmos
-wa925,3hr,m s-1,Upward Air Velocity at 925hPa,upward_air_velocity,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,up,,,,,atmos
 wetbc,mon,kg m-2 s-1,Wet Deposition Rate of Black Carbon,minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_wet_deposition,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,aerosol
 wetbc,day,kg m-2 s-1,Wet Deposition Rate of Black Carbon,minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_wet_deposition,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,aerosol
 wetbc,1hr,kg m-2 s-1,Wet Deposition Rate of Black Carbon,minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_wet_deposition,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,aerosol
@@ -1079,75 +989,57 @@ z0,day,m,Surface Roughness Length,surface_roughness_length,,area: time: mean,are
 zg10,mon,m,Geopotential Height at 10hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p10,real,,,,,,atmos
 zg10,day,m,Geopotential Height at 10hPa,geopotential_height,Geopotential height on the 10hPa surface,area: time: mean,area: areacella,longitude latitude time p10,real,,,,,,atmos
 zg10,6hr,m,Geopotential Height at 10hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p10,real,,,,,,atmos
-zg10,3hr,m,Geopotential Height at 10hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p10,real,,,,,,atmos
 zg100,mon,m,Geopotential Height at 100hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p100,real,,,,,,atmos
 zg100,day,m,Geopotential Height at 100hPa,geopotential_height,Geopotential height on the 100 hPa surface,area: time: mean,area: areacella,longitude latitude time p100,real,,,,,,atmos
 zg100,6hr,m,Geopotential Height at 100hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p100,real,,,,,,atmos
-zg100,3hr,m,Geopotential Height at 100hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p100,real,,,,,,atmos
 zg1000,mon,m,Geopotential Height at 1000hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
 zg1000,day,m,Geopotential Height at 1000hPa,geopotential_height,Geopotential height on the 1000 hPa surface,area: time: mean,area: areacella,longitude latitude time p1000,real,,,,,,atmos
 zg1000,6hr,m,Geopotential Height at 1000hPa,geopotential_height,Geopotential height on the 1000 hPa surface,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,,,,,,atmos
-zg1000,3hr,m,Geopotential Height at 1000hPa,geopotential_height,Geopotential height on the 1000 hPa surface,area: mean time: point,area: areacella,longitude latitude time1 p1000,real,,,,,,atmos
 zg150,mon,m,Geopotential Height at 150hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p150,real,,,,,,atmos
 zg150,day,m,Geopotential Height at 150hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p150,real,,,,,,atmos
 zg150,6hr,m,Geopotential Height at 150hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p150,real,,,,,,atmos
-zg150,3hr,m,Geopotential Height at 150hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p150,real,,,,,,atmos
 zg20,mon,m,Geopotential Height at 20hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p20,real,,,,,,atmos
 zg20,day,m,Geopotential Height at 20hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p20,real,,,,,,atmos
 zg20,6hr,m,Geopotential Height at 20hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p20,real,,,,,,atmos
-zg20,3hr,m,Geopotential Height at 20hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p20,real,,,,,,atmos
 zg200,mon,m,Geopotential Height at 200hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p200,real,,,,,,atmos
 zg200,day,m,Geopotential Height at 200hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p200,real,,,,,,atmos
 zg200,6hr,m,Geopotential Height at 200hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p200,real,,,,,,atmos
-zg200,3hr,m,Geopotential Height at 200hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p200,real,,,,,,atmos
 zg250,mon,m,Geopotential Height at 250hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p250,real,,,,,,atmos
 zg250,day,m,Geopotential Height at 250hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p250,real,,,,,,atmos
 zg250,6hr,m,Geopotential Height at 250hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p250,real,,,,,,atmos
-zg250,3hr,m,Geopotential Height at 250hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p250,real,,,,,,atmos
 zg30,mon,m,Geopotential Height at 30hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p30,real,,,,,,atmos
 zg30,day,m,Geopotential Height at 30hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p30,real,,,,,,atmos
 zg30,6hr,m,Geopotential Height at 30hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p30,real,,,,,,atmos
-zg30,3hr,m,Geopotential Height at 30hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p30,real,,,,,,atmos
 zg300,mon,m,Geopotential Height at 300hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p300,real,,,,,,atmos
 zg300,day,m,Geopotential Height at 300hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p300,real,,,,,,atmos
 zg300,6hr,m,Geopotential Height at 300hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p300,real,,,,,,atmos
-zg300,3hr,m,Geopotential Height at 300hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p300,real,,,,,,atmos
 zg400,mon,m,Geopotential Height at 400hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p400,real,,,,,,atmos
 zg400,day,m,Geopotential Height at 400hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p400,real,,,,,,atmos
 zg400,6hr,m,Geopotential Height at 400hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p400,real,,,,,,atmos
-zg400,3hr,m,Geopotential Height at 400hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p400,real,,,,,,atmos
 zg50,mon,m,Geopotential Height at 50hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p50,real,,,,,,atmos
 zg50,day,m,Geopotential Height at 50hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p50,real,,,,,,atmos
 zg50,6hr,m,Geopotential Height at 50hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p50,real,,,,,,atmos
-zg50,3hr,m,Geopotential Height at 50hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p50,real,,,,,,atmos
 zg500,mon,m,Geopotential Height at 500hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p500,real,,,,,,atmos
 zg500,day,m,Geopotential Height at 500hPa,geopotential_height,geopotential height on the 500 hPa surface,area: time: mean,area: areacella,longitude latitude time p500,real,,,,,,atmos
 zg500,6hr,m,Geopotential Height at 500hPa,geopotential_height,geopotential height on the 500 hPa surface,area: mean time: point,area: areacella,longitude latitude time1 p500,real,,,,,,atmos
-zg500,3hr,m,Geopotential Height at 500hPa,geopotential_height,geopotential height on the 500 hPa surface,area: mean time: point,area: areacella,longitude latitude time1 p500,real,,,,,,atmos
 zg600,mon,m,Geopotential Height at 600hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p600,real,,,,,,atmos
 zg600,day,m,Geopotential Height at 600hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p600,real,,,,,,atmos
 zg600,6hr,m,Geopotential Height at 600hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p600,real,,,,,,atmos
-zg600,3hr,m,Geopotential Height at 600hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p600,real,,,,,,atmos
 zg70,mon,m,Geopotential Height at 70hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p70,real,,,,,,atmos
 zg70,day,m,Geopotential Height at 70hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p70,real,,,,,,atmos
 zg70,6hr,m,Geopotential Height at 70hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p70,real,,,,,,atmos
-zg70,3hr,m,Geopotential Height at 70hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p70,real,,,,,,atmos
 zg700,mon,m,Geopotential Height at 700hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
 zg700,day,m,Geopotential Height at 700hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p700,real,,,,,,atmos
 zg700,6hr,m,Geopotential Height at 700hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p700,real,,,,,,atmos
-zg700,3hr,m,Geopotential Height at 700hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p700,real,,,,,,atmos
 zg750,mon,m,Geopotential Height at 750hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p750,real,,,,,,atmos
 zg750,day,m,Geopotential Height at 750hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p750,real,,,,,,atmos
 zg750,6hr,m,Geopotential Height at 750hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p750,real,,,,,,atmos
-zg750,3hr,m,Geopotential Height at 750hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p750,real,,,,,,atmos
 zg850,mon,m,Geopotential Height at 850hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
 zg850,day,m,Geopotential Height at 850hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p850,real,,,,,,atmos
 zg850,6hr,m,Geopotential Height at 850hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,,,,,,atmos
-zg850,3hr,m,Geopotential Height at 850hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p850,real,,,,,,atmos
 zg925,mon,m,Geopotential Height at 925hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p925,real,,,,,,atmos
 zg925,day,m,Geopotential Height at 925hPa,geopotential_height,,area: time: mean,area: areacella,longitude latitude time p925,real,,,,,,atmos
 zg925,6hr,m,Geopotential Height at 925hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,,,,,,atmos
-zg925,3hr,m,Geopotential Height at 925hPa,geopotential_height,,area: mean time: point,area: areacella,longitude latitude time1 p925,real,,,,,,atmos
 zmla,mon,m,Height of Boundary Layer,atmosphere_boundary_layer_thickness,,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 zmla,day,m,Height of Boundary Layer,atmosphere_boundary_layer_thickness,The atmosphere boundary layer thickness is the 'depth' or 'height' of the (atmosphere) planetary boundary layer.,area: time: mean,area: areacella,longitude latitude time,real,,,,,,atmos
 zmla,3hr,m,Height of Boundary Layer,atmosphere_boundary_layer_thickness,,area: mean time: point,area: areacella,longitude latitude time1,real,,,,,,atmos
