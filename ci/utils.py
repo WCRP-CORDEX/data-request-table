@@ -81,7 +81,7 @@ def create_html(filename):
         f"This is the CORDEX-CMIP6 RCM data request for {label}." 
         f" The browsable list shows the available variables, frequencies and other properties."
         f" For more information about the data request, see <a href='https://github.com/WCRP-CORDEX/data-request-table#tutorial'>https://github.com/WCRP-CORDEX/data-request-table</a>."
-        f" CSV and Excel versions of the data request can be found <a href='https://github.com/WCRP-CORDEX/data-request-table/data-request'>here</a>."
+        f" CSV and Excel versions of the data request can be found <a href='https://github.com/WCRP-CORDEX/data-request-table/tree/main/data-request'>here</a>."
     )
 
     header_html = "\n".join(f"        <th>{escape(column)}</th>" for column in df.columns)
