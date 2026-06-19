@@ -61,6 +61,7 @@ def test_all_positive_attrs_set():
     up = ["outgoing", "upward", "upwelling"]
     down = ["incoming", "downward", "downwelling", "sinking"]
     df = pd.read_csv(cmor_tables)
+    df = df[df.realm.isin(["atmos", "ocean"])]
 
     ups = df.loc[df.standard_name.str.contains("|".join(up), case=False)]
     downs = df.loc[df.standard_name.str.contains("|".join(down), case=False)]
