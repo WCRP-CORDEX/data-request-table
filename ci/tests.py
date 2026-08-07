@@ -107,6 +107,22 @@ def test_dimensions_attrs_set():
     assert no_dimensions.empty
 
 
+def test_type_attrs_set():
+    """
+    Ensure all type attributes are set in the CMOR tables.
+
+    This test checks if the 'type' attribute is set for all entries
+    in the CMOR tables. It identifies any entries that are missing this attribute.
+    """
+    df = pd.read_csv(cmor_tables)
+
+    no_type = df.loc[df.type.isna()]
+    if not no_type.empty:
+        print(f"No type defined for: {no_type[['out_name', 'frequency', 'realm']]}")
+
+    assert no_type.empty
+
+
 def test_all_units_cf_conform():
     """
     Ensure all units are CF conform in the CMOR tables.
