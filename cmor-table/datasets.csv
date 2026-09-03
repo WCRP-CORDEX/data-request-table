@@ -240,6 +240,10 @@ hfss,mon,W m-2,Surface Upward Sensible Heat Flux,surface_upward_sensible_heat_fl
 hfss,day,W m-2,Surface Upward Sensible Heat Flux,surface_upward_sensible_heat_flux,"The surface sensible heat flux, also called turbulent heat flux, is the exchange of heat between the surface and the air by motion of air.",area: time: mean,area: areacella,longitude latitude time,real,up,,,,,atmos
 hfss,3hr,W m-2,Surface Upward Sensible Heat Flux,surface_upward_sensible_heat_flux,,area: time: mean,area: areacella,longitude latitude time,real,up,,,,,atmos
 hfss,1hr,W m-2,Surface Upward Sensible Heat Flux,surface_upward_sensible_heat_flux,,area: time: mean,area: areacella,longitude latitude time,real,up,,,,,atmos
+hfso,mon,W m-2,Ground Heat Flux,downward_heat_flux_in_soil,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
+hfso,day,W m-2,Ground Heat Flux,downward_heat_flux_in_soil,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
+hfso,3hr,W m-2,Ground Heat Flux,downward_heat_flux_in_soil,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
+hfso,1hr,W m-2,Ground Heat Flux,downward_heat_flux_in_soil,,area: time: mean,area: areacella,longitude latitude time,real,down,,,,,atmos
 hurs,mon,%,Near-Surface Relative Humidity,relative_humidity,"The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
 hurs,day,%,Near-Surface Relative Humidity,relative_humidity,"The relative humidity with respect to liquid water for T> 0 C, and with respect to ice for T<0 C.",area: time: mean,area: areacella,longitude latitude time height2m,real,,,,,,atmos
 hurs,1hr,%,Near-Surface Relative Humidity,relative_humidity,,area: mean time: point,area: areacella,longitude latitude time1 height2m,real,,,,,,atmos
