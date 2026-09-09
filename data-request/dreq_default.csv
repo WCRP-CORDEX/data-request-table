@@ -394,7 +394,6 @@ limax,mon,K,Daily Maximum Lifted Index,temperature_difference_between_ambient_ai
 limax,day,K,Daily Maximum Lifted Index,temperature_difference_between_ambient_air_and_air_lifted_adiabatically_from_the_surface,area: mean time: maximum,TIER2,
 cinmax,mon,J kg-1,Daily Maximum Convective Inhibition,atmosphere_convective_inhibition_wrt_surface,area: mean time: maximum within days time: mean over days,TIER2,
 cinmax,day,J kg-1,Daily Maximum Convective Inhibition,atmosphere_convective_inhibition_wrt_surface,area: mean time: maximum,TIER2,
-od550aer,mon,1,Ambient Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER2,"long_name fixed, 2022.09.22  https://github.com/WCRP-CORDEX/cordex-cmip6-data-request/issues/6"
 ua150,mon,m s-1,Eastward Wind at 150hPa,eastward_wind,area: time: mean,TIER2,
 ua150,day,m s-1,Eastward Wind at 150hPa,eastward_wind,area: time: mean,TIER2,
 ua150,6hr,m s-1,Eastward Wind at 150hPa,eastward_wind,area: mean time: point,TIER2,
@@ -546,3 +545,420 @@ sftlaf,fx,%,Percentage of the Grid Cell Occupied by Lake,area_fraction,area: mea
 sfturf,fx,%,Percentage of the Grid Cell Occupied by Urban Area,area_fraction,area: mean,TIER2,not in CMIP or in CF
 dtb,fx,m,Depth to Bedrock,bedrock_depth_below_ground_level,area: mean,TIER2,not in CMIP or in CF (lower boundary of land surface models)
 areacella,fx,m2,Atmosphere Grid-Cell Area,cell_area,area: sum,TIER2,
+abs550aer,mon,1,Ambient Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+abs550aer,day,1,Ambient Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+abs550aer,1hr,1,Ambient Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: mean time: point,CORE,1hr optional (considered for Tier1)
+asy550aer,mon,1,Aerosol Asymmetry Parameter at 550 nm,asymmetry_factor_of_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+asy550aer,day,1,Aerosol Asymmetry Parameter at 550 nm,asymmetry_factor_of_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+asy550aer,1hr,1,Aerosol Asymmetry Parameter at 550 nm,asymmetry_factor_of_ambient_aerosol_particles,area: mean time: point,CORE,1hr optional (considered for Tier1)
+od550aer,mon,1,Ambient Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550aer,day,1,Ambient Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550aer,1hr,1,Ambient Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: mean time: point,CORE,1hr optional (considered for Tier1)
+od550bc,mon,1,Black Carbon Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550bc,day,1,Black Carbon Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550bc,1hr,1,Black Carbon Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_black_carbon_ambient_aerosol,area: mean time: point,CORE,1hr optional (considered for Tier1)
+od550dust,mon,1,Dust Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550dust,day,1,Dust Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550dust,1hr,1,Dust Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles,area: mean time: point,CORE,1hr optional (considered for Tier1)
+od550nh4,mon,1,Ammonium Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_ammonium_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550nh4,day,1,Ammonium Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_ammonium_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550nh4,1hr,1,Ammonium Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_ammonium_ambient_aerosol_particles,area: mean time: point,CORE,1hr optional (considered for Tier1)
+od550no3,mon,1,Nitrate Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550no3,day,1,Nitrate Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550no3,1hr,1,Nitrate Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: mean time: point,CORE,1hr optional (considered for Tier1)
+od550oa,mon,1,Organic Matter Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550oa,day,1,Organic Matter Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550oa,1hr,1,Organic Matter Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: mean time: point,CORE,1hr optional (considered for Tier1)
+od550so4,mon,1,Sulfate Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550so4,day,1,Sulfate Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550so4,1hr,1,Sulfate Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: mean time: point,CORE,1hr optional (considered for Tier1)
+od550ss,mon,1,Sea-Salt Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550ss,day,1,Sea-Salt Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+od550ss,1hr,1,Sea-Salt Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: mean time: point,CORE,1hr optional (considered for Tier1)
+ssa550aer,mon,1,Aerosol Single Scattering Albedo at 550 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+ssa550aer,day,1,Aerosol Single Scattering Albedo at 550 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: time: mean,CORE,1hr optional (considered for Tier1)
+ssa550aer,1hr,1,Aerosol Single Scattering Albedo at 550 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: mean time: point,CORE,1hr optional (considered for Tier1)
+toz,mon,m,Total Column Ozone,equivalent_thickness_at_stp_of_atmosphere_ozone_content,area: time: mean,CORE,
+toz,day,m,Total Column Ozone,equivalent_thickness_at_stp_of_atmosphere_ozone_content,area: time: mean,CORE,
+abs1000aer,mon,1,Ambient Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+abs1000aer,day,1,Ambient Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+abs1000aer,3hr,1,Ambient Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: mean time: point,TIER1,
+abs350aer,mon,1,Ambient Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+abs350aer,day,1,Ambient Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+abs350aer,3hr,1,Ambient Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: mean time: point,TIER1,
+abs440aer,mon,1,Ambient Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+abs440aer,day,1,Ambient Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+abs440aer,3hr,1,Ambient Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: mean time: point,TIER1,
+abs870aer,mon,1,Ambient Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+abs870aer,day,1,Ambient Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+abs870aer,3hr,1,Ambient Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: mean time: point,TIER1,
+asy1000aer,mon,1,Aerosol Asymmetry Parameter at 1000 nm,asymmetry_factor_of_ambient_aerosol_particles,area: time: mean,TIER1,
+asy1000aer,day,1,Aerosol Asymmetry Parameter at 1000 nm,asymmetry_factor_of_ambient_aerosol_particles,area: time: mean,TIER1,
+asy1000aer,3hr,1,Aerosol Asymmetry Parameter at 1000 nm,asymmetry_factor_of_ambient_aerosol_particles,area: mean time: point,TIER1,
+asy350aer,mon,1,Aerosol Asymmetry Parameter at 350 nm,asymmetry_factor_of_ambient_aerosol_particles,area: time: mean,TIER1,
+asy350aer,day,1,Aerosol Asymmetry Parameter at 350 nm,asymmetry_factor_of_ambient_aerosol_particles,area: time: mean,TIER1,
+asy350aer,3hr,1,Aerosol Asymmetry Parameter at 350 nm,asymmetry_factor_of_ambient_aerosol_particles,area: mean time: point,TIER1,
+asy440aer,mon,1,Aerosol Asymmetry Parameter at 440 nm,asymmetry_factor_of_ambient_aerosol_particles,area: time: mean,TIER1,
+asy440aer,day,1,Aerosol Asymmetry Parameter at 440 nm,asymmetry_factor_of_ambient_aerosol_particles,area: time: mean,TIER1,
+asy440aer,3hr,1,Aerosol Asymmetry Parameter at 440 nm,asymmetry_factor_of_ambient_aerosol_particles,area: mean time: point,TIER1,
+asy870aer,mon,1,Aerosol Asymmetry Parameter at 870 nm,asymmetry_factor_of_ambient_aerosol_particles,area: time: mean,TIER1,
+asy870aer,day,1,Aerosol Asymmetry Parameter at 870 nm,asymmetry_factor_of_ambient_aerosol_particles,area: time: mean,TIER1,
+asy870aer,3hr,1,Aerosol Asymmetry Parameter at 870 nm,asymmetry_factor_of_ambient_aerosol_particles,area: mean time: point,TIER1,
+drybc,mon,kg m-2 s-1,Dry Deposition Rate of Black Carbon,minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+drybc,day,kg m-2 s-1,Dry Deposition Rate of Black Carbon,minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+drybc,1hr,kg m-2 s-1,Dry Deposition Rate of Black Carbon,minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+drydust,mon,kg m-2 s-1,Dry Deposition Rate of Dust,minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+drydust,day,kg m-2 s-1,Dry Deposition Rate of Dust,minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+drydust,1hr,kg m-2 s-1,Dry Deposition Rate of Dust,minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+drynh4,mon,kg m-2 s-1,Dry Deposition Rate of Ammonium,minus_tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+drynh4,day,kg m-2 s-1,Dry Deposition Rate of Ammonium,minus_tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+drynh4,1hr,kg m-2 s-1,Dry Deposition Rate of Ammonium,minus_tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+dryno3,mon,kg m-2 s-1,Dry Deposition Rate of Nitrate,tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+dryno3,day,kg m-2 s-1,Dry Deposition Rate of Nitrate,tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+dryno3,1hr,kg m-2 s-1,Dry Deposition Rate of Nitrate,tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+dryoa,mon,kg m-2 s-1,Dry Deposition Rate of Organic Matter,minus_tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+dryoa,day,kg m-2 s-1,Dry Deposition Rate of Organic Matter,minus_tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+dryoa,1hr,kg m-2 s-1,Dry Deposition Rate of Organic Matter,minus_tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+dryso4,mon,kg m-2 s-1,Dry Deposition Rate of Sulfate,minus_tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+dryso4,day,kg m-2 s-1,Dry Deposition Rate of Sulfate,minus_tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+dryso4,1hr,kg m-2 s-1,Dry Deposition Rate of Sulfate,minus_tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+dryss,mon,kg m-2 s-1,Dry Deposition Rate of Sea-Salt,minus_tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+dryss,day,kg m-2 s-1,Dry Deposition Rate of Sea-Salt,minus_tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+dryss,1hr,kg m-2 s-1,Dry Deposition Rate of Sea-Salt,minus_tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,
+emibc,mon,kg m-2 s-1,Total Emission Rate of Black Carbon,tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+emibc,day,kg m-2 s-1,Total Emission Rate of Black Carbon,tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+emidust,mon,kg m-2 s-1,Total Emission Rate of Dust,tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+emidust,day,kg m-2 s-1,Total Emission Rate of Dust,tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+eminh3,mon,kg m-2 s-1,Total Emission Rate of Ammonia,tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission,area: mean time: minimum,TIER1,daily output only if daily variations in emissions
+eminh3,day,kg m-2 s-1,Total Emission Rate of Ammonia,tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission,area: mean time: minimum,TIER1,daily output only if daily variations in emissions
+eminox,mon,kg m-2 s-1,Total Emission Rate of NOx,tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_due_to_emission,area: mean time: minimum,TIER1,daily output only if daily variations in emissions
+eminox,day,kg m-2 s-1,Total Emission Rate of NOx,tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_due_to_emission,area: mean time: minimum,TIER1,daily output only if daily variations in emissions
+emioa,mon,kg m-2 s-1,Total Emission Rate of Organic Matter,tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+emioa,day,kg m-2 s-1,Total Emission Rate of Organic Matter,tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+emiso2,mon,kg m-2 s-1,Total Emission Rate of Sulfure Dioxide,tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+emiso2,day,kg m-2 s-1,Total Emission Rate of Sulfure Dioxide,tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+emiso4,mon,kg m-2 s-1,Total Emission Rate of Sulfate,tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+emiso4,day,kg m-2 s-1,Total Emission Rate of Sulfate,tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+emiss,mon,kg m-2 s-1,Total Emission Rate of Sea-Salt,tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+emiss,day,kg m-2 s-1,Total Emission Rate of Sea-Salt,tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+emivoc,mon,kg m-2 s-1,Total Emission Rate of NMVOC,tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+emivoc,day,kg m-2 s-1,Total Emission Rate of NMVOC,tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission,area: time: mean,TIER1,daily output only if daily variations in emissions
+od1000aer,mon,1,Ambient Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+od1000aer,day,1,Ambient Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+od1000aer,3hr,1,Ambient Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: mean time: point,TIER1,
+od350aer,mon,1,Ambient Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+od350aer,day,1,Ambient Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+od350aer,3hr,1,Ambient Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: mean time: point,TIER1,
+od440aer,mon,1,Ambient Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+od440aer,day,1,Ambient Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+od440aer,3hr,1,Ambient Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: mean time: point,TIER1,
+od550lt1aer,mon,1,Ambient Fine Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_pm1_ambient_aerosol_particles,area: time: mean,TIER1,
+od550lt1aer,day,1,Ambient Fine Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_pm1_ambient_aerosol_particles,area: time: mean,TIER1,
+od550lt1aer,1hr,1,Ambient Fine Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_pm1_ambient_aerosol_particles,area: mean time: point,TIER1,
+od550soa,mon,1,Secondary Organic Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER1,
+od550soa,day,1,Secondary Organic Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER1,
+od550soa,1hr,1,Secondary Organic Aerosol Optical Thickness at 550nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: mean time: point,TIER1,
+od870aer,mon,1,Ambient Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+od870aer,day,1,Ambient Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+od870aer,3hr,1,Ambient Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_ambient_aerosol_particles,area: mean time: point,TIER1,
+rsutaf,mon,W m-2,TOA Outgoing Aerosol-Free Shortwave Radiation,toa_outgoing_shortwave_flux_assuming_no_aerosol,area: time: mean,TIER1,
+rsutaf,day,W m-2,TOA Outgoing Aerosol-Free Shortwave Radiation,toa_outgoing_shortwave_flux_assuming_no_aerosol,area: time: mean,TIER1,
+rsutaf,6hr,W m-2,TOA Outgoing Aerosol-Free Shortwave Radiation,toa_outgoing_shortwave_flux_assuming_no_aerosol,area: time: mean,TIER1,
+rsutcsaf,mon,W m-2,"TOA Outgoing Clear-Sky, Aerosol-Free Shortwave Radiation",toa_outgoing_shortwave_flux_assuming_clear_sky_and_no_aerosol,area: time: mean,TIER1,
+rsutcsaf,day,W m-2,"TOA Outgoing Clear-Sky, Aerosol-Free Shortwave Radiation",toa_outgoing_shortwave_flux_assuming_clear_sky_and_no_aerosol,area: time: mean,TIER1,
+rsutcsaf,6hr,W m-2,"TOA Outgoing Clear-Sky, Aerosol-Free Shortwave Radiation",toa_outgoing_shortwave_flux_assuming_clear_sky_and_no_aerosol,area: time: mean,TIER1,
+rlutaf,mon,W m-2,TOA Outgoing Aerosol-Free Longwave Radiation,toa_outgoing_longwave_flux,area: time: mean,TIER1,
+rlutaf,day,W m-2,TOA Outgoing Aerosol-Free Longwave Radiation,toa_outgoing_longwave_flux,area: time: mean,TIER1,
+rlutaf,6hr,W m-2,TOA Outgoing Aerosol-Free Longwave Radiation,toa_outgoing_longwave_flux,area: time: mean,TIER1,
+rlutcsaf,mon,W m-2,"TOA Outgoing Clear-Sky, Aerosol-Free Longwave Radiation",toa_outgoing_longwave_flux_assuming_clear_sky,area: time: mean,TIER1,
+rlutcsaf,day,W m-2,"TOA Outgoing Clear-Sky, Aerosol-Free Longwave Radiation",toa_outgoing_longwave_flux_assuming_clear_sky,area: time: mean,TIER1,
+rlutcsaf,6hr,W m-2,"TOA Outgoing Clear-Sky, Aerosol-Free Longwave Radiation",toa_outgoing_longwave_flux_assuming_clear_sky,area: time: mean,TIER1,
+rsdsaf,mon,W m-2,Surface Downwelling Aerosol-Free Shortwave Radiation,surface_downwelling_shortwave_flux_in_air,area: time: mean,TIER1,
+rsdsaf,day,W m-2,Surface Downwelling Aerosol-Free Shortwave Radiation,surface_downwelling_shortwave_flux_in_air,area: time: mean,TIER1,
+rsdsaf,6hr,W m-2,Surface Downwelling Aerosol-Free Shortwave Radiation,surface_downwelling_shortwave_flux_in_air,area: time: mean,TIER1,
+rsdscsaf,mon,W m-2,"Surface Downwelling Clear-Sky, Aerosol-Free Shortwave Radiation",surface_downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol,area: time: mean,TIER1,
+rsdscsaf,day,W m-2,"Surface Downwelling Clear-Sky, Aerosol-Free Shortwave Radiation",surface_downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol,area: time: mean,TIER1,
+rsdscsaf,6hr,W m-2,"Surface Downwelling Clear-Sky, Aerosol-Free Shortwave Radiation",surface_downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol,area: time: mean,TIER1,
+rsusaf,mon,W m-2,Surface Upwelling Aerosol-Free Shortwave Radiation,surface_upwelling_shortwave_flux_in_air,area: time: mean,TIER1,
+rsusaf,day,W m-2,Surface Upwelling Aerosol-Free Shortwave Radiation,surface_upwelling_shortwave_flux_in_air,area: time: mean,TIER1,
+rsusaf,6hr,W m-2,Surface Upwelling Aerosol-Free Shortwave Radiation,surface_upwelling_shortwave_flux_in_air,area: time: mean,TIER1,
+rsuscsaf,mon,W m-2,"Surface Upwelling Clear-Sky, Aerosol-Free Shortwave Radiation",surface_upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol,area: time: mean,TIER1,
+rsuscsaf,day,W m-2,"Surface Upwelling Clear-Sky, Aerosol-Free Shortwave Radiation",surface_upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol,area: time: mean,TIER1,
+rsuscsaf,6hr,W m-2,"Surface Upwelling Clear-Sky, Aerosol-Free Shortwave Radiation",surface_upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol,area: time: mean,TIER1,
+rldsaf,mon,W m-2,Surface Downwelling Aerosol-Free Longwave Radiation,surface_downwelling_longwave_flux_in_air,area: time: mean,TIER1,
+rldsaf,day,W m-2,Surface Downwelling Aerosol-Free Longwave Radiation,surface_downwelling_longwave_flux_in_air,area: time: mean,TIER1,
+rldsaf,6hr,W m-2,Surface Downwelling Aerosol-Free Longwave Radiation,surface_downwelling_longwave_flux_in_air,area: time: mean,TIER1,
+rldscsaf,mon,W m-2,"Surface Downwelling Clear-Sky, Aerosol-Free Longwave Radiation",surface_downwelling_longwave_flux_in_air_assuming_clear_sky,area: time: mean,TIER1,
+rldscsaf,day,W m-2,"Surface Downwelling Clear-Sky, Aerosol-Free Longwave Radiation",surface_downwelling_longwave_flux_in_air_assuming_clear_sky,area: time: mean,TIER1,
+rldscsaf,6hr,W m-2,"Surface Downwelling Clear-Sky, Aerosol-Free Longwave Radiation",surface_downwelling_longwave_flux_in_air_assuming_clear_sky,area: time: mean,TIER1,
+rlusaf,mon,W m-2,Surface Upwelling Aerosol-Free Longwave Radiation,surface_upwelling_longwave_flux_in_air,area: time: mean,TIER1,
+rlusaf,day,W m-2,Surface Upwelling Aerosol-Free Longwave Radiation,surface_upwelling_longwave_flux_in_air,area: time: mean,TIER1,
+rlusaf,6hr,W m-2,Surface Upwelling Aerosol-Free Longwave Radiation,surface_upwelling_longwave_flux_in_air,area: time: mean,TIER1,
+rluscsaf,mon,W m-2,"Surface Upwelling Clear-Sky, Aerosol-Free Longwave Radiation",surface_upwelling_longwave_flux_in_air_assuming_clear_sky_and_no_aerosol,area: time: mean,TIER1,
+rluscsaf,day,W m-2,"Surface Upwelling Clear-Sky, Aerosol-Free Longwave Radiation",surface_upwelling_longwave_flux_in_air_assuming_clear_sky_and_no_aerosol,area: time: mean,TIER1,
+rluscsaf,6hr,W m-2,"Surface Upwelling Clear-Sky, Aerosol-Free Longwave Radiation",surface_upwelling_longwave_flux_in_air_assuming_clear_sky_and_no_aerosol,area: time: mean,TIER1,
+sconcbc,mon,kg m-3,Surface Concentration of Black Carbon,mass_concentration_of_elemental_carbon_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcbc,day,kg m-3,Surface Concentration of Black Carbon,mass_concentration_of_elemental_carbon_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcbc,1hr,kg m-3,Surface Concentration of Black Carbon,mass_concentration_of_elemental_carbon_dry_aerosol_particles_in_air,area: mean time: point,TIER1,
+sconcdust,mon,kg m-3,Surface Concentration of Dust,mass_concentration_of_dust_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcdust,day,kg m-3,Surface Concentration of Dust,mass_concentration_of_dust_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcdust,1hr,kg m-3,Surface Concentration of Dust,mass_concentration_of_dust_dry_aerosol_particles_in_air,area: mean time: point,TIER1,
+sconcnh4,mon,kg m-3,Surface Concentration of Ammonium,mass_concentration_of_ammonium_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcnh4,day,kg m-3,Surface Concentration of Ammonium,mass_concentration_of_ammonium_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcnh4,1hr,kg m-3,Surface Concentration of Ammonium,mass_concentration_of_ammonium_dry_aerosol_particles_in_air,area: mean time: point,TIER1,
+sconcno3,mon,kg m-3,Surface Concentration of Nitrate,mass_concentration_of_nitrate_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcno3,day,kg m-3,Surface Concentration of Nitrate,mass_concentration_of_nitrate_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcno3,1hr,kg m-3,Surface Concentration of Nitrate,mass_concentration_of_nitrate_dry_aerosol_particles_in_air,area: mean time: point,TIER1,
+sconcoa,mon,kg m-3,Surface Concentration of Organic Matter Aerosol,mass_concentration_of_particulate_organic_matter_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcoa,day,kg m-3,Surface Concentration of Organic Matter Aerosol,mass_concentration_of_particulate_organic_matter_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcoa,1hr,kg m-3,Surface Concentration of Organic Matter Aerosol,mass_concentration_of_particulate_organic_matter_dry_aerosol_particles_in_air,area: mean time: point,TIER1,
+sconcso4,mon,kg m-3,Surface Concentration of Sulfate,mass_concentration_of_sulfate_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcso4,day,kg m-3,Surface Concentration of Sulfate,mass_concentration_of_sulfate_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcso4,1hr,kg m-3,Surface Concentration of Sulfate,mass_concentration_of_sulfate_dry_aerosol_particles_in_air,area: mean time: point,TIER1,
+sconcsoa,mon,kg m-3,Surface Concentration of Secondary Organic Aerosol,mass_concentration_of_secondary_particulate_organic_matter_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcsoa,day,kg m-3,Surface Concentration of Secondary Organic Aerosol,mass_concentration_of_secondary_particulate_organic_matter_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcsoa,1hr,kg m-3,Surface Concentration of Secondary Organic Aerosol,mass_concentration_of_secondary_particulate_organic_matter_dry_aerosol_particles_in_air,area: mean time: point,TIER1,
+sconcss,mon,kg m-3,Surface Concentration of Sea-Salt Aerosol,mass_concentration_of_sea_salt_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcss,day,kg m-3,Surface Concentration of Sea-Salt Aerosol,mass_concentration_of_sea_salt_dry_aerosol_particles_in_air,area: time: mean,TIER1,
+sconcss,1hr,kg m-3,Surface Concentration of Sea-Salt Aerosol,mass_concentration_of_sea_salt_dry_aerosol_particles_in_air,area: mean time: point,TIER1,
+sedbc,mon,kg m-2 s-1,Sedimentation Rate of Black Carbon,minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedbc,day,kg m-2 s-1,Sedimentation Rate of Black Carbon,minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedbc,1hr,kg m-2 s-1,Sedimentation Rate of Black Carbon,minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+seddust,mon,kg m-2 s-1,Sedimentation Rate of Dust,minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+seddust,day,kg m-2 s-1,Sedimentation Rate of Dust,minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+seddust,1hr,kg m-2 s-1,Sedimentation Rate of Dust,minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sednh4,mon,kg m-2 s-1,Sedimentation Rate of Ammonium,minus_tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sednh4,day,kg m-2 s-1,Sedimentation Rate of Ammonium,minus_tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sednh4,1hr,kg m-2 s-1,Sedimentation Rate of Ammonium,minus_tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedno3,mon,kg m-2 s-1,Sedimentation Rate of Nitrate,tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedno3,day,kg m-2 s-1,Sedimentation Rate of Nitrate,tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedno3,1hr,kg m-2 s-1,Sedimentation Rate of Nitrate,tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedoa,mon,kg m-2 s-1,Sedimentation Rate of Organic Matter,minus_tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedoa,day,kg m-2 s-1,Sedimentation Rate of Organic Matter,minus_tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedoa,1hr,kg m-2 s-1,Sedimentation Rate of Organic Matter,minus_tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedso4,mon,kg m-2 s-1,Sedimentation Rate of Sulfate,minus_tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedso4,day,kg m-2 s-1,Sedimentation Rate of Sulfate,minus_tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedso4,1hr,kg m-2 s-1,Sedimentation Rate of Sulfate,minus_tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedss,mon,kg m-2 s-1,Sedimentation Rate of Sea-Salt,minus_tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedss,day,kg m-2 s-1,Sedimentation Rate of Sea-Salt,minus_tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+sedss,1hr,kg m-2 s-1,Sedimentation Rate of Sea-Salt,minus_tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_dry_deposition,area: time: mean,TIER1,only if sedimentation is applied for this aerosol
+ssa1000aer,mon,1,Aerosol Single Scattering Albedo at 1000 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+ssa1000aer,day,1,Aerosol Single Scattering Albedo at 1000 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+ssa1000aer,3hr,1,Aerosol Single Scattering Albedo at 1000 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: mean time: point,TIER1,
+ssa350aer,mon,1,Aerosol Single Scattering Albedo at 350 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+ssa350aer,day,1,Aerosol Single Scattering Albedo at 350 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+ssa350aer,3hr,1,Aerosol Single Scattering Albedo at 350 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: mean time: point,TIER1,
+ssa440aer,mon,1,Aerosol Single Scattering Albedo at 440 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+ssa440aer,day,1,Aerosol Single Scattering Albedo at 440 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+ssa440aer,3hr,1,Aerosol Single Scattering Albedo at 440 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: mean time: point,TIER1,
+ssa870aer,mon,1,Aerosol Single Scattering Albedo at 870 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+ssa870aer,day,1,Aerosol Single Scattering Albedo at 870 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,
+ssa870aer,3hr,1,Aerosol Single Scattering Albedo at 870 nm,single_scattering_albedo_in_air_due_to_ambient_aerosol_particles,area: mean time: point,TIER1,
+wetbc,mon,kg m-2 s-1,Wet Deposition Rate of Black Carbon,minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetbc,day,kg m-2 s-1,Wet Deposition Rate of Black Carbon,minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetbc,1hr,kg m-2 s-1,Wet Deposition Rate of Black Carbon,minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetdust,mon,kg m-2 s-1,Wet Deposition Rate of Dust,minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetdust,day,kg m-2 s-1,Wet Deposition Rate of Dust,minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetdust,1hr,kg m-2 s-1,Wet Deposition Rate of Dust,minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetnh4,mon,kg m-2 s-1,Wet Deposition Rate of Ammonium,minus_tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetnh4,day,kg m-2 s-1,Wet Deposition Rate of Ammonium,minus_tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetnh4,1hr,kg m-2 s-1,Wet Deposition Rate of Ammonium,minus_tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetno3,mon,kg m-2 s-1,Wet Deposition Rate of Nitrate,tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetno3,day,kg m-2 s-1,Wet Deposition Rate of Nitrate,tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetno3,1hr,kg m-2 s-1,Wet Deposition Rate of Nitrate,tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetoa,mon,kg m-2 s-1,Wet Deposition Rate of Organic Matter,minus_tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetoa,day,kg m-2 s-1,Wet Deposition Rate of Organic Matter,minus_tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetoa,1hr,kg m-2 s-1,Wet Deposition Rate of Organic Matter,minus_tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetso4,mon,kg m-2 s-1,Wet Deposition Rate of Sulfate,minus_tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetso4,day,kg m-2 s-1,Wet Deposition Rate of Sulfate,minus_tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetso4,1hr,kg m-2 s-1,Wet Deposition Rate of Sulfate,minus_tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetss,mon,kg m-2 s-1,Wet Deposition Rate of Sea-Salt,minus_tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetss,day,kg m-2 s-1,Wet Deposition Rate of Sea-Salt,minus_tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+wetss,1hr,kg m-2 s-1,Wet Deposition Rate of Sea-Salt,minus_tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_wet_deposition,area: time: mean,TIER1,
+cdnc,mon,m-3,Cloud Liquid Droplet Number Concentration,number_concentration_of_cloud_liquid_water_particles_in_air,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+cdnc,day,m-3,Cloud Liquid Droplet Number Concentration,number_concentration_of_cloud_liquid_water_particles_in_air,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+cdnc,3hr,m-3,Cloud Liquid Droplet Number Concentration,number_concentration_of_cloud_liquid_water_particles_in_air,area: mean time: point,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550aer,mon,m-1,Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550aer,day,m-1,Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550aer,3hr,m-1,Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: mean time: point,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550bc,mon,m-1,Black Carbon Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550bc,day,m-1,Black Carbon Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550dust,mon,m-1,Dust Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550dust,day,m-1,Dust Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550nh4,mon,m-1,Ammonium Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550nh4,day,m-1,Ammonium Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550no3,mon,m-1,Nitrate Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550no3,day,m-1,Nitrate Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550oa,mon,m-1,Organic Matter Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550oa,day,m-1,Organic Matter Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550so4,mon,m-1,Sulfate Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550so4,day,m-1,Sulfate Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550ss,mon,m-1,Sea-salt Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+ext550ss,day,m-1,Sea-salt Aerosol Extinction Coefficient,volume_extinction_coefficient_in_air_due_to_ambient_aerosol,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550aer,mon,m-1,Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550aer,day,m-1,Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550aer,3hr,m-1,Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: mean time: point,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550bc,mon,m-1,Black Carbon Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550bc,day,m-1,Black Carbon Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550dust,mon,m-1,Dust Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550dust,day,m-1,Dust Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550nh4,mon,m-1,Ammonium Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550nh4,day,m-1,Ammonium Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550no3,mon,m-1,Nitrate Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550no3,day,m-1,Nitrate Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550oa,mon,m-1,Organic Matter Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550oa,day,m-1,Organic Matter Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550so4,mon,m-1,Sulfate Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550so4,day,m-1,Sulfate Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550ss,mon,m-1,Sea-salt Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+scat550ss,day,m-1,Sea-salt Aerosol Scattering Coefficient,volume_scattering_coefficient_in_air_due_to_ambient_aerosol_particles,area: time: mean,TIER1,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+abs1000bc,mon,1,Black Carbon Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+abs1000bc,day,1,Black Carbon Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+abs1000dust,mon,1,Dust Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+abs1000dust,day,1,Dust Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+abs1000nh4,mon,1,Ammonium Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER2,
+abs1000nh4,day,1,Ammonium Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER2,
+abs1000no3,mon,1,Nitrate Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs1000no3,day,1,Nitrate Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs1000oa,mon,1,Organic Matter Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+abs1000oa,day,1,Organic Matter Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+abs1000so4,mon,1,Sulfate Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs1000so4,day,1,Sulfate Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs1000ss,mon,1,Sea-salt Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+abs1000ss,day,1,Sea-salt Aerosol Absorption Optical Thickness at 1000 nm,atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+abs350bc,mon,1,Black Carbon Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+abs350bc,day,1,Black Carbon Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+abs350dust,mon,1,Dust Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+abs350dust,day,1,Dust Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+abs350nh4,mon,1,Ammonium Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER2,
+abs350nh4,day,1,Ammonium Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER2,
+abs350no3,mon,1,Nitrate Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs350no3,day,1,Nitrate Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs350oa,mon,1,Organic Matter Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+abs350oa,day,1,Organic Matter Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+abs350so4,mon,1,Sulfate Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs350so4,day,1,Sulfate Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs350ss,mon,1,Sea-salt Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+abs350ss,day,1,Sea-salt Aerosol Absorption Optical Thickness at 350 nm,atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+abs440bc,mon,1,Black Carbon Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+abs440bc,day,1,Black Carbon Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+abs440dust,mon,1,Dust Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+abs440dust,day,1,Dust Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+abs440nh4,mon,1,Ammonium Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER2,
+abs440nh4,day,1,Ammonium Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER2,
+abs440no3,mon,1,Nitrate Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs440no3,day,1,Nitrate Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs440oa,mon,1,Organic Matter Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+abs440oa,day,1,Organic Matter Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+abs440so4,mon,1,Sulfate Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs440so4,day,1,Sulfate Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs440ss,mon,1,Sea-salt Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+abs440ss,day,1,Sea-salt Aerosol Absorption Optical Thickness at 440 nm,atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+abs550bc,mon,1,Black Carbon Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+abs550bc,day,1,Black Carbon Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+abs550dust,mon,1,Dust Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+abs550dust,day,1,Dust Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+abs550nh4,mon,1,Ammonium Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER2,
+abs550nh4,day,1,Ammonium Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER2,
+abs550no3,mon,1,Nitrate Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs550no3,day,1,Nitrate Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs550oa,mon,1,Organic Matter Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+abs550oa,day,1,Organic Matter Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+abs550so4,mon,1,Sulfate Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs550so4,day,1,Sulfate Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs550ss,mon,1,Sea-salt Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+abs550ss,day,1,Sea-salt Aerosol Absorption Optical Thickness at 550 nm,atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+abs870bc,mon,1,Black Carbon Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+abs870bc,day,1,Black Carbon Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+abs870dust,mon,1,Dust Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+abs870dust,day,1,Dust Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+abs870nh4,mon,1,Ammonium Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER2,
+abs870nh4,day,1,Ammonium Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles,area: time: mean,TIER2,
+abs870no3,mon,1,Nitrate Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs870no3,day,1,Nitrate Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs870oa,mon,1,Organic Matter Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+abs870oa,day,1,Organic Matter Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+abs870so4,mon,1,Sulfate Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs870so4,day,1,Sulfate Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+abs870ss,mon,1,Sea-salt Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+abs870ss,day,1,Sea-salt Aerosol Absorption Optical Thickness at 870 nm,atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+od1000bc,mon,1,Black Carbon Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+od1000bc,day,1,Black Carbon Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+od1000dust,mon,1,Dust Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+od1000dust,day,1,Dust Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+od1000nh4,mon,1,Ammonium Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_ammonium_ambient_aerosol_particles,area: time: mean,TIER2,
+od1000nh4,day,1,Ammonium Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_ammonium_ambient_aerosol_particles,area: time: mean,TIER2,
+od1000no3,mon,1,Nitrate Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+od1000no3,day,1,Nitrate Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+od1000oa,mon,1,Organic Matter Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+od1000oa,day,1,Organic Matter Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+od1000so4,mon,1,Sulfate Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+od1000so4,day,1,Sulfate Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+od1000ss,mon,1,Sea-Salt Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+od1000ss,day,1,Sea-Salt Aerosol Optical Thickness at 1000nm,atmosphere_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+od350bc,mon,1,Black Carbon Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+od350bc,day,1,Black Carbon Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+od350dust,mon,1,Dust Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+od350dust,day,1,Dust Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+od350nh4,mon,1,Ammonium Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_ammonium_ambient_aerosol_particles,area: time: mean,TIER2,
+od350nh4,day,1,Ammonium Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_ammonium_ambient_aerosol_particles,area: time: mean,TIER2,
+od350no3,mon,1,Nitrate Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+od350no3,day,1,Nitrate Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+od350oa,mon,1,Organic Matter Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+od350oa,day,1,Organic Matter Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+od350so4,mon,1,Sulfate Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+od350so4,day,1,Sulfate Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+od350ss,mon,1,Sea-Salt Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+od350ss,day,1,Sea-Salt Aerosol Optical Thickness at 350nm,atmosphere_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+od440bc,mon,1,Black Carbon Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+od440bc,day,1,Black Carbon Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+od440dust,mon,1,Dust Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+od440dust,day,1,Dust Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+od440nh4,mon,1,Ammonium Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_ammonium_ambient_aerosol_particles,area: time: mean,TIER2,
+od440nh4,day,1,Ammonium Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_ammonium_ambient_aerosol_particles,area: time: mean,TIER2,
+od440no3,mon,1,Nitrate Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+od440no3,day,1,Nitrate Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+od440oa,mon,1,Organic Matter Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+od440oa,day,1,Organic Matter Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+od440so4,mon,1,Sulfate Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+od440so4,day,1,Sulfate Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+od440ss,mon,1,Sea-Salt Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+od440ss,day,1,Sea-Salt Aerosol Optical Thickness at 440nm,atmosphere_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+od870bc,mon,1,Black Carbon Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+od870bc,day,1,Black Carbon Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_black_carbon_ambient_aerosol,area: time: mean,TIER2,
+od870dust,mon,1,Dust Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+od870dust,day,1,Dust Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles,area: time: mean,TIER2,
+od870nh4,mon,1,Ammonium Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_ammonium_ambient_aerosol_particles,area: time: mean,TIER2,
+od870nh4,day,1,Ammonium Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_ammonium_ambient_aerosol_particles,area: time: mean,TIER2,
+od870no3,mon,1,Nitrate Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+od870no3,day,1,Nitrate Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_nitrate_ambient_aerosol_particles,area: time: mean,TIER2,
+od870oa,mon,1,Organic Matter Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+od870oa,day,1,Organic Matter Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles,area: time: mean,TIER2,
+od870so4,mon,1,Sulfate Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+od870so4,day,1,Sulfate Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles,area: time: mean,TIER2,
+od870ss,mon,1,Sea-Salt Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+od870ss,day,1,Sea-Salt Aerosol Optical Thickness at 870nm,atmosphere_optical_thickness_due_to_sea_salt_ambient_aerosol_particles,area: time: mean,TIER2,
+chepnh4,mon,kg m-2 s-1,Chemical Production of Dry Ammonium Aerosol,tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_net_chemical_production,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+chepnh4,day,kg m-2 s-1,Chemical Production of Dry Ammonium Aerosol,tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_net_chemical_production,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+chepno3,mon,kg m-2 s-1,Chemical Production of Dry Nitrate Aerosol,tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_net_chemical_production,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+chepno3,day,kg m-2 s-1,Chemical Production of Dry Nitrate Aerosol,tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_net_chemical_production,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+cheaqpso4,mon,kg m-2 s-1,Aqueous-Phase Production Rate of SO4,tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_aqueous_phase_net_chemical_production,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+cheaqpso4,day,kg m-2 s-1,Aqueous-Phase Production Rate of SO4,tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_aqueous_phase_net_chemical_production,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+chegpso4,mon,kg m-2 s-1,Gas-Phase Production Rate of SO4,tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_gaseous_phase_net_chemical_production,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+chegpso4,day,kg m-2 s-1,Gas-Phase Production Rate of SO4,tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_gaseous_phase_net_chemical_production,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+chepsoa,mon,kg m-2 s-1,Chemical Production of Dry Aerosol Secondary Organic Matter,tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_particles_due_to_net_chemical_production,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+chepsoa,day,kg m-2 s-1,Chemical Production of Dry Aerosol Secondary Organic Matter,tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_particles_due_to_net_chemical_production,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concbc,mon,kg m-3,Concentration of Black Carbon,mass_concentration_of_elemental_carbon_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concbc,day,kg m-3,Concentration of Black Carbon,mass_concentration_of_elemental_carbon_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concdust,mon,kg m-3,Concentration of Dust,mass_concentration_of_dust_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concdust,day,kg m-3,Concentration of Dust,mass_concentration_of_dust_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concnh4,mon,kg m-3,Concentration of Ammonium,mass_concentration_of_ammonium_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concnh4,day,kg m-3,Concentration of Ammonium,mass_concentration_of_ammonium_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concno3,mon,kg m-3,Concentration of Nitrate,mass_concentration_of_nitrate_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concno3,day,kg m-3,Concentration of Nitrate,mass_concentration_of_nitrate_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concoa,mon,kg m-3,Concentration of Organic Matter,mass_concentration_of_particulate_organic_matter_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concoa,day,kg m-3,Concentration of Organic Matter,mass_concentration_of_particulate_organic_matter_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concso4,mon,kg m-3,Concentration of SO4,mass_concentration_of_sulfate_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concso4,day,kg m-3,Concentration of SO4,mass_concentration_of_sulfate_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concss,mon,kg m-3,Concentration of Sea-Salt Aerosol,mass_concentration_of_sea_salt_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
+concss,day,kg m-3,Concentration of Sea-Salt Aerosol,mass_concentration_of_sea_salt_dry_aerosol_particles_in_air,area: time: mean,TIER2,"List of levels: 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 925, 950, 975, 1000 hPa (all in 1 file if possible)"
